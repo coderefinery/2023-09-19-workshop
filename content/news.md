@@ -1,6 +1,11 @@
 +++
 +++
 
+### News
+
+- Here we will post latest news before/during the workshop.
+
+
 ### Changes compared to last workshop
 
 - Sessions in week 2 have more time between them to make it easier to join only few
@@ -10,8 +15,3 @@
 - Simpler registration. Participants using partner registration pages do not
   have to register in two places.
 - Improve experience for team leaders.
-
-
-### News
-
-- Here we will post latest news before/during the workshop
