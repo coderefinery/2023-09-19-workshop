@@ -26,6 +26,7 @@ then you have all it takes to lead a team to success.
 
 ## Instructors
 
+- Radovan Bast
 - ...
 
 
