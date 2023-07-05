@@ -9,3 +9,4 @@
   volunteer exercise leads.
 - Simpler registration. Participants using partner registration pages do not
   have to register in two places.
+- Improve experience for "team leaders" (previously "exercise leaders").
