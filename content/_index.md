@@ -5,7 +5,7 @@ title = "Schedule"
 ## Partners and local exercise groups
 
 Some partners offer local support, such as breakout rooms, to their local
-teams. You can [become a partner](https://coderefinery.org/organization/partners/) to
+teams. You can [become a partner](https://coderefinery.org/about/partners/) to
 support your community!
 
 We collect here the exercise groups that we know:
@@ -31,6 +31,7 @@ then you have all it takes to lead a team to success.
 
 ## Workshop organizers
 
+- Radovan Bast
 - ...
 
 
