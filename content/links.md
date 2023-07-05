@@ -3,7 +3,7 @@
 
 ### Summary of important links
 
-- **Watch the stream at [https://twitch.tv/coderefinery](https://twitch.tv/coderefinery)** (shareable)
+- Watch the stream at [https://twitch.tv/coderefinery](https://twitch.tv/coderefinery) (shareable)
 - Links to lesson material in the schedule below (shareable)
 - Collaborative document for questions and notes (please register to receive it)
 - Q&A of each day is archived on [this site](@/questions/_index.md) (shareable)
