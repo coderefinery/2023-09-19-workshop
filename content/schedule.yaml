@@ -4,7 +4,7 @@ schedule:
   - title: "Installation help and on-boarding"
     date: "2023-09-12"
     sessions:
-      - starts: 9:00
+      - starts: 9:30
         ends: 10:30
         title: On-boarding for team leaders leading groups over video
       - starts: 11:00
@@ -16,7 +16,7 @@ schedule:
   - title: "Installation help and on-boarding (you don't need to attend both days, choose the day that is better for you)"
     date: "2023-09-13"
     sessions:
-      - starts: 9:00
+      - starts: 9:30
         ends: 10:30
         title: On-boarding for team leaders leading groups over video
       - starts: 11:00
