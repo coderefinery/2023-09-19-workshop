@@ -28,38 +28,38 @@ schedule:
   - title: "Day 1"
     date: "2023-09-19"
     sessions:
-      - starts: 7:50
-        ends: 8:00
+      - starts: 6:50
+        ends: 7:00
         title: Connecting time and icebreaker
-      - starts: 8:00
-        ends: 8:15
+      - starts: 7:00
+        ends: 7:15
         title: Welcome and introduction
         url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
         presenters: TBA
-      - starts: 8:15
-        ends: 11:30
+      - starts: 7:15
+        ends: 10:30
         title: Introduction to version control - part 1/2
         url: https://coderefinery.github.io/git-intro/
         presenters: TBA
   - title: "Day 2"
     date: "2023-09-20"
     sessions:
-      - starts: 7:50
-        ends: 8:00
+      - starts: 6:50
+        ends: 7:00
         title: Connecting time and icebreaker
-      - starts: 8:00
-        ends: 11:30
+      - starts: 7:00
+        ends: 10:30
         title: Introduction to version control - part 2/2
         url: https://coderefinery.github.io/git-intro/
         presenters: TBA
   - title: "Day 3"
     date: "2023-09-21"
     sessions:
-      - starts: 7:50
-        ends: 8:00
+      - starts: 6:50
+        ends: 7:00
         title: Connecting time and icebreaker
-      - starts: 8:00
-        ends: 11:30
+      - starts: 7:00
+        ends: 10:30
         title: Collaborative distributed version control
         url: https://coderefinery.github.io/git-collaborative/
         presenters: TBA
