@@ -37,12 +37,12 @@ schedule:
         ends: 9:00
         title: Introduction to version control - part 1/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Radovan and ...
       - starts: 10:00
         ends: 11:30
         title: Introduction to version control - part 2/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Radovan and ...
   - title: "Day 2"
     date: "2023-09-20"
     sessions:
@@ -50,12 +50,12 @@ schedule:
         ends: 9:00
         title: Introduction to version control - part 3/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Radovan and ...
       - starts: 10:00
         ends: 11:30
         title: Introduction to version control - part 4/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Radovan and ...
   - title: "Day 3"
     date: "2023-09-21"
     sessions:
@@ -63,12 +63,12 @@ schedule:
         ends: 9:00
         title: Collaborative distributed version control - part 1/2
         url: https://coderefinery.github.io/git-collaborative/
-        presenters: TBA
+        presenters: Dhanya and Johan
       - starts: 10:00
         ends: 11:30
         title: Collaborative distributed version control - part 2/2
         url: https://coderefinery.github.io/git-collaborative/
-        presenters: TBA
+        presenters: Dhanya and Johan
   - title: "Day 4"
     date: "2023-09-26"
     sessions:
@@ -76,12 +76,12 @@ schedule:
         ends: 9:00
         title: Reproducible research and FAIR data
         url: https://coderefinery.github.io/reproducible-research/
-        presenters: TBA
+        presenters: Samantha and Radovan
       - starts: 10:00
         ends: 11:30
         title: Social coding and open software
         url: https://coderefinery.github.io/social-coding/
-        presenters: TBA
+        presenters: Radovan and ...
   - title: "Day 5"
     date: "2023-09-27"
     sessions:
@@ -89,12 +89,12 @@ schedule:
         ends: 9:00
         title: Documentation
         url: https://coderefinery.github.io/documentation/
-        presenters: TBA
+        presenters: Samantha and Radovan
       - starts: 10:00
         ends: 11:30
         title: Jupyter
         url: https://coderefinery.github.io/jupyter/
-        presenters: TBA
+        presenters: Matias and Radovan
   - title: "Day 6"
     date: "2023-09-28"
     sessions:
@@ -102,12 +102,12 @@ schedule:
         ends: 9:00
         title: Software testing
         url: https://coderefinery.github.io/testing/
-        presenters: TBA
+        presenters: Radovan and ...
       - starts: 10:00
         ends: 11:30
         title: Modular code development
         url: https://coderefinery.github.io/modular-type-along/
-        presenters: TBA
+        presenters: Radovan and ...
       - starts: 11:30
         ends: 12:00
         title: Concluding remarks and where to go from here
