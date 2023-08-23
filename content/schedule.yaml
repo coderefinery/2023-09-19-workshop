@@ -76,7 +76,7 @@ schedule:
         ends: 9:00
         title: Reproducible research and FAIR data
         url: https://coderefinery.github.io/reproducible-research/
-        presenters: Samantha and Radovan
+        presenters: Samantha and Enrico
       - starts: 10:00
         ends: 11:30
         title: Social coding and open software
