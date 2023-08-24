@@ -81,7 +81,7 @@ schedule:
         ends: 11:30
         title: Social coding and open software
         url: https://coderefinery.github.io/social-coding/
-        presenters: Radovan and ...
+        presenters: Radovan and Jarno
   - title: "Day 5"
     date: "2023-09-27"
     sessions:
@@ -102,12 +102,12 @@ schedule:
         ends: 9:00
         title: Software testing
         url: https://coderefinery.github.io/testing/
-        presenters: Radovan and ...
+        presenters: Radovan and Thomas
       - starts: 10:00
         ends: 11:30
         title: Modular code development
         url: https://coderefinery.github.io/modular-type-along/
-        presenters: Radovan and ...
+        presenters: Radovan and Jarno
       - starts: 11:30
         ends: 12:00
         title: Concluding remarks and where to go from here
