@@ -3,7 +3,7 @@
 
 ### News
 
-- Here we will post latest news before/during the workshop.
+- 2023-08-25: Watch a [video on different options of how to join the workshop](https://youtu.be/QUAZELOioUY)!
 
 
 ### Changes compared to last workshop ([blog post](https://coderefinery.org/blog/2023/06/25/planning-sep-workshop/))
