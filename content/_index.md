@@ -29,13 +29,22 @@ We collect here the exercise groups that we know:
 ## Instructors
 
 - Radovan Bast
-- ...
+- Richard Darst
+- Enrico Glerean
+- Johan Hellsvik
+- Matias Jääskeläinen
+- Thomas Pfau
+- Dhanya Pushpadas
+- Jarno Rantaharju
+- Samantha Wittke
 
 
 ## Workshop organizers
 
 - Radovan Bast
-- ...
+- Richard Darst
+- Matias Jääskeläinen
+- Dhanya Pushpadas
 
 
 ## Expert helpers
