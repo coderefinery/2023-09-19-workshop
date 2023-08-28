@@ -52,6 +52,7 @@ logos = [
 
 # adapt this
 registration_link = "https://indico.neic.no/e/coderefinery-sep-2023"
+how_to_join_video = "https://youtu.be/QUAZELOioUY"
 source_repo = "https://github.com/coderefinery/2023-09-19-workshop"
 
 # uncomment as soon as registration opens
