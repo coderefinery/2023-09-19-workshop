@@ -13,6 +13,7 @@ schedule:
       - starts: 12:30
         ends: 14:00
         title: Installation help for everybody
+        url: https://coderefinery.github.io/installation/
   - title: "Installation help and on-boarding (you don't need to attend both days, choose the day that is better for you)"
     date: "2023-09-13"
     sessions:
@@ -25,6 +26,7 @@ schedule:
       - starts: 12:30
         ends: 14:00
         title: Installation help for everybody
+        url: https://coderefinery.github.io/installation/
   - title: "Day 1"
     date: "2023-09-19"
     sessions:
