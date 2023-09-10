@@ -7,9 +7,11 @@ schedule:
       - starts: 9:30
         ends: 10:30
         title: On-boarding for team leaders leading groups over video
+        url: https://coderefinery.github.io/manuals/team-leaders/
       - starts: 11:00
         ends: 12:00
         title: On-boarding for team leaders leading in-person teams
+        url: https://coderefinery.github.io/manuals/team-leaders/
       - starts: 12:30
         ends: 14:00
         title: Installation help for everybody
@@ -20,9 +22,11 @@ schedule:
       - starts: 9:30
         ends: 10:30
         title: On-boarding for team leaders leading groups over video
+        url: https://coderefinery.github.io/manuals/team-leaders/
       - starts: 11:00
         ends: 12:00
         title: On-boarding for team leaders leading in-person teams
+        url: https://coderefinery.github.io/manuals/team-leaders/
       - starts: 12:30
         ends: 14:00
         title: Installation help for everybody
