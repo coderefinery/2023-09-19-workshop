@@ -38,6 +38,7 @@ page we list also any ongoing or planned changes to avoid surprises.
 - [Workflow-1 and Workflow-2](https://coderefinery.github.io/reproducible-research/workflow-management/#exercise) (25 min).
 - [Containers-1](https://coderefinery.github.io/reproducible-research/environments/#exercises) (20 min).
 - Rest is collaborative "discussion" in collaborative document and demo.
+- **Episode "Sharing code and data" will move to the "Social coding and open software" lesson**.
 - No individual/group exercise in the "Social coding and open software" part. We will all participate via collaborative document.
   Nothing to prepare for team leaders.
 
