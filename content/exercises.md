@@ -35,8 +35,8 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 4 (Reproducible research and Social coding and open software)
 
-- [Dependencies-1 and Dependencies-2](https://coderefinery.github.io/reproducible-research/dependencies/#exercises) (20 min).
-- [Workflow-1 and Workflow-2](https://coderefinery.github.io/reproducible-research/workflow-management/#exercise) (20 min).
+- [Workflow-1 and Workflow-2](https://coderefinery.github.io/reproducible-research/workflow-management/#exercise) (25 min).
+- [Containers-1](https://coderefinery.github.io/reproducible-research/environments/#exercises) (20 min).
 - Rest is collaborative "discussion" in collaborative document and demo.
 - No individual/group exercise in the "Social coding and open software" part. We will all participate via collaborative document.
   Nothing to prepare for team leaders.
