@@ -45,7 +45,7 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 5 (How to document your research software and Jupyter notebooks)
 
-- [Writing good README files](https://coderefinery.github.io/documentation/writing-readme-files/) (15 min). Learners/groups can choose 1 of the 3 exercises there.
+- [Writing good README files](https://coderefinery.github.io/documentation/writing-readme-files/) (20 min). Learners/groups can choose 1 of the 3 exercises there.
 - [Sphinx and Markdown](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-content) (20 min). There are optional exercises.
 - [First computational notebook](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook) (20 min).
 - [Sharing a notebook using Binder](https://coderefinery.github.io/jupyter/sharing/) (20 min).
@@ -53,9 +53,7 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 6 (Automated testing and Modular code development)
 
-- **Instead of practicing testing locally** the first exercise will be about
-  setting up [automated testing](https://coderefinery.github.io/testing/continuous-integration/) (20 min).
-  We also plan to offer an R exercise for those who prefer R over Python.
-- [Test design](https://coderefinery.github.io/testing/test-design/) (20 min). No significant changes planned.
+- [Automated testing](https://coderefinery.github.io/testing/continuous-integration/) (20 min). The exercise will be streamlined a bit still.
+- [Test design](https://coderefinery.github.io/testing/test-design/) (20 min). We will add an end-to-end test exercise here as option.
 - No individual/group exercise in the "Modular code development" part. Learners will
   participate all via collaborative document and ask and advice instructors.
