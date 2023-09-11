@@ -15,6 +15,9 @@ title = "Prerequisites and software requirements"
   languages (but it is a process and not all material is completely generic
   yet).
 - Read [how to attend a livestream course](https://coderefinery.github.io/manuals/how-to-attend-stream/).
+- Printing [this Git
+  cheatsheet](https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf)
+  would be helpful - it was made by us and we'll refer to it.
 
 
 ## Preparation (software installation)
