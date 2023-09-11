@@ -38,7 +38,7 @@ schedule:
         ends: 7:20
         title: Welcome and introduction
         url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-        presenters: TBA
+        presenters: Richard
       - starts: 7:20
         ends: 9:00
         title: Introduction to version control with Git - part 1/4
@@ -124,4 +124,4 @@ schedule:
         ends: 12:00
         title: Concluding remarks and where to go from here
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
-        presenters: TBA
+        presenters: Richard
