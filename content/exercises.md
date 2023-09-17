@@ -11,7 +11,8 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 1 (Introduction to version control with Git)
 
-- [Recording changes](https://coderefinery.github.io/git-intro/basics/#exercise-record-changes) (20 min). There are also optional exercises.
+- [Recording changes](https://coderefinery.github.io/git-intro/basics/#exercise-record-changes) (20 min).
+- [Optional exercises](https://coderefinery.github.io/git-intro/basics/#exercise-comparing-changes) (20 min). Learners choose the one that is most interesting to them or try all 3 optional exercises.
 - **One exercise still to be added** (20 min). Something about using history.
 - [Branching and merging](https://coderefinery.github.io/git-intro/branches/#exercise-create-and-commit-to-branches) (20 min). There are also optional exercises.
 
