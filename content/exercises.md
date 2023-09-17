@@ -13,13 +13,12 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 - [Recording changes](https://coderefinery.github.io/git-intro/basics/#exercise-record-changes) (20 min).
 - [Optional exercises](https://coderefinery.github.io/git-intro/basics/#exercise-comparing-changes) (20 min). Learners choose the one that is most interesting to them or try all 3 optional exercises.
-- **One exercise still to be added** (20 min). Something about using history.
 - [Branching and merging](https://coderefinery.github.io/git-intro/branches/#exercise-create-and-commit-to-branches) (20 min). There are also optional exercises.
 
 
 ### Day 2 (Introduction to version control with Git)
 
-- [Pushing to GitHub](https://coderefinery.github.io/git-intro/remotes/#pushing-our-guacamole-recipe-repository-to-github) (20 min). We push the recipe from day 1 to GitHub.
+- [Pushing to GitHub](https://coderefinery.github.io/git-intro/remotes/#publishing-an-existing-repository-from-laptop-to-github) (20 min). We push the recipe from day 1 to GitHub.
 - [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/#exercise-basic-archaeology-commands) (30 min). The part with `git bisect` is optional.
 - [Undoing and recovering](https://coderefinery.github.io/git-intro/recovering/) (25 min). We let participants/groups choose among:
   - Revert a commit
