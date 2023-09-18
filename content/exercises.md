@@ -12,18 +12,29 @@ page we list also any ongoing or planned changes to avoid surprises.
 ### Day 1 (Introduction to version control with Git)
 
 - [Recording changes](https://coderefinery.github.io/git-intro/basics/#exercise-record-changes) (20 min).
-- [Optional exercises](https://coderefinery.github.io/git-intro/basics/#exercise-comparing-changes) (20 min). Learners choose the one that is most interesting to them or try all 3 optional exercises.
-- [Branching and merging](https://coderefinery.github.io/git-intro/branches/#exercise-create-and-commit-to-branches) (20 min). There are also optional exercises.
+   - Record changes
+   - Optional exercises
+- [Optional exercises](https://coderefinery.github.io/git-intro/basics/#optional-exercises-comparing-changes) (20 min).
+   - One or all optional exercises
+- [Branching and merging](https://coderefinery.github.io/git-intro/branches/#exercise-create-and-commit-to-branches) (20 min).
+   - Branch-1
+   - Branch-2
+   - There are also optional exercises
 
 
 ### Day 2 (Introduction to version control with Git)
 
-- [Pushing to GitHub](https://coderefinery.github.io/git-intro/remotes/#publishing-an-existing-repository-from-laptop-to-github) (20 min). We push the recipe from day 1 to GitHub.
-- [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/#exercise-basic-archaeology-commands) (30 min). The part with `git bisect` is optional.
+- [Pushing to GitHub](https://coderefinery.github.io/git-intro/remotes/) (20 min).
+   - Set up SSH keys
+   - Pushing our guacamole recipe repository to GitHub
+   - Clone repository
+- [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/) (30 min).
+   - History-1
+   - History-2 is optional
 - [Undoing and recovering](https://coderefinery.github.io/git-intro/recovering/) (25 min). We let participants/groups choose among:
-  - Revert a commit
-  - Modify a previous commit
-  - Git reset
+   - Undoing-1
+   - Undoing-2
+   - Undoing-3
 
 
 ### Day 3 (Collaborative distributed version control)
