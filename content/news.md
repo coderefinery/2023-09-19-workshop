@@ -3,6 +3,7 @@
 
 ### News
 
+- 2023-09-19: Q&A from day 1 archived.
 - 2023-09-10: [Install instructions](https://coderefinery.github.io/installation/) are up.
 - 2023-08-25: Watch a [video on different options of how to join the workshop](https://youtu.be/QUAZELOioUY)!
 
