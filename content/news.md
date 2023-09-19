@@ -6,6 +6,7 @@
 - 2023-09-19: Q&A from day 1 archived.
 - 2023-09-10: [Install instructions](https://coderefinery.github.io/installation/) are up.
 - 2023-08-25: Watch a [video on different options of how to join the workshop](https://youtu.be/QUAZELOioUY)!
+- Videos will be in [this playlist](https://www.youtube.com/playlist?list=PLpLblYHCzJADyLxv8GRyxFiRJBhQ-G0NQ)
 
 
 ### Changes compared to last workshop ([blog post](https://coderefinery.org/blog/2023/06/25/planning-sep-workshop/))
