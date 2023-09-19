@@ -46,6 +46,11 @@ We collect here the exercise groups that we know:
 - Matias Jääskeläinen
 
 
+## On-boarding
+
+- Samantha Wittke
+
+
 ## Recording and broadcasting
 
 - Richard Darst
