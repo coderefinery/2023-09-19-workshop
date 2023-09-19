@@ -125,3 +125,15 @@ schedule:
         title: Concluding remarks and where to go from here
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
         presenters: Richard
+  - title: "Optional: Bring your own code session"
+    date: "2023-10-02"
+    sessions:
+      - starts: 13:00
+        ends: 14:30
+        title: Bring your own code and discuss and ask (we will share connection details later)
+  - title: "Optional: Bring your own code session"
+    date: "2023-10-09"
+    sessions:
+      - starts: 13:00
+        ends: 14:30
+        title: Bring your own code and discuss and ask (we will share connection details later)
