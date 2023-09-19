@@ -14,108 +14,101 @@
 - input: day1-obs.mkv
 
 
-## Preview icebreaker
-#- output: day1-icebreaker.mkv
-#  title: 1.0 Icebreaker
-#  description: >-
-#    The pre-start discussion and icebreakers.  You probably want to go
-#    on to the next video.
-#  time:
-#    - start: 00:11:13
-#    - end: 00:20:12
-#
-#
-## Intro
-#- output: day1-intro.mkv
-#  title: 1.1 Intro
-#  description: >
-#    The introduction to this workshop, explaining general mechanics
-#    and what CodeRefinery is.
-#
-#    https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-#  time:
-#     #- input: CR_LOGO_30p.mkv
-#     #- start: 00:00
-#     #- stop: 00:06
-#     - input: day1-obs.mkv
-#     - start: 00:20:12
-#     - stop: 00:37:40
-#     #- input: CR_LOGO_30p.mkv
-#     #- start: 00:00
-#     #- stop: 00:06
-#
-## Git-intro day 1
-#- output: day1-git-intro-1.mkv
-#  title: 1.2 Git Intro
-#  description: >
-#    Here, we go over the basics of git from first principles, though
-#    this is not the most basic course you can find.  We cover basics,
-#    motivation, making commits, undoing things, staging.  The part 2
-#    video goes into branching and merging, conflict resolution,
-#    inspecting history, basics of sharing repositories online, and
-#    some practical advice.  However, this does not cover multi-user
-#    work or remotes (that is the next lesson, git-collaborative).
-#
-#    There are two external videos which are excluded from this
-#    recording.  You can find the link to them in the table of contents
-#    below.
-#
-#    https://coderefinery.github.io/git-intro/
-#
-#  time:
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#    - input: day1-obs.mkv
-#    - start: 00:37:40
-#    - 00:37:49: Overview of the day
-#    - 00:37:59: '# Motivation to version control'
-#    - 00:52:00: '# Basics (creating repo, adding, committing, etc.)'
-#    - 01:06:57: "Exercise: recording changes"
-#    - end: 01:09:29
-#    - start: 01:39:44
-#    - -: Going over the exercise
-#    - 01:43:16: git history and log
-#    - 01:48:02: .gitignore
-#    - 01:51:41: '# Branching and merging'
-#    - 01:56:20: '"git graph" alias'
-#    - 01:58:35: Branch basics
-#    - 02:04:22: "Exercise: create and commit to branches"
-#    - stop: 02:07:52
-#    - start: 02:39:06
-#    - -: continuing
-#    - 02:41:01: Merging branches
-#    - 02:46:41: Deleting branches
-#    - 02:51:36: Tags
-#    - 02:54:42: Summary of branching
-#    - 02:57:29: '# Conflict resolution'
-#    - 03:02:14: Preparing a sample conflict to resolve
-#    - 03:07:33: Merging conflicting changes
-#    - 03:10:51: Resolving the conflict
-#    - 03:17:23: "Exercise: resolving a conflict"
-#    - stop: 03:17:57
-#    - start: 03:39:33
-#    - -: Going over the exercise, other comments
-#    - 03:42:25: 'Q&A and summary'
-#    - 03:47:28: Feedback
-#    - stop: 03:49:44
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#
-#
-##
-##    - stop: 03:13:04
-##    - start: 03:22:51
-##    - 03:32:57: "Wrap-up of the day, Q&A"
-##    - stop: 03:48:54
-##
-#
-#
-###### I commented out the input from the top! -MJ
-#
-#
-#
+# Preview icebreaker
+- output: day1-icebreaker.mkv
+  title: 1.0 Icebreaker
+  description: >-
+    The pre-start discussion and icebreakers.  You probably want to go
+    on to the next video.
+  time:
+    - start: 00:14:20
+    - end: 00:19:32
+
+
+# Intro
+- output: day1-intro.mkv
+  title: 1.1 Intro
+  description: >
+    The introduction to this workshop, explaining general mechanics
+    and what CodeRefinery is.
+
+    https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
+  time:
+     #- input: CR_LOGO_30p.mkv
+     #- start: 00:00
+     #- stop: 00:06
+     - input: day1-obs.mkv
+     - start: 00:19:32
+     - stop: 00:39:29
+     #- input: CR_LOGO_30p.mkv
+     #- start: 00:00
+     #- stop: 00:06
+
+# Git-intro day 1
+- output: day1-git-intro-1.mkv
+  title: 1.2 Git Intro
+  description: >
+    Here, we go over the basics of git from first principles, though
+    this is not the most basic course you can find.  We cover basics,
+    motivation, making commits, undoing things, staging.  The part 2
+    video goes into branching and merging, conflict resolution,
+    inspecting history, basics of sharing repositories online, and
+    some practical advice.  However, this does not cover multi-user
+    work or remotes (that is the next lesson, git-collaborative).
+
+    There are two external videos which are excluded from this
+    recording.  You can find the link to them in the table of contents
+    below.
+
+    https://coderefinery.github.io/git-intro/
+
+  time:
+    #- input: CR_LOGO_30p.mov
+    #- start: 00:00
+    #- stop: 00:06
+    - input: day1-obs.mkv
+    - start: 00:40:39
+    - -: Overview of the day
+    - 00:42:45: '# Motivation to version control'
+    - 00:55:21: '# Basics (creating repo, adding, committing, etc.)'
+    - 00:58:25: Initial configuration of git
+    - stop: 01:13:20
+    - start: 01:24:19
+    - -: "Exercise: recording changes"
+    - stop: 01:28:14
+    - start: 01:47:34
+    - -: Going over the exercise
+    - 01:49:55: Git history and git log
+    - 01:54:32: Writing good commit messages
+    - 01:58:52: Ignoring files with .gitignore
+    - 02:00:48: Summary of basics
+    - 02:02:46: Optional and extra exercises
+    - stop: 02:04:53
+    - start: 03:18:46
+    - -: "Q&A after the break"
+    - 03:22:32: '# Branching and merging'
+    - 03:28:24: '"git graph" alias'
+    - 03:31:47: Creating and working with branches
+    - 03:38:49: "Exercise: create and commit to branches"
+    - stop: 03:41:20
+    - start: 04:01:35
+    - -: Quickly looking at the exercise
+    - 04:03:19: Merging branches
+    - 04:05:49: Deleting branches
+    #- 02:51:36: Tags
+    - 04:07:07: "Q&A"
+    - stop: 04:15:30
+    - start: 04:26:14
+    - -: '# Conflict resolution'
+    - 04:30:50: Preparing a sample conflict to resolve
+    - 04:34:52: Merging conflicting changes
+    - 04:36:28: Resolving the conflict
+    - 04:44:02: 'Q&A'
+    - stop: 04:51:20
+
+
+
+
 ## Day 2
 #- input: day2-obs.mkv
 #
