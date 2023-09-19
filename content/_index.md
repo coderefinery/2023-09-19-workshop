@@ -44,9 +44,29 @@ We collect here the exercise groups that we know:
 - Radovan Bast
 - Richard Darst
 - Matias Jääskeläinen
+
+
+## Recording and broadcasting
+
+- Richard Darst
+- Jarno Rantaharju
+- Matias Jääskeläinen
+
+
+## Outreach
+
 - Dhanya Pushpadas
 
 
 ## Expert helpers
 
-- ...
+- Diana Iusan
+- Enrico Glerean
+- Teemu Ruokolainen
+
+
+## Collaborative notes editors
+
+- Diana Iusan
+- Stephan Smuts
+- Johan Hellsvik
