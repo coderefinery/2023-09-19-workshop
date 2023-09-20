@@ -109,85 +109,110 @@
 
 
 
-## Day 2
-#- input: day2-obs.mkv
-#
-#
-#- output: day2-icebreaker.mkv
-#  title: 2.0 Day 2 icebreaker
-#  description: >
-#    The quick introduction to Day 2 and recap from Day 1.
-#  time:
-#    #- input: CR_LOGO_30p.mkv
-#    #- start: 00:00
-#    #- stop: 00:06
-#    - input: day2-obs.mkv
-#    - start: 00:12:32
-#    - -: Icebreaker questions
-#    - 00:12:55: How we use git and how did we start?  One teacher's story.
-#    - 00:18:57: 'Q&A from icebreaker questions'
-#    - 00:20:47: How we use git?  Another teacher's story.
-#    - 00:23:48: Another teacher's story
-#    - 00:26:22: More discussion
-#    - stop: 00:27:57
-#    #- input: CR_LOGO_30p.mkv
-#    #- start: 00:00
-#    #- stop: 00:06
-#
-## Git-intro day 2
-#- output: day2-git-intro-2.mkv
-#  title: 2.1 Git Intro day 2
-#  description: >
-#    Part 2 of the previous video: https://www.youtube.com/watch?v=SNOjd0j44Hs&list=PLpLblYHCzJACsZllghoLA4JBMjkTk0eq4&index=2
-#
-#    Here, we go over the basics of git from first principles, though
-#    this is not the most basic course you can find.  Previous video:
-#    We covered basics, motivation, making commits, merging, and
-#    staging.  This part 2 video goes into conflict resolution, remotes
-#    and basics of
-#    sharing repositories online, inspecting history, undoing and
-#    recovering, and some practical advice.  However, this does not
-#    cover multi-user work or remotes (that is the next lesson,
-#    git-collaborative).
-#
-#    https://coderefinery.github.io/git-intro/
-#
-#  time:
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#    - input: day2-obs.mkv
-#    - start: 00:27:57
-#    - -: § Sharing repositories online
-#    - 00:36:56: "Exercise: push recipe to Github."
-#    - stop: 00:49:04
-#    - start: 01:07:44
-#    - -: Questions from exercise
-#    - -: § Inspecting history
-#    - 01:20:25: "Exercise: inspecting history"
-#    - stop: 01:22:47
-#    - start: 02:02:03
-#    - -: Wrap-up of inspecting history, summary, Q&A
-#    - 02:07:06: § Undoing and recovering
-#    - 02:16:34: "Exercises: undoing and recovering"
-#    - stop: 02:18:01
-#    - start: 02:50:36
-#    - -: Going over the exercises
-#    - 03:01:48: "Summary of the lessons not covered: staging, git under the hood, and configuration"
-#    - stop: 03:07:34
-#    - start: 03:21:01
-#    - -: "§ Practical advice: how much git is necessary?"
-#    - 03:31:39: Thoughts from staff, how much git?
-#    - 03:42:54: Important preparation for tomorrow
-#    - cover: {begin: "03:50:33", end: "03:51:51", w: 840, h: 1080}
-#    - 03:52:00: Feedback and other comments, day 2
-#    - stop: 03:55:35
-#    #- input: CR_LOGO_30p.mov
-#    #- start: 00:00
-#    #- stop: 00:06
-#
-#
-#
+# Day 2
+- input: day2-obs.mkv
+
+
+- output: day2-icebreaker.mkv
+  title: 2.1 Day 2 icebreaker
+  description: >
+    The quick introduction to Day 2 and recap from Day 1.
+  time:
+    #- input: CR_LOGO_30p.mkv
+    #- start: 00:00
+    #- stop: 00:06
+    - input: day2-obs.mkv
+    - start: 00:13:44
+    - 00:14:31: Icebreaker questions
+    - 00:18:41: git tags
+    - 00:20:43: Local vs remote
+    - stop: 00:24:03
+    #- input: CR_LOGO_30p.mkv
+    #- start: 00:00
+    #- stop: 00:06
+
+# Git-intro day 2
+- output: day2-git-intro-2.mkv
+  title: 2.2 Git Intro day 2
+  description: >
+    Part 2 of the previous video: https://www.youtube.com/watch?v=e2GGBtlZW8o&list=PLpLblYHCzJADyLxv8GRyxFiRJBhQ-G0NQ&index=4
+
+    Here, we go over the basics of git from first principles, though
+    this is not the most basic course you can find.  Previous video:
+    We covered basics, motivation, making commits, merging, and
+    staging.  This part 2 video goes into conflict resolution, remotes
+    and basics of
+    sharing repositories online, inspecting history, undoing and
+    recovering, and some practical advice.  However, this does not
+    cover multi-user work or remotes (that is the next lesson,
+    git-collaborative).
+
+    https://coderefinery.github.io/git-intro/
+
+  time:
+    #- input: CR_LOGO_30p.mov
+    #- start: 00:00
+    #- stop: 00:06
+    - input: day2-obs.mkv
+    - start: 00:28:39
+    - 00:30:11: § Sharing repositories online
+    - 00:41:44: "Exercise: push recipe to Github. (around here)"
+    - stop: 00:44:52
+    - start: 01:08:05
+    - -: Demo and Questions from exercise
+    - stop: 01:15:53
+    - start: 01:26:46
+    - -: 'Q&A'
+    - 01:30:28: § Inspecting history
+    - 01:42:44: "Exercise: inspecting history"
+    - stop: 01:46:20
+    - start: 02:16:31
+    - -: Wrap-up of inspecting history, summary, Q&A
+    - stop: 02:24:03
+    - start: 03:21:58
+    - -: After break discussion
+    - 03:23:20: § Undoing and recovering
+    - 03:38:15: "Exercises: undoing and recovering"
+    - stop: 03:39:07
+    - start: 04:04:29
+    - -: Going over the exercises
+    #- 03:01:48: "Summary of the lessons not covered: staging, git under the hood, and configuration"
+    - stop: 04:16:19
+    - start: 04:26:59
+    - -: "§ Practical advice: how much git is necessary?, and general Q&A of last two days"
+    #- 03:42:54: Important preparation for tomorrow
+    #- cover: {begin: "03:50:33", end: "03:51:51", w: 840, h: 1080}
+    #- 03:52:00: Feedback and other comments, day 2
+    - stop: 004:55:56
+    #- input: CR_LOGO_30p.mov
+    #- start: 00:00
+    #- stop: 00:06
+
+- output: day2-bisect.mkv
+  title: 2.3 Bisection exercise
+  description: >
+    Demonstration of git-bisect from the "Inspecting history"
+    exercise.  Discussion + demo of the exercise.  We didn't do this
+    in the main exercise.
+
+    https://coderefinery.github.io/git-intro/archaeology/#finding-out-when-something-broke-changed-with-git-bisect
+
+  time:
+    - input: day2-obs.mkv
+    - start: 04:56:13
+    - -: What is git bisect?
+    - 04:57:30: CATS
+    - 05:00:26: § Starting the exercise
+    - 05:02:03: § Bisecting manually
+    - 05:08:59: Finding the bad commit, discussion
+    - 05:11:32: § Bisecting with a script, figuring out how to test automatically
+    - 05:15:45: Making the script
+    - 05:16:32: Running the script
+    - 05:18:13: § Final discussion
+    - stop: 05:19:41
+
+
+
 ### Day 3
 #- input: day3-obs.mkv
 #
