@@ -11,8 +11,11 @@ and hopefully could answer sufficiently in our collaborative document.
 
 All these questions and answers from this week are archived at https://coderefinery.github.io/2023-09-19-workshop/questions/
 
+Video recordings are up: https://coderefinery.github.io/2023-09-19-workshop/#news
+
 We hope you got some good practice and understanding on how to collaborate using Git/GitHub and
 our trial of collaborating with you from the stream worked out for you!
+If you have suggestions on how to improve our lessons, please open issues or send pull requests: https://github.com/coderefinery
 
 Next week will be a little more diverse!
 
