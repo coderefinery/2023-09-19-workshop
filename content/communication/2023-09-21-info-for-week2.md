@@ -1,3 +1,9 @@
++++
+title = "2023-09-19 Summary week 1 and preparation for week 2" 
+[extra] 
+subject = "[CodeRefinery workshop] preparation for week 2" 
++++
+
 Dear CodeRefinery workshop participant,
 
 Thank you for joining the workshop this week, and for all the wonderful questions we got  from you 
