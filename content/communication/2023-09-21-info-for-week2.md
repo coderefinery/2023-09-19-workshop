@@ -1,7 +1,7 @@
 +++
-title = "2023-09-21 Summary week 1 and preparation for week 2" 
+title = "2023-09-21 Week 1 summary and week 2 outlook" 
 [extra] 
-subject = "[CodeRefinery workshop] preparation for week 2" 
+subject = "[CodeRefinery workshop] week 1 summary and week 2 outlook" 
 +++
 
 Dear CodeRefinery workshop participant,
