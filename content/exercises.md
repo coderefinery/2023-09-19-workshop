@@ -56,8 +56,13 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 5 (How to document your research software and Jupyter notebooks)
 
-- [Writing good README files](https://coderefinery.github.io/documentation/writing-readme-files/) (20 min). Learners/groups can choose 1 of the 3 exercises there.
-- [Sphinx and Markdown](https://coderefinery.github.io/documentation/sphinx/#exercise-sphinx-content) (20 min). There are optional exercises.
+- [Writing good README files](https://coderefinery.github.io/documentation/writing-readme-files/) (20 min).
+   - README-1 or README-2 or README-3
+- [Sphinx and Markdown](https://coderefinery.github.io/documentation/sphinx/) and
+  [Deploying Sphinx documentation to GitHub Pages](https://coderefinery.github.io/documentation/gh_workflow/) (20 min).
+   - Sphinx-2
+   - Sphinx-3 (optional)
+   - GH-Pages-1
 - [First computational notebook](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook) (20 min).
 - [Sharing a notebook using Binder](https://coderefinery.github.io/jupyter/sharing/) (20 min).
 
