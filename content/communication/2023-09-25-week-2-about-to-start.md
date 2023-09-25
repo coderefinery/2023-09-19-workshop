@@ -6,7 +6,7 @@ subject = "[CodeRefinery workshop] week 2 about to start"
 
 Dear all,
 
-CodeRefinery workshop week 2 about to start - we are very much looking forward.
+CodeRefinery workshop week 2 is about to start - we are very much looking forward.
 
 This week is like a mini-seminar series containing topics related to reproducibility and reusability. You are welcome to invite colleagues to join, also just for a part of it.
 
