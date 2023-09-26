@@ -273,7 +273,7 @@ https://coderefinery.github.io/social-coding/social-coding/
   - votes: ooooooooooo
 
 
-## Quesion 2: The most concerning thing for me, If I share my software now
+## Question 2: The most concerning thing for me, If I share my software now
 
 **Choose one**. Vote by adding an `o` character:
 
