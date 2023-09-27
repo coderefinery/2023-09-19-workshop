@@ -34,5 +34,4 @@ provide us with the following **three documents via email**:
    However any other personal reflection is welcome. Evaluation criteria: we
    expect reflections that are related to the content of each of the six days.
 
-During the workshop we will provide with contact addresses where you should
-send these documents to.
+Your submission can then be sent via email to scip _at_ aalto.fi by 01/12/2023 and you will receive the certificate by 22/12/2023.
