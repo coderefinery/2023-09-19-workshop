@@ -1,7 +1,7 @@
 +++
 template = "page-with-toc.html"
-title = "Questions and notes from workshop day 4"
-+++  
+title = "Questions and notes from workshop day 5"
++++
 
 ## Icebreakers, day 5
 
@@ -65,7 +65,7 @@ https://coderefinery.github.io/documentation/wishlist/
    - Serves a purpose people actually need?
    - Contains a "Let's get started" section and/or a tutorial that can be followed for <30 min.
    - Provides a clear goal of the project/package
-   - Contains a troubleshooting section 
+   - Contains a troubleshooting section
 - How can you motivate your colleagues to contribute to the documentation?
     - Make it easy?  Minimum work for best impact?  Least redudancy?
     - As close to code as possible?
@@ -102,7 +102,7 @@ https://coderefinery.github.io/documentation/wishlist/
 2. Nice README examples:
     - https://github.com/plasma-umass/scalene
     - https://github.com/geopandas/geopandas#readme
-    - https://github.com/IndrajeetPatil/ggstatsplot (Not sure if it is good example) 
+    - https://github.com/IndrajeetPatil/ggstatsplot (Not sure if it is good example)
     - https://github.com/matiassingers/awesome-readme (For a list of good README examples)
 
 3. This link: ![picture uploaded about Sphinx link in the lesson material](https://notes.coderefinery.org/uploads/c2ee6aaa-a140-4f25-b7dd-06ab115e01e6.png)
@@ -113,7 +113,7 @@ is not working at least on my PC
 4. The functions (Note, warning etc) isn't working for me. It seems to render markdown, just not these functions. I even tried to copy and paste it. I'm using the github website.
     - example:
         - https://github.com/bast/experiment
-        - source: https://raw.githubusercontent.com/bast/experiment/main/README.md 
+        - source: https://raw.githubusercontent.com/bast/experiment/main/README.md
     - You need to commit it and then you see it on the github project-site in the preview. Otherwise it doesn't work
     - ~~note/warning/etc are Sphinx (MyST-markdown) specific things, and Github markdown rendering doesn't generally know about them so they look weird.~~ never mind, I was thinking of something else.
 
@@ -163,7 +163,7 @@ We type along with Radovan now: https://coderefinery.github.io/documentation/sph
          - because plain Sphinx does not know what to do with markdown files and it needs that extension to parse and render them. default for Sphinx are .rst files. But we prefer to show it with markdown. we believe this is easier and this is also what we use in our work.
     - Okay so I am in the (coderefinery) and have ran `pip install myst_parser` and checked with `python -c "import myst_parser"`; but doesn't seem to solve the rendering problem...
         - I would in this case try to remove the "_build" directory and re-run `sphinx-build . _build` again.
-    - (thanks for the help ^^) It didn't work unfortunately tho 
+    - (thanks for the help ^^) It didn't work unfortunately tho
     - and the files are in the same folder as the `index.rst`? and you have activated the extension in `conf.py`?
     - They are in the same folder yes, and `some-feature.md` and `another-feature.md` are mentioned in the `index.rst` and in the `conf.py` the extension line has been altered to `extensions = ['myst_parser']` ?
 
@@ -190,7 +190,7 @@ We type along with Radovan now: https://coderefinery.github.io/documentation/sph
             - Thanks!
 
 15. I managed to link to a external python file and that worked fine! How can I refer to only one specific python function?
-    - Where it says `automodule`, I think you can do specific functions and so on.  I don't know off the top of my head but (surprise) Sphinx documentation is usually pretty good about it.  
+    - Where it says `automodule`, I think you can do specific functions and so on.  I don't know off the top of my head but (surprise) Sphinx documentation is usually pretty good about it.
     - https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#directive-autofunction
 
 16. Can I create a Sphinx webpage without making it a public website? For example, if I want to create a tutorial for my colleagues, can I have a webpage like this that is "local"?
@@ -214,7 +214,7 @@ Exercise feedback - how did it go?
 17. At TU Delft it went well, there is interest to look at Git pages
     - great!
 
-18. I managed to make it but got the error "Users/myname/code/doc-example/new-feature.md: WARNING: document isn't included in any toctree" and then got a bit stuck after that. 
+18. I managed to make it but got the error "Users/myname/code/doc-example/new-feature.md: WARNING: document isn't included in any toctree" and then got a bit stuck after that.
     - Is the new-feature.md in the same folder as index.rst?
     - A typo in filename can also give that error
     - If it's a warning, the rest works.  What it means: it made the page `new-feature.md` but it isn't included in the Table of Contents.  Maybe this is expected but maybe it could be added to a `toctree` directive somewhere
@@ -223,7 +223,7 @@ Exercise feedback - how did it go?
     - We'll explain now.  It is rather short and direct, it shows the outcome but there is plenty more to learn
     - (but also, many of us go copying around working Actions files rather than understand every bit of them...)
 
-20. I am confused abnout what `sphinx-build . -W -b linkcheck _build` does. From what I understand it should create a local web server, but I can't find where or how to find this. 
+20. I am confused abnout what `sphinx-build . -W -b linkcheck _build` does. From what I understand it should create a local web server, but I can't find where or how to find this.
     - It reads all documents and checks all links: does the URL still exist and return data?  It's used to keep stuff up to date
     - sphinx-autobuild is an extension that *does* make a local web server and shows updates live as you write and save.
 
@@ -248,7 +248,7 @@ Exercise feedback - how did it go?
 26. The link in the first step of exercise GH-Pages-1 doesn't work for me. How can I then get access to the template?
     - Are yo ulogged in to Github?  The `/generate` part goes straight to a form that needs to be logged in
     - The project itself is here: https://github.com/coderefinery/documentation-example/ (after login there should be a Generate button, that goes to the `/generate` URL)
-    - Thanks. Now it works. I was logged in with a different browser than I use for the notes. 
+    - Thanks. Now it works. I was logged in with a different browser than I use for the notes.
 
 27. Thank you for a great morning!
     - thanks!
@@ -257,14 +257,14 @@ Exercise feedback - how did it go?
 :::info
 ### Lunch until xx:00 (12 CEST)
 - Then Jupyter
-- It's not just basics, but we see how to take it to the next level for reproducibility and 
+- It's not just basics, but we see how to take it to the next level for reproducibility and
 :::
 
 28. I know that it is a little off-topic but does anybody know how we can include code from a file in ***mkdocs*** such as in the example given for sphinx where we used:
     ```{literalinclude} example.py
     :language: python
     :emphasize-lines: 2-3
-    ``` 
+    ```
     - I don't know, but one of the big advantages of Sphinx is it's extreme extensibility and directive-based nature that allows this.  mkdocs might have this, but there's much more that might be harder.  (the complexity of Sphinx is also probably why it's not used as much as it should be...)
 
 29. How would I add code (with docstring) to the `src` folder now and make it appear in an API section on the documentation page?
@@ -285,18 +285,18 @@ Exercise feedback - how did it go?
   1.`uses: peaceiris/actions-gh-pages@v3`
   2.`github.ref == 'refs/heads/main'`
   3.`github_token: ${{ secrets.GITHUB_TOKEN }}`
-  4.`force_orphan: true` 
+  4.`force_orphan: true`
     - (we will explain/reply later, now prepping for next lesson ...)
     - (1) says "use this other action to do some stuff for us": (this one: https://github.com/peaceiris/actions-gh-pages).
     - (2) says "if this is the main branch, do the deployment"  (you don't want other pull requests deployed as the main documentation).
     - (3) tells the action (in (1)) to use the automatically included token to give permission to push (to the branch gh-pages).
     - (4) says "don't keep history of the gh-pages branch".
 
-33. A follow-up question to question 15: I am able to make autodoc API for my functions, but I fail to create hyperlinks to one specific function. I tried the :func:`pythonmodule.func` method, and also \.. autofunction:: pythonmodule.func\. Can please someone help me? Please see [My Doc](https://siebelede.github.io/doc-example/get-started.html#code-explanation) for the code example. 
+33. A follow-up question to question 15: I am able to make autodoc API for my functions, but I fail to create hyperlinks to one specific function. I tried the :func:`pythonmodule.func` method, and also \.. autofunction:: pythonmodule.func\. Can please someone help me? Please see [My Doc](https://siebelede.github.io/doc-example/get-started.html#code-explanation) for the code example.
     - `.. autofunction::` is the ReST syntax, not MyST. Try this: `{autofunction} mandelbrot.mandelbrot_set`
     - This is the equivalent MyST syntax, they can be always be translated between the two.  Sometimes you see docs in only one or the other.  (also, it's the main point of MyST-markdown: other markdowns don't generally have this power)
     - Thanks! I will try
- 
+
 35. I have now used the tutorial here: https://sphinx-autoapi.readthedocs.io/en/latest/tutorials.html to generate an autoapi that points to the `src`. Would that be a good solution rather than making manual api.md?
     - ah that is even better! good find.
 
@@ -326,7 +326,7 @@ https://coderefinery.github.io/jupyter/
 40. Is there a way to increase the (code/markdown) font for my own notebook ? The one in my computer is a bit small for me to see.
     - Settings -> Theme has options for code/editor/UI adjustments seprately.  You can also try adjusting font of whole web browser (control + or control -)
 
-41. How did you copy the table? When I try it just looks like text. 
+41. How did you copy the table? When I try it just looks like text.
     - The shorcuts table? I used the [raw text version of the lesson material](https://raw.githubusercontent.com/coderefinery/jupyter/main/content/interface.md) and copy-pasted the table from there. It has Markdown syntax for tables.
         - Thanks!
 
@@ -334,7 +334,7 @@ https://coderefinery.github.io/jupyter/
 # Exercise until xx:45
 - Goal: activate coderefinery environment, start jupyter lab, do these:
 - "A first computational notebook"
- 
+
 https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook
 
 How did the exercise go?
@@ -346,13 +346,13 @@ How did the exercise go?
 :::
 
 42. I understand that press ESCAPE goes to "command" mode but is there a way for me to know if I am in command mode ?
-    - If it shows you a cursor inside a cell then you are editing that cell. 
+    - If it shows you a cursor inside a cell then you are editing that cell.
     - You can try arrowkeys up and down to see whether it moves cursor or code selection (the blue vertical bar)
 
 43. Is there a way to go to command mode by mouse clicking ?
     - Yup! Click between hte blue vertical bar and the cell
 
-44. I cant seem to run the code cells. Instead of a number like this [1], I have a [*] and if I write print('hello') I do not see a result under the cell 
+44. I cant seem to run the code cells. Instead of a number like this [1], I have a [*] and if I write print('hello') I do not see a result under the cell
     - please tell us what you see instead
     - Markdown cells and "raw" cells don't have the number next to them. Maybe your cell is not a code cell actually?
         - It seems like it was just very slow
@@ -374,14 +374,14 @@ https://coderefinery.github.io/jupyter/version-control/
 
 47. Is nbdime automatically installed when I download Jupyter
     - I think not. (How do I know if I have it ? Is it a python package ?)
-      - how to know whether you have it: in your notebook you can try `import nbdime` - if you see an error, it is not there 
+      - how to know whether you have it: in your notebook you can try `import nbdime` - if you see an error, it is not there
     - It is not by default there as far as I know
     - Python package `nbdime`: `pip install nbdime`, `conda install nbdime`, or however you manage packages. it's included as part of the CodeRefinery conda environment
 
 48. When do you prefer using jupyter over just using github?
     - I think they serve different purposes.  Github hosts static files, Jupyter lets you do computing.  They can work well together.
 
-49. Is there a way to export Jupyter notebook as (PDF, .py file. HTML) using the kernel ? I am not so good with command lines... 
+49. Is there a way to export Jupyter notebook as (PDF, .py file. HTML) using the kernel ? I am not so good with command lines...
     - Yep: File> Save and export notebook as.  It should export it how it is here.
         - For PDF I think this is needed: https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex
         - downloading $\LaTeX$ file and HTML file did work
@@ -415,10 +415,10 @@ https://coderefinery.github.io/jupyter/version-control/
 ### How was today for you?
 - too fast: o
 - just right: oooooo
-- too slow: 
+- too slow:
 - too easy: o
 - right level: oo
-- too advanced: 
+- too advanced:
 - I would recommend this course to others: ooo
 - It was good.
 
@@ -426,8 +426,8 @@ https://coderefinery.github.io/jupyter/version-control/
 - yes, during the week:oooo
 - yes, for future reference: ooooooo
 - yes, for taking the course without watching live: oo
-- a bit: 
-- not really, I wouldn't use: 
+- a bit:
+- not really, I wouldn't use:
 
 Comments on videos:
 - I did not know it existed...
@@ -441,12 +441,12 @@ Comments on videos:
 - Yes, engaging and they were usefull. I liked today more than tomorrow.
 - Jupyter explanation was very clear
 - Another great day! this is one of the best courses I've taken, thank you :)
-- Was nice to see how coding can be done collaboratively in projects 
+- Was nice to see how coding can be done collaboratively in projects
 
 ### One thing to be improved for next time:
 - A demonstration on the Binder exercise, maybe. I didn't get it to work and don't really know what was supposed to happen and what use it would be.
 - For the Navigation of the Jupyter notebook is a bit hard for me to follow as I am looking at it at the first time. In https://coderefinery.github.io/jupyter/interface/#navigation for example, is it possible to add some pictures on how "Command palette" or "Cell inspector" look like. Overview picture will be helpful
-    - Great suggestion! 
+    - Great suggestion!
 - In https://coderefinery.github.io/jupyter/sharing/, maybe will be helpful to include the mouse clicking way to export/share Jupyter file to HTML, PDF, etc. Most of us may just want to export quickly and send the results to their manager by email.
     - There could be a screenshot 🤔
     - in question 49:
@@ -455,9 +455,9 @@ Comments on videos:
 
 ### Any other comments:
 - I could not make last exercise, I have no idea how to copy notebook to github/binder, I was lost there... Probably my fault, not the tutors :)
-  - thanks for feedback. to get a notebook on github you can use the "add file" button on github. once it is on github, you visit binder page and place the link to github repository. 
+  - thanks for feedback. to get a notebook on github you can use the "add file" button on github. once it is on github, you visit binder page and place the link to github repository.
   - Ok, thanks I understand that I have to copy all the code from notebook and could not find the option to copy raw code.
-    - Not sure if there is a way inside Jupyter. 
+    - Not sure if there is a way inside Jupyter.
     - The easiest way propably is in github to use this "add file" button. There you can add any file directly to the repo. You will find the notebook file inside the folder that you launched Jupyter in command line in the very beginning
     - Not sure if it works for you. Click File -> Download will output the json one. Click File -> Save export notebook as -> Markdown will output code as well...
         - I think it's then not in .ipynb format (at least not if it is markdown ie .md) and then Binder cannot open it as notebook.
