@@ -245,9 +245,9 @@
     - 00:30:14: Starting off, basic prerequisites
     - 00:39:28: § Concepts around collaboration
     - 00:58:01: § Centralized workflow
-    - 01:05:54: stop
+    - 01:05:54: stop   # ERROR: wrong syntax
     - 01:16:11: start
-    - -: "Exercise Centralized-1"
+    - 01:16:11: "Exercise Centralized-1"
     - stop: 01:24:58
     - start: 01:54:37
     - -: "Exercise Centralized-2: reviewing and merging the pull request"
