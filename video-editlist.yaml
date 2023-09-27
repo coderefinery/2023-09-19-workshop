@@ -367,97 +367,88 @@
 ####
 ###
 ### Day 5
-#- input: day5-obs.mkv
-#
-#- output: day5-intro.mkv
-#  title: 5.0 Day 5 introduction
-#  description: >
-#    The quick introduction to Day 5, including a general discussion
-#    about documentation and Jupyter.
-#  time:
-#    - start: 00:14:41
-#    - stop: 00:25:15
-#
-#
-#- output: day5-jupyter.mkv
-#  title: 5.1 Jupyter
-#  description: >
-#    This lesson teachs learners the user interface of JupyterLab, how
-#    Jupyter notebooks work, and what some common and powerful usecases
-#    are. Our focus is to demonstrate and discuss and guide towards
-#    good practices for reproducibility, collaboration, and
-#    reusability. The emphasis of this lesson is to demonstrate how to
-#    use notebooks in combination with version control and how to share
-#    reproducible notebooks via Binder.
-#
-#    This lesson demonstrates the use of JupyterLab, nbdime,
-#    jupyterlab-git, and Binder.
-#
-#    https://coderefinery.github.io/jupyter/
-#  time:
-#    - start: 00:25:57
-#    #- -: Introduction to topics
-#    #- 00:28:28: Introduction to Jupyter
-#    #- 00:39:10: "Demo: Starting Jupyter Lab"
-#    #- 00:40:57: Continuing with Jupyter lesson
-#    #- 00:45:16: Tools for writing, testing and debugging code
-#    #- 00:48:40: First Computational Notebook and Exercise
-#    - stop: 00:55:01
-#    - start: 01:14:42
-#    #- -: Back from Exercise, Questions
-#    #- 01:11:43: Notebooks and version control
-#    #- 01:16:21: "Demo: version control in Jupyter"
-#    - stop: 01:36:16
-#    - start: 01:46:34
-#    - stop: 01:47:55
-#    - start: 02:04:10
-#    #- -: Sharing notebooks and Binder exercise
-#    #- end: 01:48:46
-#    #- start: 02:09:04
-#    #- -: Summary
-#    - stop: 02:07:35
-#
-#- output: day5-documentation.mkv
-#  title: 5.2 Documentation
-#  description: >
-#    In this lesson we discuss different solutions for implementing and
-#    deploying code documentation. We start by creating a wishlist for
-#    how we would code documentation like to be. Then after a tour of
-#    available tools, we discuss how to write useful and accessible
-#    READMEs, and then we progress by demonstrating and practicing the
-#    Sphinx documentation generator and demonstrate how to deploy
-#    documentation to Read the Docs service.
-#
-#    Topics and tools discussed: Markdown, reStructured text, README
-#    documentation, table of contents generation, Sphinx, Read the
-#    Docs, GitHub/GitLab pages.
-#
-#    https://coderefinery.github.io/documentation/
-#  time:
-#    - start: 02:07:35
-#    - -: Intro
-#    - 02:10:08: § Motivation and wishlist
-#    - stop: 02:19:50
-#    - start: 02:29:05
-#    #- 02:17:01: Documentation examples
-#    #- 02:21:19: "Brainstorm: What do we want in a good documentation?"
-#    #- end: 02:25:09
-#    #- start: 02:36:00
-#    #- 02:36:08: Popular tools and solutions
-#    - 02:32:19: § README files
-#    - 02:33:47: "Exercise: Readme files"
-#    - stop: 02:35:41
-#    - start: 02:50:08
-#    - -: Post-exercise discussion
-#    - 02:51:10: Sphinx and Markdown intro
-#    - 02:53:30: Sphinx Typealong starts
-#    - 03:02:08: "Exercise: more Sphinx things"
-#    - stop: 03:03:27
-#    - start: 03:24:36
-#    - -: Post-exercise discussion
-#    - 03:25:56: '§ Deploying Sphinx to GitHub Pages (Demo)'
-#    - 03:44:19: Tomorrow, questions, summary, and feedback
-#    - end: 03:56:27
+- input: day5-obs.mkv
+
+- output: day5-intro.mkv
+  title: 5.1 Day 5 icebreakers
+  description: >
+    The random icebreaking discussion for day 5.
+  time:
+    - start: 00:10:03
+    - stop: 00:18:27
+
+- output: day5-documentation.mkv
+  title: 5.2 Documentation
+  description: >
+    In this lesson we discuss different solutions for implementing and
+    deploying code documentation. We start by creating a wishlist for
+    how we would code documentation like to be. Then after a tour of
+    available tools, we discuss how to write useful and accessible
+    READMEs, and then we progress by demonstrating and practicing the
+    Sphinx documentation generator and demonstrate how to deploy
+    documentation to Read the Docs service.
+
+    Topics and tools discussed: Markdown, reStructured text, README
+    documentation, table of contents generation, Sphinx, Read the
+    Docs, GitHub/GitLab pages.
+
+    https://coderefinery.github.io/documentation/
+  time:
+    - start: 00:18:27
+    - -: Introduction to topics
+    - 20:51: Throwback to yesterday
+    - 24:54: Motivation and wishlist
+    - 29:01: Quick overview of optional lessons
+    - 30:36: README files
+    - 32:12: "Exercise: Readme files"
+    - stop: 36:50
+    - start: 58:06
+    - -: Discussion after exercise
+    - 01:03:10: Sphinx and Markdown intro
+    - 01:08:12: Sphinx Typealong starts
+    - stop: 01:19:18
+    - start: 01:30:00
+    - -: "Exercise: more Sphinx things"
+    - stop: 01:31:48
+    - start: 01:57:51
+    - -: Post-exercise discussion
+    - 02:01:15: 'Deploying Sphinx to GitHub Pages (Demo)'
+    - 02:11:03: Hosting websites/homepages on GitHub Pages
+    - 02:12:51: Summary
+    - stop: 02:18:10
+
+- output: day5-jupyter.mkv
+  title: 5.3 Jupyter
+  description: >
+    This lesson teachs learners the user interface of JupyterLab, how
+    Jupyter notebooks work, and what some common and powerful usecases
+    are. Our focus is to demonstrate and discuss and guide towards
+    good practices for reproducibility, collaboration, and
+    reusability. The emphasis of this lesson is to demonstrate how to
+    use notebooks in combination with version control and how to share
+    reproducible notebooks via Binder.
+
+    This lesson demonstrates the use of JupyterLab, nbdime,
+    jupyterlab-git, and Binder.
+
+    https://coderefinery.github.io/jupyter/
+  time:
+    - start: 03:18:08
+    - -: Intro
+    - 03:19:08: Introduction to Jupyter
+    - 03:25:49: "Demo: Starting Jupyter Lab"
+    - 03:32:12: Continuing with Jupyter lesson
+    - 03:39:17: First Computational Notebook and Exercise
+    - stop: 03:42:08
+    - start: 04:02:46
+    - 04:03:20: "Demo: version control in Jupyter"
+    - stop: 04:14:10
+    - start: 04:25:12
+    - -: Sharing notebooks and Binder exercise
+    - stop: 04:29:16
+    - start: 04:47:45
+    - -: Summary
+    - stop: 04:53:04
 #
 ###- output: day5-outro.mkv
 ###  title: 5.3 Day 5 outro
