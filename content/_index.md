@@ -54,8 +54,9 @@ We collect here the exercise groups that we know:
 ## Recording and broadcasting
 
 - Richard Darst
-- Jarno Rantaharju
 - Matias Jääskeläinen
+- Jarno Rantaharju
+- Mira Salmensaari
 
 
 ## Outreach
