@@ -494,7 +494,6 @@
     - 00:22:44: Motivation
     - 00:34:50: Concepts
     - 00:37:48: Testing locally (with exercise)
-    - -: "Exercise: testing locally with pytest"
     - stop: 00:40:39
     - start: 00:57:35
     - 00:57:56: Automated testing and continuous integration with Github Actions
