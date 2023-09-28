@@ -473,7 +473,7 @@
 
 
 - output: day6-testing.mkv
-  title: 6.1 Software Testing
+  title: 6.2 Software Testing
   description: >
     Software testing is a fundamental part of modern software
     development, and especially important for science since results
@@ -509,7 +509,7 @@
 
 
 - output: day6-modular-code-development.mkv
-  title: 6.2 Modular Code Development
+  title: 6.3 Modular Code Development
   description: >
     In this live-coding demo session we take a Python script as
     starting point which reads data, computes simple statistics, and
@@ -537,7 +537,7 @@
     - 03:50:00: Rewriting functions to improve reusability
     - 03:55:14: Moving to scripts
     - 04:00:34: Creating git repository for the project
-    - 04:03:39: Adding a test 
+    - 04:03:39: Adding a test
     - 04:07:39: "Improving reproducibility: creating requirements.txt"
     - stop: 04:10:54
     - start: 04:22:39
@@ -550,7 +550,7 @@
     - stop: 04:48:45
 
 - output: day6-outro.mkv
-  title: 6.3 Workshop outro
+  title: 6.4 Workshop outro
   description: >
       The concluding remarks of the workshop.
 
