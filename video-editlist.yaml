@@ -16,7 +16,7 @@
 
 # Preview icebreaker
 - output: day1-icebreaker.mkv
-  title: 1.0 Icebreaker
+  title: 1.1 Icebreaker
   description: >-
     The pre-start discussion and icebreakers.  You probably want to go
     on to the next video.
@@ -27,7 +27,7 @@
 
 # Intro
 - output: day1-intro.mkv
-  title: 1.1 Intro
+  title: 1.2 Intro
   description: >
     The introduction to this workshop, explaining general mechanics
     and what CodeRefinery is.
@@ -46,7 +46,7 @@
 
 # Git-intro day 1
 - output: day1-git-intro-1.mkv
-  title: 1.2 Git Intro
+  title: 1.3 Git Intro (day 1)
   description: >
     Here, we go over the basics of git from first principles, though
     this is not the most basic course you can find.  We cover basics,
