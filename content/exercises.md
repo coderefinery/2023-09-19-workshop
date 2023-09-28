@@ -69,7 +69,7 @@ page we list also any ongoing or planned changes to avoid surprises.
 
 ### Day 6 (Automated testing and Modular code development)
 
-- [Automated testing](https://coderefinery.github.io/testing/continuous-integration/) (20 min). The exercise will be streamlined a bit still.
+- [Testing locally](https://coderefinery.github.io/testing/pytest/) (20 min).
 - [Test design](https://coderefinery.github.io/testing/test-design/) (20 min). We will add an end-to-end test exercise here as option.
 - No individual/group exercise in the "Modular code development" part. Learners will
   participate all via collaborative document and ask and advice instructors.
