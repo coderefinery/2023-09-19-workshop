@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 1 - CodeRefinery workshop September 19-21 and 26-28, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-09-19-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 1</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:title" content="Questions and notes from workshop day 1" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-09-19-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 1</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#icebreakers">Icebreakers</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#what-s-your-favorite-fruit">What&#x27;s your favorite fruit?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#how-do-you-use-computers-in-your-work">How do you use computers in your work?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#if-you-use-git-or-version-control-already-what-aspect-do-you-find-most-confusing-surprising">If you use Git or version control already, what aspect do you find most confusing&#x2F;surprising?</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#introduction-to-the-workshop">Introduction to the workshop</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#intro-to-version-control">Intro to version control</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#git-basics">Git basics</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#break-until-xx-05">Break until xx:05</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#exercise-https-coderefinery-github-io-git-intro-basics-exercise-record-changes">Exercise: https:&#x2F;&#x2F;coderefinery.github.io&#x2F;git-intro&#x2F;basics&#x2F;#exercise-record-changes</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#git-log-history-and-commit-messages">Git log history and commit messages</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#branching-and-merging">Branching and merging</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#exercises-branch-1-and-branch-2">Exercises Branch-1 and Branch-2</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#conflicts-and-confict-resolution">Conflicts and confict resolution</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day1/#feedback-of-day-1">Feedback of day 1</a>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreakers">Icebreakers</h2>
+<h3 id="what-s-your-favorite-fruit">What's your favorite fruit?</h3>
+<ul>
+<li>(you can write here by clicking pen button on top of page)</li>
+<li>watermelon +1</li>
+<li>guava</li>
+<li>banana +1</li>
+<li>pineapple</li>
+<li>green apple</li>
+<li>tomato</li>
+<li>orange</li>
+<li>passion fruit +1</li>
+<li>melon +1</li>
+<li>the forbidden fruit</li>
+<li>blueberry</li>
+<li>mango +4</li>
+<li>strawberries</li>
+<li>persimmons +1</li>
+<li>Grapes +1</li>
+<li>Nectarines</li>
+<li>avocado</li>
+<li>raspberry</li>
+<li>pear (in the right season)</li>
+<li>kiwi</li>
+<li>Mango +1</li>
+<li>grapefruit</li>
+</ul>
+<h3 id="how-do-you-use-computers-in-your-work">How do you use computers in your work?</h3>
+<ul>
+<li>actively +1</li>
+<li>Genomics +1</li>
+<li>for everything +1</li>
+<li>for almost everything, but mostly data preperation and analysis</li>
+<li>data analysis</li>
+<li>a lot</li>
+<li>image analysis</li>
+<li>programming robots</li>
+<li>For research and writing codes</li>
+<li>pre- and post-processing molecular simulations</li>
+<li>Latex</li>
+<li>for research, modelling, data analysis</li>
+<li>Processing data and making nice graphs, writing</li>
+<li>mostly data analysis and research</li>
+<li>for bayesian analysis</li>
+<li>I put it on a table, mostly</li>
+<li>Clean and harmonise clinical data</li>
+<li>brain imaging, statistics</li>
+</ul>
+<h3 id="if-you-use-git-or-version-control-already-what-aspect-do-you-find-most-confusing-surprising">If you use Git or version control already, what aspect do you find most confusing/surprising?</h3>
+<ul>
+<li>if I run a command, where does it save things</li>
+<li>How to work efficiently with remote repository for example pull, rebase etc.  +1</li>
+<li>I am afraid to do something wrong</li>
+<li>How to use branches</li>
+<li>How to solve conflicts? ditto +1+1</li>
+<li>Forget to commit regularly +1</li>
+<li>Took long time to understand the concept</li>
+<li>How to find open source projects that are not too complicated to collaborate?</li>
+<li>how to avoid conflicts in collaborative branches</li>
+<li>If I make a change does it change it for everyone?</li>
+<li>committing to some other bigger projects on github (how forking and branches work)</li>
+<li>First, loging each time you want to push, and, merging conflicts and divergences</li>
+<li>using github for windows is easyer</li>
+<li>I mainly use git in VScode, so the commands and all the possible flags I don't always understand (force, force-with-lease, etc)</li>
+<li>I butcher git, I use it for filesharing over different clusters (with gitignore, you can easely ignore files you don't need to postprocess :)</li>
+<li>Why should I use git from terminal instead of something like GitHub Desktop?</li>
+<li>Create a repo from a local folder that has already lots of files and subfolders</li>
+<li>Creating an empty repository, especially in cloud services like gitHub and gitLab</li>
+<li>the most surprising thing is how the whole operating system works together with git</li>
+</ul>
+<h2 id="introduction-to-the-workshop">Introduction to the workshop</h2>
+<p>https://github.com/coderefinery/workshop-intro/blob/master/livestream.md</p>
+<ol>
+<li>
+<p>Why are questions numbered?</p>
+<ul>
+<li>so that we can sometimes refer to an older question</li>
+</ul>
+</li>
+<li>
+<p>What if we lose count?</p>
+<ul>
+<li>Don't worry, we will follow it (and try to keep it correct, but worst case we will update them in the archive)</li>
+<li>it is not a big problem if they are off</li>
+</ul>
+</li>
+<li>
+<p>Is audio clipping?</p>
+<ul>
+<li>There's some slight distortion in RB's voice -MJ</li>
+<li>and is it balanced?
+<ul>
+<li>Yes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="intro-to-version-control">Intro to version control</h2>
+<p>https://coderefinery.github.io/git-intro/motivation/</p>
+<ol start="4">
+<li>
+<p>Does the blame/annotate works for other programming codes besides Python ?</p>
+<ul>
+<li>Yes! It just goes through the files line by line, so it works best with text-like files.</li>
+<li>If the file is a binary, <code>git blame</code> will point to the whole file instead.</li>
+</ul>
+</li>
+<li>
+<p>How can you get the permalink for a specific line? right click in blame?</p>
+<ul>
+<li>This depends on what user interface you are using. Is the code in a cloud service? (Such as GitHub, GitLab or similar)
+<ul>
+<li>Yes, through the github interface (or through CLI if that is possible, though mostly through a cloud interface)
+<ul>
+<li>On GitHub, open a file and click on the line number. Then Click the three dots next to the line number and choose &quot;copy permalink&quot;.
+<ul>
+<li>Got it thank you!!!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Most of the nice features of version control only work with text files, right? (i.e. putting a word file into Git is possible, but suboptimal)</p>
+<ul>
+<li>yes. Any &quot;binary file&quot; is not a really good &quot;target&quot; for this type of version control. But you can still do it to e.g. keep versions in sync, like a doc file describing a tool with the actual code in the tool (even though I would choose a different way of documentation :) ).
+<ul>
+<li>This will become clearer when we understand how <code>git diff</code> works. In a way, though, track changes is already a sort of version control for Word files, for example. Also mind that all files are in fact binary: the distinction is between those who are human-readable &quot;straight away&quot; and those who encode information that you are not supposed to read.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>we canot see his screen</p>
+<ul>
+<li>Sorted.</li>
+</ul>
+</li>
+</ol>
+<h2 id="git-basics">Git basics</h2>
+<p>https://coderefinery.github.io/git-intro/basics/</p>
+<ol start="8">
+<li>
+<p>When instructor said, that the global flag affects everything in the computer, may be better to clarify. For the furture repos everything will take affect, but some settings will not affect how old (before issuing the command) will behave. For example the email used in commits will not change in repos created before the change.</p>
+<ul>
+<li>It will affect all the Git repositories, unless you have other &quot;local&quot; settings. &quot;Local&quot; settings override &quot;global&quot; settings, which override &quot;system&quot; settings.
+<ul>
+<li>Good point, the global settings can be overidden by local settings.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Do these setting matter when I'm both using (my private) GitHub and (my institution's) GitLab?</p>
+<ul>
+<li>Yes, all your commits will contain the name and the email you add here.</li>
+</ul>
+</li>
+<li>
+<p>Visibility of the console window is still not perfect, the edges are off the screen</p>
+<ul>
+<li>better or more?
+<ul>
+<li>Perfect now ♥</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I needed to add a --wait after the core.editor to be able to commit changes. Is this depended on the editor? I am using VSCode.</p>
+<ul>
+<li>It depends on the editor (But I have not had this issue with VSCode)</li>
+<li>If you scroll down this page, you can find a list of commands to configure various editors: https://swcarpentry.github.io/git-novice/02-setup.html</li>
+<li>Please also see our install instructions: https://coderefinery.github.io/installation/</li>
+</ul>
+</li>
+<li>
+<p>how do I exit the list after the <code>git config --list</code> command</p>
+<ul>
+<li>press <code>q</code> for quit. You will exit the list. Great thanks!</li>
+</ul>
+</li>
+<li>
+<p>How to exit the text file? OR save it?</p>
+<ul>
+<li>to save it <code>ctrl+x</code> -&gt; y -&gt; enter (if you used the <code>nano</code> editor)</li>
+</ul>
+</li>
+<li>
+<p>Do you have to save the file before closing?</p>
+<ul>
+<li>Yes, if you are happy with what you added there. Otherwise it won't save the changes you did. Nano will ask you &quot;do you want to save?&quot;</li>
+<li>ctrl O (stylised as ^O) is the save operation (from write Out); after saving you are asked to confirm the file name; you still are inside nano; to leave nano type ^X for eXit. nano is an old piece of software, so it brings you a bit back in time as to functionality. This is a precursor of the modern graphic user interfaces: note also that when you have nano on the terminal, you don't have the shell.</li>
+</ul>
+</li>
+<li>
+<p>Maybe it's good to show the files you generated in the system file explorer. Just to show people what's happening.</p>
+<ul>
+<li>Thank your for the feedback.</li>
+</ul>
+</li>
+<li>
+<p>Could you recommend some good code editors at some point of the course? I unfortunately do use nano for a lot of stuff</p>
+<ul>
+<li>This is very much a personal question. There are several editors specific for a certain language (like e.g. RStudio for R, PyCharm or spyder for python or the Matlab editor for matlab) or general purpose ones like VSCode, eclipse, emacs. But it really depends on what you want.</li>
+<li>My personal opinion: If you like (or have to) work from the terminal (e.g. on a remote server), vi or emacs have more features. Otherwise VS Code is a great tool.
+<ul>
+<li>Comment here: vscode has remote plugins that allow usage on a remote system.</li>
+</ul>
+</li>
+<li>Thanks!</li>
+<li>we are considering to maybe in future recommend VScode to start with instead of nano. Advantage of nano is its availability also on clusters.</li>
+</ul>
+</li>
+<li>
+<p>Looking at the <code>git help commit</code> command, isn't it much easier to use git commit --help (go to the overall help weppage) or use git commit -h (getting a shorter version in the terminal)?</p>
+<ul>
+<li>Good input. Indeed, it is easier, but it depends if you find the information you need. It is better to start with a shorter help page and move on to something more elaborate if needed.</li>
+</ul>
+</li>
+<li>
+<p>For now, the repository only exists locally right?</p>
+<ul>
+<li>Indeed.</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to make RB's audio break a little less?</p>
+<ul>
+<li>RB: can you please describe how it sounds? trying to trouble-shoot
+<ul>
+<li>it is distorted and picks up the room quite a lot
+<ul>
+<li>thanks, working on it
+<ul>
+<li>there is no easy fix for the room but maybe just try to lower input a bit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>As a good practice, we are suggested to commit often. I wonder if it does not store (use) lots of my space for example in Github? Each commit is an image of the working dir?</p>
+<ul>
+<li>Only the changes are stored, so committing often is not an issue.</li>
+<li>Especially as a beginner, it is recommended to commit often. Later on we're learn how to &quot;squash&quot; several commits into one. This makes the log history shorter, but it should not be used if you shared your local repository with others/GitHub.
+<ul>
+<li>In this case, do not I get lost in lots of nano commits? Especially, if I am working on a project daily and commit everyday? For exampling, in case, I want to find a bug?
+<ul>
+<li>I agree it may be tricky, that is why &quot;squashing&quot; (using <code>git rebase</code> for example) the last couple of commits may be handy. But if you do have many changes in one commit, it will be harder to debug your code in case you discover an error. You need to find the right balance for your project/style.</li>
+<li>For us, branches and pull requests are also a nice way to structure your commits and to make things more traceable.
+<ul>
+<li>Indeed, branches are another good option to structure the project and avoid a large number of commits in the main branch.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>It is not a problem for the disk. Changes are saved very efficiently.</li>
+</ul>
+</li>
+</ol>
+<h2 id="break-until-xx-05">Break until xx:05</h2>
+<ul>
+<li>make sure you walk around some or relax</li>
+<li>you can keep asking questions</li>
+</ul>
+<ol start="21">
+<li>
+<p>Sound ok! RB is not quiet.</p>
+<ul>
+<li>thanks</li>
+</ul>
+</li>
+<li>
+<p>If the repository is only local (for now), how can we use the browser github instructions?</p>
+<ul>
+<li>for the browser github you would have to start further up when we created the repository and (also) create it there.</li>
+</ul>
+</li>
+<li>
+<p>What does the HASH mean in the additional exercises?</p>
+<ul>
+<li>it is that long 40 character identifier of each commit</li>
+</ul>
+</li>
+</ol>
+<h2 id="exercise-https-coderefinery-github-io-git-intro-basics-exercise-record-changes">Exercise: https://coderefinery.github.io/git-intro/basics/#exercise-record-changes</h2>
+<p>Until xx:29</p>
+<p>Goal:</p>
+<ul>
+<li>Basic-1</li>
+<li>But there are optional exercises on the same page (green boxes)o</li>
+<li>You can also try to retrace the steps on github</li>
+</ul>
+<p>I am (add &quot;o&quot; to vote):</p>
+<ul>
+<li>done: oooooooooooooooooooooo</li>
+<li>need more time: o</li>
+<li>not trying: o</li>
+<li>it was easy: ooooooooooo</li>
+<li>it was about right: ooo</li>
+<li>it was hard: o</li>
+<li>not so hard, but nano freaked me out - changed to vs code oo
+<ul>
+<li>I feel ya. We use Nano as example because it is maybe the simplest text editor in command line. I use VSCode usually as well. -MJ</li>
+</ul>
+</li>
+<li>great exercise!ooo</li>
+</ul>
+<ol start="24">
+<li>
+<p>What to do when <code>git init -b main</code> does not work?</p>
+<ul>
+<li>sorry we tested this also on older versions of Git but apparently not thoroughly enough</li>
+<li>RB: I recommend to go through the exercise then without the &quot;-b main&quot; part and then default branch will be called &quot;master&quot; but the rest will still work</li>
+<li>You can do <code>git init</code>, then <code>git checkout -b main</code> right after to get &quot;main&quot; as the name of the current branch, this works on older versions.
+<ul>
+<li>I would rather show these topic and fix when we deal with branches later on?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Why are some commands with two dashes, and others with just one? E.g., <code>git add --all</code> or <code>git add -A</code></p>
+<ul>
+<li>If you use one dash, you may combine several options, each represented by one  letter, an abbreviation to the double dash options.</li>
+<li>often the double-dash are longer versions and the single dash abbreviations
+<ul>
+<li>Great thanks :-)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can I edit the commit message of a past commit?</p>
+<ul>
+<li>Technically yes.  It would make sense right after you did it (use <code>git commit --amend</code>).  Don't do this for older commits or after you push (we'll learn this term later), it'll make a big confusion.
+<ul>
+<li>we might try it tomorrow. more here: https://coderefinery.github.io/git-intro/recovering/</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Does diff show all differences between versions, or only a part of them if the documents are very long?</p>
+<ul>
+<li>All (unless you request something else)</li>
+</ul>
+</li>
+<li>
+<p>Optional ex. 3: I get this error message when launching meld: The diff tool meld is not available as 'meld' fatal: external diff died, stopping at instructions.txt. I have activated codereifnery conda env.</p>
+<ul>
+<li>This is an extra tool which can be added.  Don't worry about it for now - it's just an extra thing to try.</li>
+<li>note that meld is for Win/Linux and opendiff is for Mac</li>
+<li>GitHub has visual diffs aand also eg. JupyterLab can have (we demonstrate this next week)</li>
+</ul>
+</li>
+<li>
+<p>Is there an easy way to be able to view mutiple hashes in the terminal at once?</p>
+<ul>
+<li>do you mean <code>git log --oneline</code> ?</li>
+</ul>
+</li>
+<li>
+<p>Why always &quot;add&quot; not just commit directly? +1</p>
+<ul>
+<li>you can commit directly too!  &quot;add&quot; provides extra ways to check before going on, so we show that first.</li>
+<li>Using <code>add</code> first gives you a control step on what will be commited, it is very usufull if you do not want to commit all of your changes in one commit.</li>
+<li>we have an episode discussing pros and cons of both (&quot;staging area&quot;). but it is perfectly fine at the beginning to commit files directly.</li>
+<li>if you make a commit of any little change you do, you get a huge history (the output of <code>git log</code>) with a very fragmented (granular) meaning. <code>git add</code> can also work as a sort of back-up copy you can fall back to before you make a commit (unsure whether this is covered here)</li>
+</ul>
+</li>
+<li>
+<p>Optional ex. 2: I can't have a look on <code>git show HASH</code> because it gets an error: ambiguous argument 'HASH': unknown revision or path not in the working tree.</p>
+<ul>
+<li>replace &quot;HASH&quot; by the actual identifier (it is different on each computer; use <code>git log --oneline</code> to see them)
+<ul>
+<li>oh thank you, I got it!</li>
+</ul>
+</li>
+<li>TOFIX: please explain what a HASH is in the exercise explanation
+<ul>
+<li>thanks! https://github.com/coderefinery/git-intro/issues/427</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How do I create a new file, I missed that bit. I am getting this error</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>$ git add ingredients.txt
+</span><span>fatal: pathspec &#39;ingredients.txt&#39; did not match any files
+</span></code></pre>
+<ul>
+<li>You can use <code>nano</code> for example for the editor to make a file in the git directory.</li>
+<li>eg: <code>nano ingredients.txt</code>, Then you edit the file and <code>ctrl+x</code> and <code>Y</code> to save it.</li>
+</ul>
+</li>
+<li>
+<p>Is it safe to keep a git repository in cloud storage such as Dropbox or OneDrive?</p>
+<ul>
+<li>I would rather place them on GitHub/GitLab/Bitbucket. Otherwise the could storage with its own version tracking might start tracking the &quot;.git&quot; part also and the one versioning might confuse the other (that's my experience when trying this with one of them 10 years ago)</li>
+<li>I'd add that it depends how &quot;safe&quot; the cloud is. Also, the big advantage with putting it on GitHub or GitLab is that you can use the web interface to inspect commits, files, and do some other tasks that are similar to the git commands in the terminal.</li>
+</ul>
+</li>
+<li>
+<p>In MacOS opendiff is installed but not showing the diff?</p>
+<ul>
+<li>you might need to set it as the diff tool for git (https://git-scm.com/docs/git-difftool)</li>
+<li>https://coderefinery.github.io/installation/difftools/</li>
+</ul>
+</li>
+<li>
+<p>Can you maybe give an example about a good comment? (informative, short, specific, how to do that?)</p>
+<ul>
+<li>&quot;:bugfix: Corrected the calculation in the add function - =&gt; +&quot;</li>
+<li>Good commit messages is art: https://cbea.ms/git-commit/
+<ul>
+<li>like any writing imo :D</li>
+</ul>
+</li>
+<li>some good references are listed in https://coderefinery.github.io/git-intro/basics/#writing-useful-commit-messages - it can be good to also browse few of the example projects that are very popular to see how they do it</li>
+<li>A good comment provides a context and explains why something was done (this might not be needed for trivial changes)</li>
+</ul>
+</li>
+<li>
+<p>In this case:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>Date:   Tue Sep 19 10:12:33 2023 +0200
+</span><span>
+</span><span>    added enjoy message
+</span><span>
+</span><span>diff --git a/instructions.txt b/instructions.txt
+</span><span>index 7811273..2b11074 100644
+</span><span>--- a/instructions.txt
+</span><span>+++ b/instructions.txt
+</span><span>@@ -4,3 +4,4 @@
+</span><span> * squeeze lime
+</span><span> * add salt
+</span><span> * and mix well
+</span><span>+* enjoy!
+</span></code></pre>
+<p>What is my HASH1 and HASH2 ?</p>
+<ul>
+<li>I understand, I found it following right now, taking ids from: <code>git log --oneline</code>
+<ul>
+<li>ah good - I wanted to answer but then got distracted</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="git-log-history-and-commit-messages">Git log history and commit messages</h2>
+<p>https://coderefinery.github.io/git-intro/basics/#git-history-and-log</p>
+<ol start="37">
+<li>
+<p>How can I see the <code>git diff</code> output in the vs code?</p>
+<ul>
+<li>either you do it in a terminal (just open a terminal in vscode), or you can click on the &quot;version control&quot; tab (left side, looks a bit like a graph), and then look at changes. But that's already an interpretation of the git diff output.</li>
+<li>note also that &quot;git diff&quot; will give no output if you have <code>git add</code>-ed a change. it compares working directory with commit or staging area.</li>
+</ul>
+</li>
+<li>
+<p>What does this error mean - warning: in the working copy of 'instructions.txt', LF will be replaced by CRLF the next time Git touches it</p>
+<ul>
+<li>Linefeeds (newlines) are encoded differently between windows and linux, and git can be set up to use one of them (https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings), this message tells you which type it will use.</li>
+<li>CRLF = carriage return, line feed. From the usage of typewriter to move on in a sheet of paper (now visible from inkjet printers)</li>
+<li>https://coderefinery.github.io/installation/shell-and-git/#troubleshooting</li>
+</ul>
+</li>
+<li>
+<p>git difftool does not work, I am using Mac, git difftool --tool=opendiff HASH, this does not show me any thing but no error message either</p>
+<ul>
+<li>is that the latest commit and are there any changes since then?
+<ul>
+<li>yes, it is the latest commit, no change. Is that the problem?
+<ul>
+<li>No, not a problem but it simply cannot show anything as there are no changes :smile:</li>
+<li>Ok, thanks. I used another hash, now it gave me an error message: xcode-select: error: tool 'opendiff' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance. I have XQuartz installed and opened.
+<ul>
+<li>That's a problem with the setup on your mac. I'll see if I find something, but I'm not a mac user myself, so not sure if I can help you there</li>
+<li>thanks anyway, I will figure it out :-)</li>
+<li>Do you have Xcode installed?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Any reference for installing opendiff on Linux (Ubuntu)? <code>apt search opendiff</code> gives no results.</p>
+<ul>
+<li>You may try <code>meld</code> on linux. https://coderefinery.github.io/installation/difftools/
+<ul>
+<li>Thanks, that already tried and works perfectly.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Should I always remove with <code>git rm</code> instead of bash <code>rm</code>?</p>
+<ul>
+<li><code>git rm</code> removes file + stages removal</li>
+<li><code>rm</code> + <code>git add DELETED_FILE</code> (or <code>git rm DELETED_FILE</code>) is the same
+<ul>
+<li>As you can see here, the command <code>git add</code> is not always about adding a document to the index, but to record a change in the index/stage. Note that <code>git stage</code> is an alias of <code>git add</code>, that is, you can use both names to the same effect</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is there a convention for adding additional .gitignore files in subdirectories and when not to?</p>
+<ul>
+<li>Not sure if there is one. Personally I would keep .gitignore files in the main folder. if you really need a specific -gitignore for a subfolder, maybe you actually want to have a submodule instead of a folder i.e. the folder actually represents it's own entity in some way?</li>
+<li>use one if one is enough but sometimes it is useful to have several. problem with several is that sometimes your colleagues will overlook them and be surprised that there are more than one.</li>
+</ul>
+</li>
+<li>
+<p>I have a problem with <code>difftool</code> in mac os. I got the following error</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>xcode-select: error: tool `opendiff` requires Xcode, but active developer directory `/Library/Developer/CommandLineTools` is a command line tools instance
+</span></code></pre>
+<ul>
+<li>This problem usually happens when <code>xcode-select</code> developer directory is pointing to <code>/Library/Developer/CommandLineTools</code> when regular xcode is required.</li>
+<li>you can try to change the active directory <code>sudo xcode-select -switch /Library/Developer/CommandLineTools</code></li>
+<li>But, I would suggest to try it after the workshop. Otherwise you may loose your focus on <code>git</code>. For the time being, you can use <code>git diff</code> on command line.</li>
+</ul>
+</li>
+<li>
+<p>General question. I always have a problem to decide how to structure the
+folders which are under control of Git, especially when I work on Python
+Notebook to code in an explorative way. I start with creating a new project
+folder as a git private repo. After some coding, I realise I would like to
+divide the project into two projects, because one specific part becomes
+important, or because I only want to publish one part of the project for
+public. There is also a need to maintain two very similar code (i.e.
+seperate the private version of code from the public version). If you have
+many projects like this, GitHub structure becomes messy. Is there a good
+practice to organise GitHub repo/folder structure?</p>
+<ul>
+<li>What you can do is create a new repo for the &quot;important&quot; part and include it as a submodule in your original, removing the code you exported. That way, your &quot;private&quot; keeps intact but you can continue developing on the exported functionality.</li>
+<li>But also it is often impossible and &quot;unreasonable&quot; to try to get it right and perfect right from the start. It is an iterative process of projects splitting or joining. As soon as a project becomes difficult to name, it might signal that it tries to do too many things. Common code used in other project can then be split off into a separate library that can be included either by git (as submodule, answer above) or by pip as Python package.</li>
+<li>What do you mean with <em>GitHub folders</em>?
+<ul>
+<li>It just means folder under control of GitHub (question text already modified)
+<ul>
+<li>Perhaps, an option is to maintain two long-living branches of the same repository and share with others only a public branch. This makes it simpler to overview the differences between what you <em>develop privately</em> and <em>release publicly</em>. Look up around for tips about &quot;Git workflows&quot; and stay tuned with the rest of the course!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>When I began with git some years ago, I was in a similar course. Then I
+generated a .git folder in my personal /user directory. This led to a lot
+of mess since the underlying .git(s) made under this folder (which is
+basically everything) is then connected in ways I don't quite understand.
+Deleting the most &quot;top&quot; or &quot;parent&quot; positioned .git then helped on this
+issue and the underlying &quot;child&quot; git folders are fine, but it first led to
+some confusion. So, not so much a question here, but a story and a reminder
+to try and avoid making such a mistake. I would also suggest that we would
+have made a /CodeRefineryWorkshop folder first and then dived into that and
+made the /recipe folder there. At least if I had done that back then, I
+would have not mistakenly made a .git before I knew what I was doing
+(although I should have done that in what today is this /recipe folder, but
+mistakes were made and we learn hehe). Today, the story ends happily with a
+much cleaner directory and I am a very happy user of git <code>&lt;3</code></p>
+<ul>
+<li>thanks for the suggestion. we will adjust our material to first create a workshop directory and then everything underneath: https://github.com/coderefinery/git-intro/issues/424</li>
+<li>adding here as explanation for others: git repositories can be nested with git submodules or git subtrees, but nesting them by placing one under the other on the hard drive can lead to confusion since when you type commands like &quot;git status&quot;, Git only sees the closest git repository, but nothing &quot;above&quot;.</li>
+</ul>
+</li>
+</ol>
+<h2 id="branching-and-merging">Branching and merging</h2>
+<p>https://coderefinery.github.io/git-intro/branches/</p>
+<ol start="46">
+<li>
+<p>Is there a way to list down my alias for my git commands ? Asking this because I will forget what graph does later...</p>
+<ul>
+<li><code>git config --list</code> will not only list the configuration, but also all the configured aliases. You can also ask for <code>git config alias.graph</code> specifically</li>
+</ul>
+</li>
+<li>
+<p>Warning. Some people still have <code>master</code> instead of <code>main</code></p>
+<ul>
+<li>yes. in this case replace all command to use &quot;master&quot; instead of &quot;main&quot;</li>
+</ul>
+</li>
+<li>
+<p>Is <code>switch</code> exactly the same as <code>checkout</code>?</p>
+<ul>
+<li>No. <code>switch</code> is more specific and does only one thing of many that <code>checkout</code> does. So it is a safer option because with a single outcome there is no way things can go wrong. In other words, you can get checkout to make a switch, but it is a more error-prone avenue</li>
+<li>for the purpose of branching it does the same</li>
+<li>see question 61 too</li>
+</ul>
+</li>
+<li>
+<p>How do I remove an git alias?</p>
+<ul>
+<li>easy: <code>git config --global --edit</code> to open in editor.</li>
+<li>There is also <code>git config --global --unset alias.graph</code> if you prefer the command line</li>
+<li>alternatively you can edit the file <code>~/.gitconfig</code> where all the <code>git config</code> settings get saved
+<ul>
+<li>more fragile option: if you break things there, repairing will be more troublesome. Better to have a focused git command to make a specific intervention
+<ul>
+<li>good point</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="exercises-branch-1-and-branch-2">Exercises Branch-1 and Branch-2</h3>
+<p>https://coderefinery.github.io/git-intro/branches/#exercise-create-and-commit-to-branches</p>
+<p>Until xx:43</p>
+<ul>
+<li>The exercise does what we just did together, but again</li>
+<li>Go on and do the merge during the exercise session.</li>
+<li>At the end, yous should have an &quot;experiment&quot; branch and a &quot;less-salt&quot; branch and merged them back</li>
+<li>Branch-1 and Branch-2</li>
+</ul>
+<ol start="50">
+<li>
+<p>I seemed to have closed the window and cannot open the repository back again. How does one open a repository? ...</p>
+<ul>
+<li>You need to change directory (<code>cd</code>) to the right place.  <code>ls</code> should tell you what's there.  e.g. <code>cd recipe</code></li>
+<li>worked thanks !</li>
+</ul>
+</li>
+<li>
+<p>General question. Using zsh terminal on a mac, the tab autocomplete doesn't fill in in a git command. e.g. you can't tab to autocomplete less-salt.</p>
+<ul>
+<li>here are some hints on how to customize this: https://coderefinery.github.io/git-intro/customizing/
+<ul>
+<li>will read through it thank you!</li>
+</ul>
+</li>
+<li>Yup the autocompletion of git commands is not by default in any shell/terminal</li>
+</ul>
+</li>
+<li>
+<p>I accidentally started adding cilantro in main and because of that made some other changes in experiment. Now experiment is &quot;behind&quot; main and I got a merge conflict. How can I fix this?</p>
+<ul>
+<li>recommended recovery:
+<ul>
+<li>create a new directory</li>
+<li>cd into the new directory</li>
+<li>follow &quot;if you got stuck ...&quot; blue box in https://coderefinery.github.io/git-intro/branches/#exercise-merging-branches</li>
+</ul>
+</li>
+<li>tomorrow we will learn to recover from such sitiations: https://coderefinery.github.io/git-intro/recovering/</li>
+<li>but also no problem if it is &quot;messed up&quot;, for the rest of today you will not need it and rest can be demonstration from us and then later you can try to retrace the steps. also tomorrow we can start from the &quot;if you got stuck&quot;</li>
+</ul>
+</li>
+<li>
+<p>In the solutions, it is said: &quot;This was possible since one branch is the ancestor of the other and their developments did not diverge.&quot; I don't understand, how this was different?</p>
+<ul>
+<li>Quick answer: There are not changes in branch &quot;main&quot; that don't exist in branch &quot;experiment&quot;. So git can just take the new changes and apply them to branch &quot;main&quot;.
+<ul>
+<li>Oh I see. So if, lets say, another person had modified the main while I was working on the branch, this would not have worked?</li>
+</ul>
+</li>
+<li>We'll get back to this in the stream</li>
+</ul>
+</li>
+</ol>
+<p>Question to audience: How is the speed so far (add an &quot;o&quot;)?</p>
+<ul>
+<li>too fast: o</li>
+<li>too slow: o</li>
+<li>just right: oooooooooo</li>
+<li>confused where we are:</li>
+</ul>
+<ol start="54">
+<li>
+<p>I made my own bean 🫘 recipe and created two branches from main. In one branch I added one new ingredient and in the other branch another ingredient. I successfully merged one branch into main, but when trying to merge the other it said I had a conflict: differing bottom lines in the ingredients file. However, it did not allow me to choose which version to keep or to keep both lines.</p>
+<ul>
+<li>Also, we will cover conflicts later. To get back to where everyone else is, you can follow</li>
+<li>https://coderefinery.github.io/git-intro/conflicts/</li>
+</ul>
+</li>
+<li>
+<p>I am a bit confused about the fast-forward. I create 2 branches (test1 and
+2). Swith to test1. Change README. Swith to main. Merge, I was expecting
+usual merging but is fast forwaded. Not sure I get this, as the changes are
+in the branch test1 not main.</p>
+<ul>
+<li>Merging can be automatic or manual.
+In case of automatic merge, Git decides which merging strategy is the
+most suitable to the case, based on prior expertise of the Git
+developers.  In the case of manual merge, you decide with appropriate
+option to the <code>git merge</code> command.  You have ultimately control on
+which merging strategy will be used. However, as a matter of default,
+Git will ask you to resolve a conflict when none of its automatic
+strategies appear suited to tackle the file differences at hand.  In
+your case, Git has used a so-called fast forward strategy because the
+changes you made in the source branch are simple enough that they can
+be seen as if you had changed the document in the target branch. (Of
+course when you make a branch, you cannot take it for granted that your
+changes will be simple all the way, barring exceptions.) A bit of a
+mouthful, I know.</li>
+<li>Fast-forward means: if Git can merge without creating a merge commit, by only moving one branch label &quot;forward&quot;,
+then it will try to do that. In your case <code>test1</code> was one commit ahead of <code>main</code>. Merging <code>test1</code> into <code>main</code> could
+be done by moving <code>main</code> one commit forward, without creating a merge commit.</li>
+</ul>
+</li>
+<li>
+<p>what if you didn't get this comment after merging to main?</p>
+<ul>
+<li>It's possible there were no changes in the main branch, so that the merge was done using &quot;fast forward&quot;.</li>
+<li>some editors or older git versions create the merge commit automatically without giving you the chance to edit them</li>
+</ul>
+</li>
+<li>
+<p>What does it mean that the merge was made using the &quot;'ort' strategy&quot;?</p>
+<ul>
+<li>This is the default merge strategy. More info <a rel="noopener" target="_blank" href="https://git-scm.com/docs/merge-strategies#Documentation/merge-strategies.txt-ort">here</a></li>
+</ul>
+</li>
+<li>
+<p>Is <code>git switch</code> and <code>git branch</code> encouraged over the more general (but maybe ambigious) <code>git checkout</code></p>
+<ul>
+<li>Yes, because it is more clear what the command does from its name</li>
+</ul>
+</li>
+<li>
+<p>Can you delete the current branch with <code>git branch -d main</code>   when in branch <code>main</code>?</p>
+<ul>
+<li>No, you cannot remove the branch you're currently on. You need to switch to a different one first.</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to merge any branch without a message/update? Because when I was doing the fast-forward exercise I followed the exact workflow but it did not ask for any message while previously in 'less-salt' and others it did.</p>
+<ul>
+<li>A fast forward merge does not necessarily have a message.</li>
+<li>Otherwise, the merge will create a new commit, and require a commit message</li>
+<li>you can also configure git to not ask you and just put a default commit message for merge commit (since personally I never modify that message)</li>
+</ul>
+</li>
+<li>
+<p>Does it make sense have multiple branches for different type of pipelines? Or is the ultimate goal always to merge?</p>
+<ul>
+<li>can you please define what &quot;pipeline&quot; is?
+<ul>
+<li>I often have cases where I need to handle different files and these different files need some changes in the code. My approach is to have pipeline_1.py and pipeline_2.py. But if I could branch the pipeline_1.py and make modifications to that, then I don't need to create a new file and I see, where the pipelines &quot;diverge&quot;. Now as I am thinking about this, maybe it is not a good idea, because this is about version controlling, not for these type of tricks.</li>
+<li>Looks like pipeline is a file for you. Pipeline can have several meanings in software development. Mind that a branch keeps track of changes in multiple files. The branches may have different versions of a file with the same name, if this helps. When you switch branches, the content of that file will change. So you cannot have two versions of the same file at the same time in your working directory (aka working tree).</li>
+</ul>
+</li>
+<li>Sometimes I do have long-running branches which never converge.  It's possible and if you don't edit the same stuff, it's not too bad.  But you might want to see if you can define the differences as configurations rather than different code.</li>
+<li>Some open source programs have branches meant for different use cases, and these branches will never be merged to main. For example, there are versions of the Linux kernel for different architectures. (I did not check if they are actually git branches, but they could be)
+<ul>
+<li>Oh okay! Good to know. Would love to have some examples.
+<ul>
+<li>Typical is to have a public branch for releases and a private branch for development. A celebrated model is https://nvie.com/posts/a-successful-git-branching-model/ by Vincent Driessen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Most projects only have one or two long-lived branches and most other branches are meant to be merged back at some point.</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to change the commit message afterwards (e.g. if there is a typo or another mistake)?</p>
+<ul>
+<li>Yes it is possible: <code>git commit --amend</code>.  Only do this if you just made the commit (you can in fact do more, but it can get confusing very quickly)</li>
+<li>https://coderefinery.github.io/git-intro/recovering/#adding-to-the-previous-commit-modifies-history (tomorrow more)</li>
+</ul>
+</li>
+<li>
+<p>Is <code>git switch</code> recommended over <code>git checkout</code> to switch branches?</p>
+<ul>
+<li>we demonstrate here <code>git switch</code> because it better communicates the intent. <code>git checkout</code> can switch branches, undo unstaged modifications, and also navigate to a past commit and we found it confusing in past workshops to explain that the same cousmmand can do so different thing</li>
+<li>see question 46 too</li>
+<li><code>git switch</code> is a newer command compared to <code>git checkout</code> and it may not work if you have an old <code>git</code> installation. <code>git switch</code> only works with branches as arguments, while <code>git checkout</code> can do different things depending on the arguments and options, which can make it more confusing as well. That is why, for clarity of the command, we recommend <code>git switch</code>. But you may use any command that you are comfortable with.
+<ul>
+<li>https://www.git-scm.com/docs/git-switch shows that git switch has been introduced with git version 2.27 (click on the version list just above in the page to find that out)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="conflicts-and-confict-resolution">Conflicts and confict resolution</h2>
+<p>https://coderefinery.github.io/git-intro/conflicts/</p>
+<ol start="64">
+<li>
+<p>I am getting the error message <code>fatal: cannot do a partial commit during a merge.</code> +1</p>
+<ul>
+<li>I found the problem. I for got the -m in <code>git commit -m &quot;Let people decide themselves how much cilantro they want&quot;</code></li>
+</ul>
+</li>
+<li>
+<p>What if I start a merge, see a conflict, and decide I don't want to merge yet? Is there a way to &quot;stop&quot; the current merge?</p>
+<ul>
+<li>git merge --abort</li>
+</ul>
+</li>
+<li>
+<p>I was following you guys, but then I merged I got <code>Already up-to-date.</code>Is this because I was on the main branch. Not sure I follow what happened.</p>
+<ul>
+<li>This is probably because you did not change anything at all the branch you are trying to merge now. Did you edit and commit files on another branch rather? Please double check.
+<ul>
+<li>I got a conflict and then I fixed following the tutorial. Then I moved into main and corrected the conflict. Then wehn I merged, basically did not merge, as there was nothing to do.
+<ul>
+<li>If you are using the terminal, the shell command <code>history</code> will list you the commands you have typed. Then you can try to revisit what you did and make sense of it. I cannot give you a precise answer based on your description. (Others may well do.)</li>
+<li>Sure, thank you</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I used mergetool and integrated it with vscode (similar to (optional) Basic-3: Visual diff tools assignment). Afterwards you can just commit again and solving the conflict. (it works nicely visually, however is probably limited to easy conflicts)</p>
+</li>
+<li>
+<p>A changed 1 lime to 2 limes, at the same time, B changed from 1/2 onion to 1 onion. This can work for each branch, but it may not work together. How about that? Is there any warning about that?</p>
+<ul>
+<li>do mean the recipe doesn't work together, or about getting a conflict when there shouldn't be one?</li>
+</ul>
+</li>
+<li>
+<p>Another thing to note (correct me if I'm wrong). There are only merge conflicts, no commit conflicts. This means that if several people work on the main branch, everyone will always overwrite any changes made (with no warnings etc.). So you need branches when working together in the majority of cases.</p>
+<ul>
+<li>In this case, there actually are different branches on different comp</li>
+<li>We will clarify this on day 3 but when working together on one branch, that one branch is typically on a central repository on GitHub. And locally we have our own local versions (clones). Even though the local branch might have the same name, Git will not let us accidentally overwrite work of others. If you try to push changes from your local &quot;main&quot; branch and Git detects that the remote &quot;main&quot; branch has commits that you don't have locally, it will stop with an error.</li>
+</ul>
+</li>
+</ol>
+<h2 id="feedback-of-day-1">Feedback of day 1</h2>
+<p>:::info
+Notes: Twitch will have videos immediately, I'll try to get them YouTube:ed by tonight, check installation/configuration for tomorrow, check course webpage for any other news we can think of.</p>
+<p>Tomorrow is more git basics, trying to see more of the full power. see you then!
+:::</p>
+<p>Overall, today was (choose all that apply):</p>
+<p>too fast:ooooo
+just right: ooooooooooooooooοoooooooooo
+too basic: o
+too advanced:
+recommendable to others: ooocoooooooooooooοooooooooo
+I am coming back tomorrow: oocooooooooooooooooooooooooooοoooo
+I'm not coming back tomorrow:</p>
+<p>How was the collaborative document (this document):</p>
+<p>felt responsive: oooooooooooooo
+slow/sluggish at times:oo</p>
+<p>One good thing about today:</p>
+<ul>
+<li>good amount of work/breaks +6</li>
+<li>enough time for local teams to work on exercises and have additional discussions +3</li>
+<li>I worked in git in the past already, however this course gives a nice connected guide in the basic commands.+2</li>
+</ul>
+<p>One thing to be improved for next time:</p>
+<ul>
+<li>slow down a bit. it is not possible to follow unless you already know how to do it.</li>
+<li>it takes w</li>
+<li>it was a bit fast towards the end, when steps were getting more complicated</li>
+<li>could be nice to see more code history from the terminal in the share screen, in case we miss a command +2</li>
+<li>No complaints, everything was super smooth. +1</li>
+<li>I worked well for us, we're just three and already know a bit about how to use git. We've learned good practices, excited for the next days.</li>
+<li>Show the files that are created in the file explorer (at least once in the beginning). And it would be helpful to add a visualization on where all the files are (saved on hard disk, staged, commited etc.)
+<ul>
+<li>Thank you for the suggestion, created an <a rel="noopener" target="_blank" href="https://github.com/coderefinery/git-intro/issues/426">issue in the course repo</a>.</li>
+</ul>
+</li>
+<li>A bit fast at the start, but smoothed out middle and end</li>
+<li>Interesting to follow the basic steps. Got me to understand a lot. But I think I will go on using GitHub for Windows, and not all the commands.</li>
+</ul>
+<p>Any other comments:</p>
+<ul>
+<li>Super interesting!! Feeling motivated to learn more</li>
+<li>Finger's crossed for a visit from the cat! +1</li>
+<li>For the remote SSH connection on github -&gt;  to use a <em>deploy key</em> it HAS to be called <code>id_rsa.pub</code> or <code>id_ed25519.pub</code> (and be located in <code>~/.ssh</code>) it will otherwise ignore your keys even if added explicetely. You can make a symlink if you have many keys. This is not needed in gitlab.</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-09-19-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

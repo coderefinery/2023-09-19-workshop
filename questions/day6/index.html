@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 6 - CodeRefinery workshop September 19-21 and 26-28, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-09-19-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 6</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-09-19-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 6</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#feedback-day-6">Feedback, day 6</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#today-was">Today was:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#one-thing-good-about-today">One thing good about today:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#one-thing-to-be-improved-for-next-time">One thing to be improved for next time:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#any-other-comments">Any other comments:</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#icebreakers-day-6">Icebreakers, day 6</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#which-tools-are-you-likely-to-keep-using">Which tools are you likely to keep using?:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#what-tools-do-you-use-for-testing-code">What tools do you use for testing code?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#tell-us-some-about-this-course">Tell us some about this course:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#how-do-you-celebrate-after-the-course">How do you celebrate after the course?</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#testing">Testing</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#is-not-testing-ok">Is not testing ok?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#discussion-what-s-easy-and-hard-to-test">Discussion: What’s easy and hard to test?</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#exercise-until-xx-40">Exercise until xx:40</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#automated-testing">Automated testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#test-design">Test design</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#exercise-until-xx-45">Exercise until xx:45</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#lunch-until-xx-00-12-00-cest-13-00-eest">Lunch until xx:00 (12:00 CEST, 13:00 EEST)</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#modular-code-development">Modular code development</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#break-until-xx-05">Break until xx:05</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#example-result">Example result</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#outro">Outro</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#feedback-day-6-1">Feedback, day 6</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#today-was-1">Today was:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#one-thing-good-about-today-1">One thing good about today:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#one-thing-to-be-improved-for-next-time-1">One thing to be improved for next time:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#any-other-comments-1">Any other comments:</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#q-a">Q&amp;A</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day6/#thank-you-to-all">Thank you to all!</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="feedback-day-6">Feedback, day 6</h2>
+<h3 id="today-was">Today was:</h3>
+<ul>
+<li>Too fast:</li>
+<li>just right:</li>
+<li>too slow:</li>
+<li>too easy:</li>
+<li>right level:</li>
+<li>too hard:</li>
+<li>Exercises were good:</li>
+<li>I would recommend today to others:</li>
+<li>I wouldn't recommend today: </li>
+</ul>
+<h3 id="one-thing-good-about-today">One thing good about today:</h3>
+<ul>
+<li>...</li>
+<li>...</li>
+</ul>
+<h3 id="one-thing-to-be-improved-for-next-time">One thing to be improved for next time:</h3>
+<ul>
+<li>...</li>
+<li>...</li>
+</ul>
+<h3 id="any-other-comments">Any other comments:</h3>
+<ul>
+<li>...</li>
+<li>...</li>
+</ul>
+<h2 id="icebreakers-day-6">Icebreakers, day 6</h2>
+<h3 id="which-tools-are-you-likely-to-keep-using">Which tools are you likely to keep using?:</h3>
+<ul>
+<li>git, alone: oooooo</li>
+<li>git, group:oo</li>
+<li>github: ooooooo</li>
+<li>pull requests: oooooo</li>
+<li>workflow automation: oooooo</li>
+<li>Sphinx: oo</li>
+<li>Readmes: ooooo</li>
+<li>Jupyter: ooo</li>
+<li>Automated testing(*): ooo</li>
+<li>Modular code(*): ooo</li>
+<li>hopefully more than one</li>
+</ul>
+<p>(*) = not yet taught, teaching today</p>
+<h3 id="what-tools-do-you-use-for-testing-code">What tools do you use for testing code?</h3>
+<ul>
+<li>pytest +1+1+1+1</li>
+<li>cargo test</li>
+<li>catch2 +1</li>
+<li>GitHub workflow +1+1 (calling pytest, cmake, ...)</li>
+<li>Julia Testing library</li>
+<li>junit (java code) +1</li>
+<li>testthat
+<ul>
+<li>great! we will show some examples but we might need your help in improving them </li>
+</ul>
+</li>
+<li>vitest (Javascript Frontend)</li>
+<li>None +2</li>
+<li>.</li>
+</ul>
+<h3 id="tell-us-some-about-this-course">Tell us some about this course:</h3>
+<p>How did you attend (alone home/work, small group home/work/online, organized group, watching videos later...):</p>
+<ul>
+<li>from office, alone</li>
+<li>library online</li>
+<li>alone home +1</li>
+<li>small group with people from university +1</li>
+<li>alone from office and homeoffice +1</li>
+</ul>
+<h3 id="how-do-you-celebrate-after-the-course">How do you celebrate after the course?</h3>
+<ul>
+<li>Sleep! (instructor)</li>
+<li>going for a mountain hike this afternoon if weather allows </li>
+<li>Setting up things for the next one (instructor). Getting more sleep, hopefully :smile:</li>
+<li>Update my documentation step-by-step :smile: </li>
+<li>Start teaching what was learned, and hope that the listener stays awake ... it takes two hands to clap ...</li>
+<li>Implement some of these lessons over the coming weeks/months, celebration wise not a lot +1</li>
+<li>Start recapping and implementing all the things learned :D going for a celebratory lunch </li>
+</ul>
+<hr />
+<ol>
+<li>
+<p>Hi, a bit early perhaps. But how do I email my homework for the certificate to this email?: <code>scip _at_ aalto.fi</code></p>
+<ul>
+<li>you mean what should be included in that email?</li>
+<li>I mean its not an email adress, so how can I send an email to it?</li>
+<li>Replace <code>_at_</code> with <code>@</code></li>
+<li>hahah ofcourse, thanks! (stupid of me)
+<ul>
+<li>There are no stupid questions! There are probably others wondering but did not ask yet :smile:</li>
+</ul>
+</li>
+<li>:smile:</li>
+</ul>
+</li>
+<li>
+<p>The screen coul be a little more narrow, a bit of text is cut on the edges. Thanks!</p>
+<ul>
+<li>Is it better?</li>
+<li>Yes, better, thanks!</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to test for error handling ?? What about outputing specifc error/warning messages...</p>
+<ul>
+<li>Many testing frameworks can have tests that expect a specific error or an incorrect output.</li>
+<li>Or you can test that the output is an error code, for example in C.</li>
+<li>Testing output is quite a bit more complicated. You would need to capture the output from the system. I would make either capture the error before it's printed (if possible), or have the function also return an error/warning code.</li>
+</ul>
+</li>
+<li>
+<p>The example of 'automated-testing' is a python function which starts with test_ , there are also other possibilities through unit-tests libraries etc. I tried to implement this but it seemed like to much work. How to balance this test-complexity vs functionality?</p>
+<ul>
+<li>Do you mean writing a unit test for every function is too much work?</li>
+<li>You can start by testing the most important low level functions and testing larger functions that call many smaller ones to have a test for all of them.
+<ul>
+<li>So like a hierarchy of tests? sub-level and sub-sub-level and level test functions?</li>
+</ul>
+</li>
+<li>In general having some tests is better than none</li>
+</ul>
+</li>
+<li>
+<p>How do I know if I have tested which lines of code, especially with tricky workflows with a lot of if else...</p>
+<ul>
+<li>There are tools for this, but it depends on programming language and testing framework. Search for &quot;test coverage&quot; + you unit testing tool</li>
+<li>For pytest, there is a tool called &quot;coverage&quot;</li>
+</ul>
+</li>
+</ol>
+<h2 id="testing">Testing</h2>
+<p>https://coderefinery.github.io/testing/motivation/</p>
+<h3 id="is-not-testing-ok">Is not testing ok?</h3>
+<ul>
+<li>Jupyter or R Markdown notebook which produces a plot and you know by looking at the plot whether it worked?
+<ul>
+<li>probably fine not to automatically test</li>
+<li>Jupyter is quite easily to debug and often the notebooks are rather small (i.e., not a complete package). I wouldn't think it's necessary.</li>
+<li>In R, there is an R package called vdiffr that helps to look at the difference between two ggplot2 plot and can be integrated as a unit test.</li>
+</ul>
+</li>
+<li>Looking at the plot is the 'testing' bit. BUT, with 'looking' one may not necessarily be objectively verifying the so called 'obvious', for better or for worse. Further, in the case of 'looking', there is also the question of reproducibility of 'test results', which in turn shows up the issues of accuracy and precision and so on.</li>
+<li>A short, “obviously correct” Python or R script which you never intend to reuse?</li>
+<li>A simple short, “obviously correct” shell script?</li>
+<li>Can you give other examples?
+<ul>
+<li>something that produces a figure and I can &quot;see&quot; that is correct.</li>
+</ul>
+</li>
+</ul>
+<h3 id="discussion-what-s-easy-and-hard-to-test">Discussion: What’s easy and hard to test?</h3>
+<ul>
+<li>Give examples of things (from your work) that are easy to test.
+<ul>
+<li>Mathematical functions such as multiplying arrays that you can easily check by comparing the result with a fixed value</li>
+</ul>
+</li>
+<li>Give examples of things (from your work) that are hard to test.
+<ul>
+<li>When making new directories in your program +1
+<ul>
+<li>I would suggest allowing a base-directory to be set for these kind of tests, and setting it to a temporary folder. A lot of languages do have libraries that allow generating temporary directories in the right location independent of the OS, and that can help. </li>
+</ul>
+</li>
+<li>When the function input is large and complex and requires lots of other functions.</li>
+<li>I'm not sure if I understand it correctly but I am working with optimization (creating prediction models that should be &quot;the most accurate&quot;) and find it hard to come up with a way to test this
+<ul>
+<li>Tests here could be &quot;the result has to be better than XYZ&quot;, e.g. in what we did in linear optimisation in a project was to test that the optimisation result is better than a value that we currently achieve. 
+<ul>
+<li>I see. I was more thinking of a way to look for coding errors.
+<ul>
+<li>On a general principle: I would assume, that if I use an external lib (at least if it is anything relatively popular), their code is correct. From this point you could test very small toy-models where you expect a certain result in our optimization and test whether your code achieves this result, try to find edge-cases where you think things might go wrong, and test those.
+<ul>
+<li>Thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>using 3rd party packages or libraries</li>
+<li>When computation time takes toooo long (more than a day)
+<ul>
+<li>yes!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="6">
+<li>What is the difference between regression tests and &quot;end to end tests&quot;?
+<ul>
+<li>Yes the concept is somewhat similar. And in the end any &quot;test&quot; is a regression test, since if a code change breaks the test you notice. </li>
+<li>Are all tests &quot;regression tests&quot; then?</li>
+<li>For me it is the same thing in practice.</li>
+<li>Essentially: Regression tests are tests that keep your functionality intact based on previous results, while End-To-End can also be tests with previously known information</li>
+<li>The focus might be on having a correct result or the focus might be on not introducing changes in the results. In practice we want both but sometimes we only have the preserving part.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h2 id="exercise-until-xx-40">Exercise until xx:40</h2>
+<p>https://coderefinery.github.io/testing/pytest/#exercise-pytest</p>
+<p>Goals:</p>
+<ul>
+<li>run pytest locally</li>
+<li>try to then break the code</li>
+<li>run pytest again and see whether it detects the error</li>
+<li>if you have time left and Python is not your langauge, try to do this in your programming language
+:::</li>
+</ul>
+<ol start="7">
+<li>
+<p>One of the keypoints is: &quot;pytest collects and runs all test functions starting with test_. If run on a directory, it collects all files matching test_*.py&quot; My question: would you often write test functions within the same file/directory/package or would you make separate file with all the test functions?</p>
+<ul>
+<li>good point, you can run pytest on a directory, a package, or a file. Personally I like to keep test functions close to the code in the same file because it helps me &quot;understand&quot; them. I think most people and most projects I see prefer to have test functions in a separate file but then I need to jump between files if I want to change things. I see tests as documentation, not only as safeguard.</li>
+<li>Depends a lot on whether this is a small script or a package. For a package I would separate them, as it's then a lot easier to ship a smaller bundle. For some small scripts putting them in the same file can be easier.</li>
+<li>For me: very small tests might go in main module.  Once it gets big enough I usually separate them out.</li>
+</ul>
+</li>
+<li>
+<p>Say I have multiple files, e.g. main and utils1 and utils2. In main I import utils1, utils2. I run somethings from utils1, but I don't use anything from utils2. Does pytest in that case still run the test_.. functions from both utils1 and utils2?</p>
+<ul>
+<li>In the &quot;auto-detect&quot; mode, it would only find tests from files named <code>test_*.py</code> - so would do neither</li>
+<li>If you do <code>pytest utils1.py</code> it would do utils1 - or whatever is exactly on command line</li>
+<li>But this is configurable.  I'd say test and see what happens, I need to refresh myself every time anyway.</li>
+</ul>
+</li>
+<li>
+<p>About Java, what are the testing tools available?</p>
+<ul>
+<li>I've heard of jUnit, for example, but a web search will probably get you the best answers.  There are probably better ones.</li>
+<li>good! thank you!</li>
+</ul>
+</li>
+</ol>
+<h2 id="automated-testing">Automated testing</h2>
+<p>https://coderefinery.github.io/testing/continuous-integration/
+(Demo, you can try this yourself later!)</p>
+<ul>
+<li>Example repo: https://github.com/bast/testing-example</li>
+</ul>
+<ol start="10">
+<li>
+<p>Can I also do this automated testing using a similar script when committing locally?</p>
+<ul>
+<li>Via git hooks, you can tell it to run commands before committing.  That would be how to do it.</li>
+<li>General Git hooks (<code>pre-commit</code> is probably the one): https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks</li>
+<li>blog post: https://medium.com/@yagizcemberci/automate-unit-tests-with-git-hooks-e25e8b564c92</li>
+</ul>
+</li>
+<li>
+<p>What are some testing tools for R? </p>
+<ul>
+<li>testthat. we have an example on https://coderefinery.github.io/testing/continuous-integration/ but I admit that it is a bit complex because R often assumes that you first implement your code as package before you add testing. if you have a simpler example, it would be great to see.</li>
+<li>ah ok, thank you, good to know!</li>
+</ul>
+</li>
+<li>
+<p>I am maintaining a small package (an integrated extension) to a much larger software package, both of them are availlable on github. Can I create a workflow where I automatically run tests with my own small package when a new version of the larger package is pushed to github/master?</p>
+<ul>
+<li>One option is to run the workflow manually from GitHub. If you set up the test to install the latest version of the larger software.</li>
+<li>I'm not sure how one repo can run when another is updated (it would be a nice idea though!).  You can schedule a run so that, for example, it runs every week.
+<ul>
+<li>this is how we do it right now, but it is quite large/expensive too run, so I am searching for a better solution.</li>
+</ul>
+</li>
+<li>How about running a script locally to check for updates. So not on GitHub, but on your own system.
+<ul>
+<li>If there is a new version, it could push a small change to GitHub (version number, for example), to trigger the test there
+<ul>
+<li>smart, thanks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can one do automated testing and install a conda environment from .yml file in the workflow? In the example case we only needed to install pytest in python 3.10</p>
+<ul>
+<li>With Github Actions, yes, you can - you can do almost anything, it gives you a whole virtual system to work with.  It might take a while to resolve and install...
+<ul>
+<li>the basic python application action already would take a requirements.yml file and install those packages. but there are conda actions as well.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If one wants to do automated testing AND sphinx documentation, would they both go in the same file?</p>
+<ul>
+<li>I'd usually have two separate files that can run on different triggers.  (though documentation testing (does it build without errors?) can be part of normal testing, too!)</li>
+</ul>
+</li>
+</ol>
+<h2 id="test-design">Test design</h2>
+<p>https://coderefinery.github.io/testing/test-design/</p>
+<p>:::info</p>
+<h2 id="exercise-until-xx-45">Exercise until xx:45</h2>
+<ul>
+<li>Anything from Test Design: https://coderefinery.github.io/testing/test-design/</li>
+<li>&quot;Choose your own adventure&quot; - they go from easier to harder, so choose what you'd like</li>
+<li>Ask many questions and we will discuss when we are done.</li>
+</ul>
+<p>How's it going:</p>
+<ul>
+<li>done 1-2 exercises: oooooo</li>
+<li>done 3-4 exercises: oooo</li>
+<li>done 5-8 exercises: o</li>
+<li>done all: </li>
+<li>not trying:</li>
+<li>this was useful: ooO</li>
+<li>this was not so useful: ooo
+:::</li>
+</ul>
+<ol start="15">
+<li>
+<p>I have seen terms called &quot;snapshot&quot; and &quot;mock&quot; testing. What is the difference between them ?</p>
+<ul>
+<li>snapshot is essentially a type of end-to-end testing, where you run the code, take the result and use it to verify that any changes didn't alter it. Mocks (at least in the javascript context) are situations, where you want to test a smaller interactive portion of a larger setup by &quot;simulating&quot; (mocking) the surrounding environment, and just testng, whether the correct functions are called with the expected arguments (e.g. you have one function A that updates an Object b by calling that objects update(data) function. You would &quot;mock&quot; the B.update() function and just check, that the value given to it is what you expect.</li>
+<li>there could be a mock for a database that the test depends on, right? is that &quot;mocking&quot; in testing?
+<ul>
+<li>yes that could be an example of mock testing. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I have a question unrelated to testing, but I was hoping I could ask about it anyway. I have a project in python where I am making a map and the file becomes to large to push to github. Is there a way to work around this? I guess the best way is to make the code (or the map file yes) smaller</p>
+<ul>
+<li>Can the map be generated automatically, instead of including it in the repository?
+<ul>
+<li>Maybe.. </li>
+</ul>
+</li>
+<li>It sounds like that the map is more like &quot;data&quot; than &quot;code&quot;. If you need to keep these data under version control, there are better tools like git-annex which can integrate with external data storage systems (e.g. google drive) but not with github due to size limitations. If the map does not change much and you don't need to track its changes, then just treat it as a separate data file outside the repository.</li>
+<li>the github repo could include a small example map and for the real run it could fetch it from places like Zenodo. is the map &quot;static&quot; or does it also change very frequently?
+<ul>
+<li>this sounds like a good solution, and I would actually like to make it dynamic, but it is not at the moment. In in way I would also like to add it to a web-page to be able to share it, but maybe I can do that using git-annex also?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I have very limited coding knowledge so was quite tricky, but was interesting to go through the solutions and understand it step-by-step. </p>
+<ul>
+<li>thanks! I know it can be a bit too much</li>
+</ul>
+</li>
+<li>
+<p>I saw in the documentation of pytest that you could specify fixtures with a decorator. When would you recommend having a &quot;fixture&quot; instead of making the file dependency itself? </p>
+<ul>
+<li>Fixtures are things that can run some code to set up something for a test: for example, make a temporary directory with input files used by different tests.  I'd say they are different things? - you could use fixture for file dependency, but is most useful if there is other setup to do.</li>
+</ul>
+</li>
+<li>
+<p>Is there a way to test multiple test files ? The tutorial only has one test file.</p>
+<ul>
+<li>yes!  Once you get to that point you'd make <code>test_xxx.py</code>, <code>test_yyy.py</code>, etc.  <code>pytest .</code> or <code>pytest tests/</code> would detect everything from that directory.  This is what big projects do.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h2 id="lunch-until-xx-00-12-00-cest-13-00-eest">Lunch until xx:00 (12:00 CEST, 13:00 EEST)</h2>
+<ul>
+<li>Then &quot;modular code development&quot;: https://coderefinery.github.io/modular-type-along/
+:::</li>
+</ul>
+<ol start="20">
+<li>
+<p>I happen to have a Java code that outputs some results in txt file and then a Python code that does some machine learning analysis. For the purpose of testing (hence code maintenance etc.), is it a good practise to keep them in different sources of code? Or should I combine them in just one piece of code?</p>
+<ul>
+<li>If the two codes are clearly connected and you would not use them separately, it makes sense to have them in the same repository.</li>
+</ul>
+</li>
+<li>
+<p>Sorry if this is obvious, but in the example where you use monkey-patching, shouldn't the 'monkeypatch' be defined first in order to call <code>monkeypatch.setattr()</code> ?</p>
+<ul>
+<li>thanks! I will look later (now preparing for next lesson)
+<ul>
+<li>*defined or imported from somewhere? Thanks :) </li>
+</ul>
+</li>
+<li>So pytest has some magic behind the scenes.  When it runs a <code>test_</code> function, some arguments are <em>automatically</em> added (fixtures), if it detects something of that name.  <code>monkeypatch</code> is one of them.  It basically does work as it is, but you won't know what <code>monkeypatch</code> does without the reference: https://docs.pytest.org/en/6.2.x/monkeypatch.html
+<ul>
+<li>thanks :) </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="modular-code-development">Modular code development</h2>
+<p>https://coderefinery.github.io/modular-type-along/
+:::info</p>
+<ul>
+<li>Despite the name, this is a demo - sit back, relax, and ask questions!</li>
+<li>You'll see a little script developed from Jupyter to something that is very reusable.
+:::</li>
+</ul>
+<p>A. What does &quot;modular code development&quot; mean for you?</p>
+<ul>
+<li>ROS is a very used environment for development in robotics :), smalls pieces of code that can be shared and piped together to make a whole system</li>
+<li>Code that can be reused for different projects</li>
+<li>using object oriented programming following SOLID principles so every class and method is usable individually and easily changed without breaking the entire package.
+<ul>
+<li><a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/SOLID">SOLID</a>:</li>
+<li>Single-responsibility principle: &quot;There should never be more than one reason for a class to change.&quot; In other words, every class (and method) should have only one responsibility.</li>
+<li>Open–closed principle: &quot;Software entities ... should be open for extension, but closed for modification.&quot;</li>
+<li>Liskov substitution principle: &quot;Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.&quot;</li>
+<li>Interface segregation principle: &quot;Clients should not be forced to depend upon interfaces that they do not use.&quot;</li>
+<li>Dependency inversion principle: &quot;Depend upon abstractions, [not] concretions.&quot;</li>
+</ul>
+</li>
+<li>simplicity</li>
+<li>reusability of code snippits for future projects</li>
+<li>I can copy-paste a part of a code into a different place and it still works</li>
+<li>functions and modules</li>
+<li>Modular programming is a software design concept focussed on separating the functionality of a program into independent, interchangeable modules, which then are the building blocks, and each block contains all the parts to execute one aspect of the functionality. These blocks, aka modules, when put together make up the executable program. The code has smaller, independent, and coherent units that can be easily understood, tested, and modified as required.</li>
+</ul>
+<p>B. What best practices can you recommend to arrive at well structured, modular code in your favourite programming language?</p>
+<ul>
+<li>start small and get better.  make it easy to split later, since everything starts small. +1</li>
+<li>DRY (don't repeat yourself)</li>
+<li>Think first jump later</li>
+</ul>
+<p>C. What do you know now about programming that you wish somebody told you earlier?</p>
+<ul>
+<li>that I will have to run my code multiple times even for the same project and I will save time and energy by making it modular</li>
+<li>Not particularly &quot;earlier&quot;, but &quot;put more emphasis&quot;, being first write out like on paper what you want to program instead of starting programming immediately.</li>
+<li>When to use classes and functions (this case in python)</li>
+<li>Less is more</li>
+<li>The huge importance of writing good documentation, as you do your programming</li>
+<li>IDEs (such as VSCode) can be incredibly helpful for writing consistent code according to guidelines of a particular language, with type checking, importing linting, check function definition, git support, and so much more. </li>
+<li>Follow coding guidlines: like PEP-8, just for readability.</li>
+<li>Go to church on Sunday, and during the fellowship chat with fellow programmers. This will ensure you don't feel you have been the biggest sinner of them all. hahaha +1</li>
+</ul>
+<p>D. Do you design a new code project on paper before coding? Discuss pros and cons.</p>
+<ul>
+<li>Not the code, but I do draw algorithm diagrams on paper (or digitally) first. (History learns that I always change it later on, but it helps getting started).</li>
+</ul>
+<p>E. Do you build your code top-down (starting from the big picture) or bottom-up (starting from components)? Discuss pros and cons.</p>
+<ul>
+<li>Both, but usually I try to make it do something as soon as possible - whether top-down or bottom-up is easier depends I guess?</li>
+<li>Bottom-up always, to check I am not doing something wrong at each step</li>
+<li>Think global, act local</li>
+</ul>
+<p>F. Would you prefer your code to be 2x slower if it was easier to read and understand?</p>
+<ul>
+<li>Depends on how long it runs :)  For some things, yes.</li>
+<li>Yes because I don't work with big data</li>
+<li>absolutely, for my future self and to not be needed for explanations if I share the code</li>
+<li>Processors are designed to run faster, the human brain is designed to read and understand better</li>
+</ul>
+<ol start="22">
+<li>
+<p>Could you show the structure of temperature.csv? For thinking of ideas for various implementation or additions</p>
+<ul>
+<li>there, shown.  I'll make a copy here:</li>
+<li>Github can preview csv nicely: https://github.com/coderefinery/modular-type-along/blob/main/data/temperatures.csv</li>
+<li>Year,m,d,Time,Time zone,Air temperature (degC)</li>
+<li>2022,1,1,00:00,UTC,-2.1</li>
+<li>Thanks!</li>
+</ul>
+</li>
+<li>
+<p>Suggestions:</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Plot the temperatures of each hour in a day for each day in a month. Each day may have a different color or a different opacity</li>
+<li><input disabled="" type="checkbox"/>
+Write a table that includes the mean temperature value of one year for each year in the dataset 
+<ul>
+<li>good idea. here we recompute known data few times. </li>
+<li>Yes! This actually requires what we've been doing so far since you need a flexible plot function</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Add x axis label and y axis label. </li>
+<li><input disabled="" type="checkbox"/>
+Write a function to visualize and save the image, with the flag 'save_plot', if True, then save to the uniform filename and path.
+<ul>
+<li>This does not work, because after savefig must be plt.show() executed.</li>
+<li>Moreover, it is better to write a vis function as follow: fig = plt.figure(); ax = plt.add_subplots(111); ax.plot(); ax.set_xlabel(); ...; fig.savefig(); fig.show();</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+Store all plots under ./images directory.
+<ul>
+<li>good idea! we might postpone this this time</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Good pracitce in jupyter notebook is keep all imports in separated cell, to not import over and over again. (By deafult it's ofcourse store in cache, but for more heavier packages it can be annoyin)</li>
+<li><input disabled="" type="checkbox" checked=""/>
+read the data before the for loop, no need to read for every temp</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Specify the type of data which function take and return. &quot;def add(a: int, b: int) -&gt; int:&quot;
+<ul>
+<li>This can be very powerful when using linting extensions in IDEs that already show errors in types before run time (&quot;static type checking&quot;)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+maybe you could make your read_data function sensitive for different headers when reading from pandas. You can add something like <code>def read_data(nrows, file_name='temperatures.csv', header='Air temperature (degC)')</code>. To default to the temperature measurement, but make it more adaptable for later use.</li>
+<li>Better practice is indeed to pass mean as an argument. Otherwise, you would let plot_temperatures depend on <code>compute_statistics</code>, introducing coupling that is (in my opinion) not necessary. </li>
+<li><input disabled="" type="checkbox" checked=""/>
+should read_data_from_File still return temperatures?</li>
+<li><input disabled="" type="checkbox"/>
+When working with scripts, good practice is to use <code>if __name__ == &quot;__main__&quot;:</code> directive. All functions should be defiend before, and also function <code>main()</code> should be defined. under directive, only <code>main()</code> execution and arguments parses should be performed.
+<ul>
+<li>thanks! we might but it might also be confusing for those who don't write Python but for Python scripts this is good practice</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Create test functions 
+<ul>
+<li>that checks whether the mean is calculated correctly (specify a array and check the known mean value?)
+<ul>
+<li>yes we will do, thanks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+Add the &quot;requirements.txt&quot; file to improve reproducibility? +1
+<ul>
+<li>thanks! yes. in a moment</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+I think that it is included in the pandas code already, but you might want to add a custom <code>try and except</code> for the existense of the file and or header. (probably redundant in this case at it is caputred in Pandas already, but this might be good practice for other code parts)</li>
+<li><input disabled="" type="checkbox"/>
+This example is too small, but when to split up the functions and the execution part of the code into different files?</li>
+</ul>
+</li>
+<li>
+<p>JupyterNotebook tips:</p>
+<ul>
+<li>'Escape + a' create cell above</li>
+<li>'Escape + b' create cell below </li>
+</ul>
+</li>
+<li>
+<p>Could you also make a function that takes num_measurements as input?</p>
+<ul>
+<li>thanks! good idea. working on it.</li>
+</ul>
+</li>
+<li>
+<p>could it be savefig() after show() ?  Not sure...</p>
+<ul>
+<li>+1 show may not be needed</li>
+</ul>
+</li>
+<li>
+<p>yes, .clf() probably clears to prepare for the next plot.</p>
+<ul>
+<li>thanks</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to add all files ending in &quot;.png&quot; to gitignore?</p>
+<ul>
+<li>thanks
+<ul>
+<li>was this now done for all &quot;remaining files&quot; or in general based on the ending of the file? e.g. if I would run it again with a different num input I'd like ti to automatically be ignored
+<ul>
+<li>I don't remember but ideally the file should contain <code>*.png</code> to ignore all PNG files which in this case we consider generated</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-until-xx-05">Break until xx:05</h3>
+<ul>
+<li>then looking at command line interfaces and modularity outside Python
+:::</li>
+</ul>
+<p>Suggestions from after the break - focusing on making it reusable from outside of this one script: as a module, command line, etc:</p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Splitting functions into another module</li>
+<li><input disabled="" type="checkbox"/>
+(from above): <code>if __name__ == &quot;__main__&quot;</code>
+<ul>
+<li>this would be a good thing to do but we might not to not confuse those who are not using Python. it is a bit Python specific.
+<ul>
+<li>could you nevertheless explain why/when this would be a good thing? </li>
+<li>I'll explain below</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+command line interface
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+specify input and output
+<ul>
+<li>(should these be positional arguments instead of --options)?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+help arguments</li>
+<li><input disabled="" type="checkbox" checked=""/>
+options to select date range, averaging, etc.</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox" checked=""/>
+make a part of that reusable somewhere else</li>
+<li><input disabled="" type="checkbox"/>
+script to run on multiple input files?
+<ul>
+<li>Better to have it run one thing at a time and script outside (e.g. Snakemake?)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+Can we have it change to a different colour depending on the mean temps? Eg: cooler temps would be blue, warmer yellow, and hot red
+<ul>
+<li>oh that would be cool. do you know how?</li>
+<li>unfortunately not, but I did find this which might be helpful? https://www.freecodecamp.org/news/how-to-change-color-in-matplotlib/ perhaps there's a way to make it dependent on the mean temp
+<ul>
+<li>You could add a function that takes the mean, and compares the mean to a certain range of temperatures, e.g., 0-10 green, 10-20 yellow, 20-30 orange, 30+ red. It returns the colour. Then you could pass the colour to the plot function.</li>
+<li>It would be cool to see if it works!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+end-to-end test? (yes just running without errors is enough of a test!)</li>
+<li><input disabled="" type="checkbox"/>
+Instead of making an integer mandatory at the input, you can also convert all integers of floats to integers (still you need to reject text in some way).</li>
+<li><input disabled="" type="checkbox"/>
+Running in parallel?</li>
+<li><input disabled="" type="checkbox"/>
+Run on computer cluster? (overkill here but discuss how it's now possible?)</li>
+</ul>
+<ol start="28">
+<li>
+<p>I didn't know there was a statitics standard lib!</p>
+<ul>
+<li>I also either forgot or never knew.</li>
+</ul>
+</li>
+<li>
+<p>Comments on Python environments and vscode?  Like how to specify run environment / how it detects the interperter?</p>
+</li>
+<li>
+<p>In Python: <code>if __name__ == &quot;__main__&quot;:</code> - why?</p>
+<ul>
+<li>If you <code>import plot_temperatures.py</code>, it'll define the functions in it but also <em>run the script that's in there</em> - that's probably not wanted when you import something!</li>
+<li><code>__name__</code> is name of current module, and it is <code>&quot;__main__&quot;</code> when you run <code>python that_scrit.py</code>.  So you can detect if it's <code>import</code>:ed or run as a script</li>
+<li>So usually you'd do something like:</li>
+<li><code>if __name__ == &quot;__main__&quot;:</code>
+<code>    main()</code></li>
+<li>and define the script function in <code>main()</code>.  Now you can both import this and run it as a script</li>
+<li>THANKS!</li>
+</ul>
+</li>
+<li>
+<p>How does click compare to argparse?</p>
+<ul>
+<li>click is sort of nicer since you can define things straight on functions like this.  It's less work and easier to read
+<ul>
+<li>those arguments are only defined for the function right below the click.command() or can be used for other functions as well? </li>
+</ul>
+</li>
+<li>But argparse is built-in, so doesn't require any extra dependency management</li>
+<li>So take your pick.</li>
+<li>both are basically equivalent. if you want to compose libraries that have CLI into something bigger, then click is nice</li>
+</ul>
+</li>
+<li>
+<p>Could you share the code that you wrote now?</p>
+<ul>
+<li>We'll probably post it after the workshop - stay tuned.</li>
+<li>(next time we should push to Github so that you all can see each time we commit+push)</li>
+<li>Can see a model from the instructor guide (we didn't exactly follow this): https://coderefinery.github.io/modular-type-along/instructor-guide/
+<ul>
+<li>Great thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How often do you use git from the command line and from VSCode?</p>
+<ul>
+<li>most of the time from vscode these days</li>
+</ul>
+</li>
+<li>
+<p>Great session after lunch! Really interactive and helpful to see how to approach writing software.</p>
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+</ol>
+<h2 id="example-result">Example result</h2>
+<p>https://github.com/rantahar/plot_temperatures_example</p>
+<h2 id="outro">Outro</h2>
+<p>https://github.com/coderefinery/workshop-outro/blob/master/README.md</p>
+<h2 id="feedback-day-6-1">Feedback, day 6</h2>
+<h3 id="today-was-1">Today was:</h3>
+<ul>
+<li>Too fast:</li>
+<li>just right: ooooooo</li>
+<li>too slow:</li>
+<li>too easy:</li>
+<li>right level:oo</li>
+<li>too hard:</li>
+<li>Exercises were good: ooo</li>
+<li>I would recommend today to others: oooooo</li>
+<li>I wouldn't recommend today: </li>
+</ul>
+<h3 id="one-thing-good-about-today-1">One thing good about today:</h3>
+<ul>
+<li>Loved the interactive coding session in the afternoon, it was very nice to see how others approach a problem and problem solve together :) </li>
+<li>...</li>
+<li>Fully coding up a problem and pair programming with comments was great. </li>
+</ul>
+<h3 id="one-thing-to-be-improved-for-next-time-1">One thing to be improved for next time:</h3>
+<ul>
+<li>I think it would be good to take more time for more complex subjects, e.g., automated testing went by quite quickly. </li>
+<li>Many threads to follow up on in the future adds a bit to cognitive load, so introducing these later would be great. 
+<ul>
+<li>yes. I believe the main focus was opinionated in a very appropriate way, covering the majority use cases. Hence completing things is great. </li>
+</ul>
+</li>
+<li>Keeping interactivity is probably most engaging.</li>
+<li>Day 3 dropped from being very practical with Git to much higher level, which was a hard change of pace to follow. </li>
+<li>...</li>
+</ul>
+<h3 id="any-other-comments-1">Any other comments:</h3>
+<ul>
+<li>This was the best workshop I've attended so far. Thanks everyone!</li>
+<li>...</li>
+</ul>
+<h2 id="q-a">Q&amp;A</h2>
+<p>:::info</p>
+<ul>
+<li>Thanks to everyone who attended!</li>
+<li>Our website and the outro contains follow-ups for the future</li>
+<li>Now we can answer questions about anything</li>
+<li>Instructor Zoom posted for &quot;meet the instructors&quot; after we are done.
+<ul>
+<li><strong>Zoom, meet instructors:</strong> https://aalto.zoom.us/j/65754790415?pwd=U3k4UHBod1dpK1g1S0RreXE5ZjVZdz09</li>
+</ul>
+</li>
+</ul>
+<h3 id="thank-you-to-all">Thank you to all!</h3>
+<p>:::</p>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-09-19-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
