@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 2 - CodeRefinery workshop September 19-21 and 26-28, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-09-19-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 2</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-09-19-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 2</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#please-continue-asking-questions-about-content-from-day-1">Please continue asking questions about content from day 1?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#icebreaker-questions-day-2">Icebreaker questions, day 2</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#i-am-watching">I am watching:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#what-should-the-mascot-of-this-month-s-workshop-be-vote-for-ideas-by-adding-o-multiple-votes-ok">What should the mascot of this month&#x27;s workshop be? (vote for ideas by adding &quot;o&quot;, multiple votes OK):</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#what-has-been-your-most-collaborative-project-so-far-tech-or-not-how-many-people-and-how-did-you-work-do-not-put-names-or-identifying-information-on-this-page">What has been your most collaborative project so far (tech or not)? How many people and how did you work? Do not put names or identifying information on this page.</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#introduction-to-version-control-continued">Introduction to version control (continued)</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#exercise-until-xx-45">Exercise: until xx:45</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#exercise-until-xx-45-1">Exercise: until xx:45</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#break-until-xx-05">Break until xx:05</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#inspecting-history">Inspecting history</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#exercise-until-xx-55">Exercise until xx:55</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#lunch-break-until-xx-00">Lunch break until xx:00</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#undoing-and-recovering">Undoing and recovering</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#exercises-undoing-and-recovering-until-xx-42">Exercises: undoing and recovering, until xx:42</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#break-until-xx-05-1">Break until xx:05</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#practical-advice-and-general-q-a">Practical advice and general Q&amp;A</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#feedback-day-2">Feedback, day 2</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#today-was">Today was:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#one-thing-good-about-today">One thing good about today:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#one-thing-to-be-improved-for-next-time">One thing to be improved for next time:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#any-other-comments">Any other comments:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day2/#workshop-mascot-anyone-offer-to-draw-it-and-we-ll-combine-with-cr-logo">Workshop mascot?  Anyone offer to draw it? (and we&#x27;ll combine with CR logo)</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="please-continue-asking-questions-about-content-from-day-1">Please continue asking questions about content from day 1?</h2>
+<p>To find questions and answers from yesterday, please follow link above</p>
+<ol>
+<li>
+<p>RB: Oh no, did we forget to mention tags?</p>
+<ul>
+<li>Answering my own question: yes! But they are important: https://coderefinery.github.io/git-intro/branches/#tags</li>
+<li>They are like branches but don't move and can be used as milestone markers along the Git history
+<ul>
+<li>this sounds intenresting, do we do exercise on this today?
+<ul>
+<li>No, but please refer to the link above for more info.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Sorry for this question but I guess I missed sth. So these changes/merges/branches are local. How to sync with local and web? Is it possible? I mean when I create a project from terminal, may I have an ability to modify from web interface or vice versa? </p>
+<ul>
+<li>great question. everything so far was local. today we will give a preview on how to share with web and tomorrow we will do that in depth.</li>
+<li>thanks for the clear answer :)</li>
+</ul>
+</li>
+</ol>
+<h2 id="icebreaker-questions-day-2">Icebreaker questions, day 2</h2>
+<h3 id="i-am-watching">I am watching:</h3>
+<ul>
+<li>by myself: oooooooooo</li>
+<li>in an organized group: ooooooooo</li>
+<li>group is online: ooooo</li>
+<li>group is in-person: oooooooooo</li>
+<li>by myself</li>
+</ul>
+<h3 id="what-should-the-mascot-of-this-month-s-workshop-be-vote-for-ideas-by-adding-o-multiple-votes-ok">What should the mascot of this month's workshop be? (vote for ideas by adding &quot;o&quot;, multiple votes OK):</h3>
+<ul>
+<li>cat: oooooooo</li>
+<li>gopher: oooo</li>
+<li>tree of souls from Avatar (symbolising git): o</li>
+<li>git goat: oo</li>
+<li>...: </li>
+<li>A hedgehog (HedgeDoc) oooo</li>
+<li>Shiba inu: o</li>
+<li>not sure if one is necessary o</li>
+</ul>
+<h3 id="what-has-been-your-most-collaborative-project-so-far-tech-or-not-how-many-people-and-how-did-you-work-do-not-put-names-or-identifying-information-on-this-page">What has been your most collaborative project so far (tech or not)? How many people and how did you work? Do not put names or identifying information on this page.</h3>
+<ul>
+<li>a project for my PhD thesis but we were only two persons</li>
+<li>have to say CodeRefinery lessons and web page :D</li>
+<li>A lab project as a pair</li>
+<li>A paper with several labs collaborating </li>
+<li>A course on R programming where we had two shared notebook for the code alongs and the exercises. It was super nice to have that all in a shared repository.</li>
+<li>raising children ;-) it takes a village &lt;3 well said:))</li>
+<li></li>
+<li>I am working on a git project with the HCP centre at my university. My research group has a tool which works fine for our goals, but can be improved for other research projects. Our HPC centre is supporting us in this improvement.</li>
+<li>Continuous work on an online tool called the &quot;MarINvaders&quot; that connects and harmonizes data from different databases. This has been going on for a while on Gitlab and is currently being simply maintained although some projects will build on top of this repository.</li>
+</ul>
+<h2 id="introduction-to-version-control-continued">Introduction to version control (continued)</h2>
+<p>https://coderefinery.github.io/git-intro/remotes/</p>
+<ol start="3">
+<li>
+<p>From twitch: for this random question, but I tried to learn git from different ressouces, but I think the best way is to learn while working on big projects, but unfortunately its not a given to be a part of big projects for beginners, what do you think?</p>
+<ul>
+<li>Open source projects are often happy to receive contributions no?
+<ul>
+<li>At least they often have contribution guidelines to make contributions easier and to keep them in the project's style</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is using GitHub for sharing and synchronizing the codes across the machines good practice? Not for version controling?</p>
+<ul>
+<li>You mean you wouldn't try to version control using it or ... ?</li>
+<li>It is a viable way to sync your code eg. between a local computer and a remote computer. The version control kind'a just happens there also</li>
+</ul>
+</li>
+<li>
+<p>Is creating a private git repository on the web safe? </p>
+<ul>
+<li>I'd say it's not &quot;API-key safe&quot; ie. don't put personal/sensitive information there</li>
+</ul>
+</li>
+<li>
+<p>Are GitHub and GitLab similar and how to choose where to store your projects?</p>
+<ul>
+<li>Pretty similar in general spirit.  GitLab can be self-hosted so for example you can use one run by your own organization.</li>
+<li>Some differences in terminology but general functionality is about the same</li>
+</ul>
+</li>
+<li>
+<p>Can one use GitHub not only for code but also to collaboratively work on datasets? To share with colleagues and multiple people modifying it.</p>
+<ul>
+<li>Not for big datasets or images or videos. Such media should be stored in other places such as cloud storage and the code or collaborative documents can be stored on GitHub. </li>
+<li>I've sometimes done that for small things.  It's not really designed for large data.</li>
+</ul>
+</li>
+<li>
+<p>A third authotication method would be using Personal access tokens right? Is there like a tier list for access methods?</p>
+<ul>
+<li>Yeah, you could.  If you're askng that question, you probably know how to do it :)</li>
+<li>Though it's a bit less secure since it's basically a reusable password so we don't give it as an examlpe.</li>
+</ul>
+</li>
+<li>
+<p>Can I use my own recipe repository even though I didn't quite finish yesterday?</p>
+<ul>
+<li>Yes.</li>
+<li>the main point here is that we are able to push a repository. in this case does not matter so much what is in the repository. but please still compare histories locally and on the web.</li>
+</ul>
+</li>
+<li>
+<p>I am bit confused, weren't we creating online github repository (recipe) yesterday ?</p>
+<ul>
+<li>We only worked on our local computers, at least if you follow the lesson. Maybe you were part of a group that create a remote repository as an extra exercise?
+<ul>
+<li>But wasn't it one of extra excercises?
+<ul>
+<li>Do you have a link to the exercise you have in mind?</li>
+<li>https://coderefinery.github.io/git-intro/basics/</li>
+<li>Part Creating a repository Browser (github)
+<ul>
+<li>I stand corrected. Indeed you could do the same steps in the exercise on GitHub instead of your local computer. That is useful especially if you do some minor changes to your repo.</li>
+<li>Ok, understood, I was thinking I confused sthg</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>RB: sorry for confusion here. Indeed we offered parts of yesterday to do on the web as alternative. in this case you have a repo on GitHub already. What I would try now is:
+<ul>
+<li>clone it and push it to a new repo that you create on github</li>
+<li>create a mini repo locally from the command line and try to push that one</li>
+<li>My problem is that I am new to github and I cannot find option to add ssh authenthication now as it was not the part of yesterday exercise</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h2 id="exercise-until-xx-45">Exercise: until xx:45</h2>
+<p>https://coderefinery.github.io/git-intro/remotes/#authenticating-to-github-ssh-or-https</p>
+<ul>
+<li>Check the sections there</li>
+<li>Goals (pushing from your computer to Github, if you did on your computer yesterday):
+<ul>
+<li>create empty repository on Github</li>
+<li>push your Git repository from your computer to the GitHub repository</li>
+<li>also experiment with cloning a repository (you might then need to clone it to a different directory)</li>
+<li>compare histories locally and on the web</li>
+<li>inspect &quot;git log&quot; after the clone</li>
+</ul>
+</li>
+</ul>
+<p>Exercise feedback:</p>
+<ul>
+<li>I am done: ooooooo</li>
+<li>I need more time: </li>
+<li>I not trying: </li>
+<li>it was easy: </li>
+<li>it was just right: o</li>
+<li>it was hard: </li>
+<li>I am confused :) o
+<ul>
+<li>There will be a demo before we resume with the lesson, so hopefully there will be no more confusion.
+:::</li>
+</ul>
+</li>
+</ul>
+<p>:::info</p>
+<h2 id="exercise-until-xx-45-1">Exercise: until xx:45</h2>
+<p>https://coderefinery.github.io/git-intro/remotes/#authenticating-to-github-ssh-or-https</p>
+<ul>
+<li>Check the sections there</li>
+<li>Goals (pushing from your computer to Github, if you did on your computer yesterday):
+<ul>
+<li>create empty repository on Github</li>
+<li>push your Git repository from your computer to the GitHub repository</li>
+<li>also experiment with cloning a repository (you might then need to clone it to a different directory)</li>
+<li>compare histories locally and on the web</li>
+<li>inspect &quot;git log&quot; after the clone</li>
+</ul>
+</li>
+</ul>
+<p>Exercise feedback:</p>
+<ul>
+<li>I am done: ooooooo</li>
+<li>I need more time: </li>
+<li>I not trying: </li>
+<li>it was easy: </li>
+<li>it was just right: o</li>
+<li>it was hard: </li>
+<li>I am confused :) o
+<ul>
+<li>There will be a demo before we resume with the lesson, so hopefully there will be no more confusion.
+:::</li>
+</ul>
+</li>
+</ul>
+<ol start="11">
+<li>
+<p>After setting up an ssh token for gitlab, the command ssh -T git@gitlab.com works in command prompt, but it does not work in git bash.
+EDIT: turns out bash home is set to a university remote drive, so its looking for the key in the wrong place I think. changing the home variable to the proper drive doesn't seem to work though and it resets after rebooting. So anyway to change the bash home variable permanently? (I tried export HOME=/c/users/me, but this doesn't help at first and it switches back to a different drive on reboot)</p>
+<ul>
+<li>hmm .... (thinking)
+This is my problem (using VDI, Helsinki University): 'Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).'</li>
+<li>This is something we recommend to check with your local organisation's IT-support</li>
+</ul>
+</li>
+<li>
+<p>When we create the remote on command line, does it become public or private on github?</p>
+<ul>
+<li>on the command line a remote is a placeholder for a web address. but it does not know whether the web address is private or public. only thing the local git cares about is whether it has write permissions to it so that's why we need to authenticate.</li>
+<li>When made on command line, it's not online at all.  Decision is made when you &quot;make new repository&quot; on github/gitlab.
+<ul>
+<li>correct, the remote is actually only a file that exists locally and it has a name, typically &quot;origin&quot; and contains a web address. that's it.</li>
+<li>okay, thanks! I just wanted to avoid publishing something by accident :D</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Could you explain these lines a bit more: Add a remote reference with the name “origin”, Rename current branch to “main”, Push branch “main” to “origin”? Specifically, what is meant by &quot;remote reference&quot; and why did we have to rename the branch if it was already called main (from yesterday)?</p>
+<ul>
+<li>OK, the &quot;Add a remote reference with the name origin&quot; is the explanation for the command <code>git remote add origin git@github.com:USER/recipe.git</code>. Explanation: remote is a git repository somewhere else, behind some web address. in this case the web address is the github address. &quot;origin&quot; is a name to that address. then from here on we can refer to &quot;origin&quot; and git will know we mean github.</li>
+<li>the renaming part has no effect here. we added it here because:
+<ul>
+<li>github shows it anyway so we wanted to explain what it would do</li>
+<li>it is a safety net for those who created &quot;master&quot; yesterday (github has by default &quot;main&quot; as default branch)</li>
+<li>no effect and no harm for those who have &quot;main&quot; already </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>All went well, but now I ask myself whether by cloning the recipe folder locally I will be able to see my change history from yesterday. In other words is the info in <code>.git</code> also pushed on GitHUb and can been seen/cloned?</p>
+<ul>
+<li>In git, every copy has all history.  If you pushed to Github, and made a new clone, you'd have all the same history.
+<ul>
+<li>ok, thank you. However, if I compare the two folders (old vs newly cloned) I can see that the history is very similar but some branches are not there in the newly cloned. Is there a reason for that? ah ok this is maybe becuase I only pushed Main? Now I pushed the branch <code>like-cilantro</code> and there is a new branch in my online version. Ok, so I guess this is the reason. Can one push all branches at once? Like the whole project on the local machine?
+<ul>
+<li>we pushed only the main branch. try also pushing the other branches. you can also <code>push --all</code> (all branches). after that you should see identical histories.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After pushing the repository to github all branches are gone in the online version. I am only left with the main branch.</p>
+<ul>
+<li>You mean locally, or on Github?  <code>push</code> by default only pushes the branch you say - the remote wont' have the others.  Unless you push them, which is also normal to do if you want.
+<ul>
+<li>Locally it is still in the state from before. The version on GitHub only has the main branch. In that case I see why thanks!
+As a follow up is there a possibilty to push all branches at once?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I cloned your repository despite having a local one. Now I am getting an error message when I try to push. How can I resolve this? </p>
+<ul>
+<li>Hm.  It depends on where you cloned and where you are now.  Are you in the original or second one?</li>
+<li>~/recipe/recipe (main)</li>
+<li>I deleted the cloned recipe and it worked thanks! </li>
+</ul>
+</li>
+<li>
+<p>What is the difference between SSH and HTTPS? I there a preferable one to use?</p>
+<ul>
+<li>shh known as Secure shell protocol, used to secure services over the network. It uses the key pair (public and private). Using the shh protocol, you can connect and authenticate to remote servers. You can connect to Github/Gitlab without your username and personal token each time </li>
+<li>ssh is more secure than https option. </li>
+</ul>
+</li>
+<li>
+<p>Can I think of origin as the remotes HEAD, or what is origin?</p>
+<ul>
+<li>You should think of origin as a reference for the remote repository.</li>
+<li>remote is a reference to a web address</li>
+<li>HEAD is reference to a branch or a commit</li>
+<li>there is a HEAD in your local repo and also a HEAD in the remote repo</li>
+</ul>
+</li>
+<li>
+<p>Where can I see the history on Github, similar to if I type &quot;git graph&quot;? It seems like now all of the history is gone.</p>
+<ul>
+<li>It should be basically the same.  The git basic history view doesn't show the graph connections, but Insights &gt; Network shows a similar network view.</li>
+</ul>
+</li>
+<li>
+<p>I find some parts confusing when setting a remote repo. </p>
+<ol>
+<li>git remote add origin git@github.com:USER/recipe.git 
+So &quot;git remote add&quot; is the command, and is &quot;origin&quot; just a name we are giving to the remote repo? </li>
+</ol>
+<ul>
+<li>Yes, &quot;origin&quot; is just a name.</li>
+</ul>
+<ol start="2">
+<li><code>git branch -M main</code> why do I need o create a new branch called main? I already have the main branch locally. </li>
+</ol>
+<ul>
+<li>The command rename the branch you're on to main. It's an extra step we added to make sure everyone has the same name for the branch.</li>
+</ul>
+<ol start="3">
+<li><code>git push -u origin main</code> &quot;u&quot; indicates upstream according to the documentation, what does that mean? And why am I pushing from origin to main, shouldn't it be the other way around?</li>
+</ol>
+<ul>
+<li>This command means: push the commit changes in my local branch called main to a remote branch with the same name. <code>-u</code> means: create a correspondence between the two branches so that next time you push this branch, it's enough you type <code>git push</code> instead of <code>git push -u origin main</code>. 
+<ul>
+<li>Perfect, thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Do you always call it &quot;origin&quot;? in this part: Add a remote reference with the name “origin”</p>
+<ul>
+<li>The default name is origin, but you can give it [almost] any name.</li>
+</ul>
+</li>
+<li>
+<p>I accidentally cloned my repository to the wrong folder. Can I move it somehow?</p>
+<ul>
+<li>You can move the whole repository somewhere else, no problem. Just make sure you do not move it inside another existing Git repository.</li>
+<li>How would I do that? </li>
+<li>in the Bash shell, <code>mv</code> moves it.  If you can find it by the file browser on your computer, that works too (and is probably simpler)</li>
+<li>Thanks! :)</li>
+</ul>
+</li>
+<li>
+<p>SSH keys. I had to remove the deploy keys from yesterday's and add to the new. Any way to do it more elegantly? </p>
+<ul>
+<li>Ah.  You set your SSH key as a deploy key to a single repository?</li>
+<li>Try going to &quot;Your settings&quot; and then &quot;SSH and GPG keys&quot;, and you can set keys for your whole user - it works for all of your repositories then.</li>
+</ul>
+</li>
+<li>
+<p>As I was pushing from github online to my local version I received following error:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>! [rejected]        main -&gt; main (fetch first)
+</span><span>error: failed to push some refs to &#39;github.com:USER/recipe.git&#39;
+</span><span>hint: Updates were rejected because the remote contains work that you do not
+</span><span>hint: have locally. This is usually caused by another repository pushing to
+</span><span>hint: the same ref. If you want to integrate the remote changes, use
+</span><span>hint: &#39;git pull&#39; before pushing again.
+</span><span>hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+</span></code></pre>
+<ul>
+<li>see troubleshooting box, it explains and shows how to recover, it's the error with &quot;contains work that you do not have&quot;
+Or the problem is that I have README as I prepared online github following yesterdays excersise</li>
+<li>Search for &quot;trobleshooting&quot; on this page: https://coderefinery.github.io/git-intro/remotes/. The solution you need is under &quot;remote contains work that you do not have&quot;.</li>
+</ul>
+</li>
+<li>
+<p>If I want to clone the repository with this command: <code>$ git clone git@github.com:USER/recipe.git</code>, should I be at the main directory or in the recipe directory? </p>
+<ul>
+<li>Main directory.  It gets put as a new directory where you are - and you probably don't want sub-repositories.</li>
+</ul>
+</li>
+<li>
+<p>Can you explain the aim of setting an SSH key? (Sorry for this silly question). Months ago I set it for my UiO Git account. When I tried to run the command <code>ssh -T for my personal Git account</code> (because I do the exercises on my personal account), it asks me to write:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>Enter passphrase for key &#39;/Users/myusername/.ssh/id_rsa&#39;:
+</span></code></pre>
+<p>I wrote and </p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>Hi USERNAME! You&#39;ve successfully authenticated, …
+</span></code></pre>
+<p>What did I do during this process :))</p>
+<ul>
+<li>The command <code>ssh -T</code> is used for testing in this case. So you just tested that you can log in.</li>
+<li>Since the test was succesful, it means you should be able to clone from and push to the UiO Git system.</li>
+</ul>
+</li>
+<li>
+<p>Why do we run <code>git branch -M main</code>?</p>
+<ul>
+<li>This names the first branch you create &quot;main&quot;.
+<ul>
+<li>The default name for your first brach used to be &quot;master&quot;, but many systems are moving to the name &quot;main&quot; and expect that to be the first branch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Why are we calling 'repository'? and not just 'local' or 'remote' folders or projects? Do we mean some specific meaning to emphasize?</p>
+<ul>
+<li>A project can have multiple repositories. A repository can have multiple folders.
+<ul>
+<li>Here, 'recipe' is a repository or project?
+<ul>
+<li>I would say it is both in this case, a project with a single repository. I don't think we need to be too strict with the semantics in the end, depending on the case one can guess if a project is a collection of repositories or if a project equals a repository. Github offers &quot;GitHub projects&quot; which is a tool to manage various repositories part of the same project (out of the scope of this course).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>So &quot;push&quot; and &quot;pull&quot; basically just means uploading and downloading to/from GitHub?</p>
+<ul>
+<li>Yes</li>
+<li>to/from a (web) address of our choice. one can even clone and pull/push on the same computer between two repositories.</li>
+</ul>
+</li>
+<li>
+<p>On GitLab I can use <code>git push --set-upstream git@gitlab.com:username/repo_name.git main</code> to create a repository named repo_name without needing to create it manually like we do in the exercise. Is this a gitlab specific thing? </p>
+<ul>
+<li>The remote repository needs to exist only on GitHub or GitLab before you push, but it can be empty before you <code>push</code>.</li>
+<li>100% something I have done on GitLab, so the answer: you can't is not very satisfactory</li>
+</ul>
+</li>
+<li>
+<p>I get the following error, after the push command (<code>git push -u origin main</code>)</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>ERROR: Repository not found. fatal: Could not read from remote   repository. Please make sure you have the correct access rights and the repository exists.
+</span></code></pre>
+<ul>
+<li>Is the <code>git remote add</code> command correct?</li>
+<li>I used: <code>git remote add origin git@github.com:USER/recipe.git</code> (with the correct USER), which gives back: <code>error: remote origin already exists.</code></li>
+<li>?</li>
+</ul>
+</li>
+<li>
+<p>Is 'origin' an arbitrary name that we can change or is it Github-specific?</p>
+<ul>
+<li>&quot;Origin&quot; is the default name for the remote, but it can be changed as you wish.</li>
+<li>if you clone a repo, it will set origin as the place where you cloned from. you can rename to a different name and also define additional remotes (more tomorrow)</li>
+</ul>
+</li>
+<li>
+<p>It would make more sense to have git push [source]  [target]..., right?</p>
+<ul>
+<li>Yeah, but not everyone thinks the same way. :)</li>
+<li>I think it is better, so that we don't need to type the entire URL all the time :)</li>
+</ul>
+</li>
+<li>
+<p>I get this error git: 'graph' is not a git command. See 'git --help'.</p>
+<ul>
+<li>This is an alias we defined yesterday, see below</li>
+<li>you can type this <code>git config --global alias.graph &quot;log --all --graph --decorate --oneline&quot;</code> +1</li>
+</ul>
+</li>
+<li>
+<p>Where was the insights part in Github where you saw a graphical display of the branches?</p>
+<ul>
+<li>Insights -&gt; Network</li>
+<li>Top bar where &quot;Code, Issues, Pull requests...&quot; (it may be hidden) &gt; Insights</li>
+</ul>
+</li>
+<li>
+<p>When I pull from remote repository to update my local repository, if my local file A is different from the remote file A, will it be merged or overwrite, or will it give me a conflict message?</p>
+<ul>
+<li>It goes to the conflict resolution process we practiced yesterday.</li>
+<li>great question. when we <code>git pull</code>, we always also implicitly merge. Most of the time there won't be a conflict. if the same portion was modified differently locally and on remote, there will be a conflict during the <code>git pull</code> step (<code>git pull</code> is <code>git fetch</code> followed by <code>git merge</code>; we did not explain that yet -&gt; tomorrow)</li>
+</ul>
+</li>
+<li>
+<p>what if I merge a branch into the main branch and then I realize I shouldnt have done that. Can I still go back to the version that they were not merged? In that case what will happen to the other mergings and progressions that I made later on (after the wrong merging)?</p>
+<ul>
+<li>This is a bit more complicated, but you can. </li>
+<li>You need the HASH of the commit before the merge. You can find it using <code>git log</code>.</li>
+<li>Then to move the main brach to that commit, use <code>git reset --hard HASH</code>. </li>
+<li>If you have already pushed the changes to another repository, this will not undo the changes there.</li>
+<li>we will discuss recovering from mistakes later today. one command we will show is <code>git revert</code> and one can revert also merge commits. the difference between <code>revert</code> and <code>reset</code> is that the first adds a new commit that undoes something that happened previously, the latter modifies history. morale of the story: use <code>git revert</code> if you need to undo something that other people already depend on since <code>git revert</code> will not change the history in the past for other people.</li>
+</ul>
+</li>
+<li>
+<p>I deleted a branch yesterday. It is not on the github web now, clearly. Is it still possible to restore it?</p>
+<ul>
+<li>yes one can create a branch and let it point again to a past commit. in the next episode we will learn how. but if you want to try: <code>git branch BRANCHNAME HASH</code> (where HASH is the identifier of the commit where you want your branch to point to)</li>
+<li>if you want to find out &quot;where did the branch that I deleted point to?&quot;, use <code>git reflog</code> (we did not explain or show reflog at all)</li>
+</ul>
+</li>
+<li>
+<p>Why do we only see the main branch in the remote? Where are the other branches we created yesterday?</p>
+<ul>
+<li>we pushed only &quot;main&quot;, try pushing also the others or try <code>git push --all origin</code></li>
+</ul>
+</li>
+<li>
+<p>Instead of doing <code>git remote add origin git@github.com:USER/recipe.git</code> and ‘git push -u origin main’ could you also do <code>git push -u git@github.com:USER/recipe.git main</code>? Or do you need to define the address as something remote?</p>
+<ul>
+<li>I think that yes, you can!  I rarely do it.</li>
+<li>yes! I use this sometimes. &quot;origin&quot; is only a placeholder and instead you can always use the full web address.</li>
+</ul>
+</li>
+<li>
+<p>Is there a way of enabling <code>ctrl+v</code> in your terminal?</p>
+<ul>
+<li>Which operating system? In Ubuntu (and many other Linuxes), <code>ctrl+shift+v</code> works.</li>
+<li>Awesome, works in Fedora as well, thanks!</li>
+</ul>
+</li>
+<li>
+<p>Wow, good idea, is there a hotkey for Windows as well ? (copy paste hotkey)</p>
+<ul>
+<li><code>Ctrl+C</code> for copy and <code>Ctrl+V</code> for paste</li>
+</ul>
+</li>
+<li>
+<p>Sorry, I wasn't clear. I meant a way to use copy paste inside the git bash terminal</p>
+<ul>
+<li>In windows maybe try painting text (left click drag) and then right click</li>
+<li>In Windows, there is a setting you need to enable in the terminal settings. After that <code>ctrl+shift+c</code> and <code>ctrl+shift+v</code>
+<ul>
+<li>right-click on the title bar of the terminal window, and select Properties.</li>
+<li>select &quot;Enable ctrl shortcuts&quot; and &quot;Use ctrl+shift+C/V for copy/paste&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Nice trick! +1 (My only challenge is that I cannot use shift + arrows to highlight. But it is indeed neat to be able to copy and paste!)</p>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-until-xx-05">Break until xx:05</h3>
+<p>:::</p>
+<h2 id="inspecting-history">Inspecting history</h2>
+<p>https://coderefinery.github.io/git-intro/archaeology/</p>
+<ol start="45">
+<li>
+<p>the <code>grep -i fixme</code> command is taking forever for me, can I exit from it?</p>
+<ul>
+<li>ctrl+c might help, &quot;grep -i fixme&quot; got me stuck as well but &quot;git grep -i fixme&quot; works</li>
+<li>Thanks that helped, I made the same mistake</li>
+<li>I think that if you would write <code>grep -r -i 'fixme'</code>, things will work out using default grep (non-git) as well. But I assume it depends as you might have no grep availlable in your terminal.</li>
+</ul>
+</li>
+<li>
+<p>Can we create a branch from a tagged version instead of a committed version?</p>
+<ul>
+<li>yep! that <code>HASH</code> can actually be anything that identifies a version.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h2 id="exercise-until-xx-55">Exercise until xx:55</h2>
+<p>https://coderefinery.github.io/git-intro/archaeology/#exercise-basic-archaeology-commands</p>
+<ul>
+<li>Try to do those five parts in History-1</li>
+<li>There is an optional &quot;git bisect&quot; exercise below (History-2)</li>
+<li>If you want, try some on your own projects</li>
+</ul>
+<p>Status:</p>
+<ul>
+<li>I'm done: ooooooooo</li>
+<li>I'm not trying: </li>
+<li>I want more time: </li>
+<li>Was easy:</li>
+<li>Was just right: oooooooooo</li>
+<li>Was hard: ooo
+:::</li>
+</ul>
+<ol start="47">
+<li>
+<p>How can we find the HASH for older brances?</p>
+<ul>
+<li>(you can use the branch name directly also)</li>
+<li><code>git log branch_name</code> should show the commits in that branch</li>
+</ul>
+</li>
+<li>
+<p>I accidently cloned the new repository to the recipe folder, can I just remove it and then clone it again to the upper folder?</p>
+<ul>
+<li>You can</li>
+<li>You can also move the newly cloned folder to a different place</li>
+</ul>
+</li>
+<li>
+<p>I have an unrelated question: I have a meeting tomorrow from 10-11. Would you still recommend that I join the workshop tomorrow? I am a &quot;individual learner&quot;</p>
+<ul>
+<li>Do join for the afternoon</li>
+<li>You can do parts of the morning exercises on your own (watching the video later or just reading the material). There is an interactive part that you might miss.</li>
+</ul>
+</li>
+<li>
+<p>I wonder whether the command &quot;git annotate ...py&quot; would also work for Jupyter notebooks?</p>
+<ul>
+<li>Jupyter notebooks are text files, but the content is not what you see in Jupyter. <code>git annote</code> would show you the actual text file. So it works, but it's not the same.</li>
+</ul>
+</li>
+<li>
+<p>If I want to make all my directories in a folder called git, how should I make this folder and make sure the new directory is within this folder?</p>
+<ul>
+<li>If you are using a terminal with bash:
+<ul>
+<li><code>mkdir git</code></li>
+<li><code>cd git</code></li>
+<li><code>git clone ...</code> (which will create a new subfolder under your &quot;git&quot; folder)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>If my git bash does not use <code>less</code> for scrolling long outputs, how can I activate it?</p>
+<ul>
+<li>you can try <code>git config --global core.pager less</code> but I haven't tested this</li>
+<li>thanks, it worked!</li>
+<li>(this was because at some times, using the pager broke it and made no output.  Maybe that  happens next week?)
+<ul>
+<li>but then we have a recovery: https://coderefinery.github.io/installation/shell-and-git/#troubleshooting</li>
+</ul>
+</li>
+<li>If next week, the pager doesn't work from the anaconda prompt, go back to here: https://coderefinery.github.io/installation/shell-and-git/#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all</li>
+</ul>
+</li>
+<li>
+<p>Any idea how to do a search using Git Bash in Windows on its own command output. I tried to print the log using the git annotate function on threshold.py and it gives a lot of things ?</p>
+<ul>
+<li>See answer in qustion above</li>
+<li>(this is a bit more advanced) you can try to also &quot;pipe&quot; the output from annotate into grep: <code>git annotate SOMEFILE | grep SOMETEXT</code> (this will run &quot;git annotate&quot; on a file and then in that output, in one step, you can search for SOMETEXT)</li>
+</ul>
+</li>
+<li>
+<p>I created the branch <code>past-code</code> (90544b4fa)and then the one <code>just-before</code> (90544b4fa~1). Then I switched to the <code>just-before</code>. Now here I was not expecting to see commit 90544b4fa as in the timeline I have in mind it did not happen yet. What I am thinking wrong?</p>
+<ul>
+<li>good point I would also not expect to see it. let me try/look.
+<ul>
+<li>I tried that and this did not happen to me. Can you please post here the series of commands you typed? indeed that commit should then not be part of &quot;git log&quot; since git can only see &quot;into the past&quot; but never &quot;into the future&quot; (git commits reference parents but not their children). so your thinking is correct but I suspect something else happened on the way</li>
+</ul>
+</li>
+<li><code>90544b4fa~1</code> means &quot;commit right <em>before</em> 90544&quot; - so 90544 isn't in it's (past) timeline anymore.  There's no easy shortcut to do &quot;commit right after this one&quot;.</li>
+<li>These is my history:<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>1318  git branch past-code 90544b4fa
+</span><span>1319  git status
+</span><span>1320  git switch past-code
+</span><span>1321  git show 90544b4fa5
+</span><span>1322  git switch --create just-before 90544b4fa~1
+</span><span>1323  git status
+</span><span>1324  git show 90544b4fa5
+</span><span>1325  git status
+</span></code></pre>
+</li>
+<li>OK you should not see <code>90544</code> on top of <code>git log --oneline</code> but <code>git show 90544</code> will still work. <code>git show</code> can point to any commit in the repository. it does not have to be older than the current branch. Did this explain the question?
+<ul>
+<li>please try then also the <code>git log --oneline</code> - it was a very good question</li>
+<li>Yes it does, and <code>git log --oneline | grep &quot;90544b4fa5&quot;</code> is empty.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In the bisect exercise, I got the following error: </p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>Some good revs are not ancestors of the bad rev. git bisect cannot work properly in this case. Maybe you mistook good and bad revs? My good was the first commit and bad the latest.
+</span></code></pre>
+<ul>
+<li>can you please post the series of your commands?</li>
+</ul>
+</li>
+<li>
+<p>In &quot;Exercise: Basic archaeology commands&quot; I do the following:</p>
+<ol>
+<li>git grep &quot;Logic error in degree_correlation&quot;
+<ul>
+<li>finding the part of the code that has this.</li>
+</ul>
+</li>
+<li>Then I use annotate:  git annotate networkx/algorithms/threshold.py
+<ul>
+<li>This should give me some insight to the file that I from grep found out has the line I was looking for. I think?</li>
+</ul>
+</li>
+<li>Then I write in &quot;/Logic error in degree_correlation&quot; specifically with the &quot;/&quot; in there as this should search through the file. I think?</li>
+<li>I drank some coffee and felt confused, but also comfortable knowing that I have adept people to help me let me know what I did wrong, because it was missing? What do I do? &lt;3</li>
+</ol>
+<ul>
+<li>Solution: I redid my git config <code>git config --global core.pager less&quot;</code> (from question 52, 58). After this the search worked.</li>
+</ul>
+</li>
+<li>
+<p>After I inspected the code as it was before the mistake was done by using 4dff462e52~1, is it possible to continue working with this version? Should I merge the just-before branch to the main branch? Or is it just for the sake of inspecting and then correcting manually?</p>
+<ul>
+<li>Doing a normal merge won't work, since it's already &quot;in main&quot;.</li>
+<li>You could make a new branch from that old point (but then you lose everything else done since then)</li>
+<li>you could <code>restore</code> that file to its old version (<code>git switch main, git restore old-version filename</code>).</li>
+<li>You could open new version and copy just what you need (maybe this is simplest if it's been a long time ago and there are other changes?)</li>
+<li>here it was for the sake of inspecting the past so it should be safe to delete the branch and try again with a different branch</li>
+</ul>
+</li>
+<li>
+<p>I tried <code>git config --global core.pager less</code> and now I'm stuck in that view (running annotate). How do I get out? Enter produces more lines and esc and ctrl+x don't work. I'm using Git Bash on Windows.</p>
+<ul>
+<li>type &quot;q&quot; to get out of that - did it work?</li>
+<li>Yes! Thanks a lot!</li>
+</ul>
+</li>
+<li>
+<p>If I do <code>git restore old-version filename</code> will I lose all the versions after this old version? Or what does <code>git restore</code> do exactly? </p>
+<ul>
+<li>it will overwrite your FILENAME with a version as it was in OLD-VERSION but it will not create a new commit yet. but you can lose changes of FILENAME if they were never committed since it will overwrite your file</li>
+</ul>
+</li>
+<li>
+<p>Would <code>git log -S &quot;TEXT HERE&quot;</code> also work to find the commit where a specific line was deleted?</p>
+<ul>
+<li>yes indeed, it will go through all commit deltas</li>
+</ul>
+</li>
+<li>
+<p>Could you show how <code>bisect</code> works in practice?</p>
+<ul>
+<li>+1 to this question, <code>git bisect good f0ea950</code> (the one in the example) doesn't work</li>
+<li>we will post a video recording where we go through this exercise (we need to find it)</li>
+<li>+1, could you at least explain how we finish the process since https://coderefinery.github.io/git-intro/archaeology/#optional-exercise-git-bisect and the solution do not explain what to do once the last good commit is found. Diff with last commit of main? When and how do we finish (with <code>git bisect reset</code> presumably?) </li>
+<li>Been searching but haven't fonud a past video.  Maybe we can do it at the end of the day.</li>
+</ul>
+</li>
+<li>
+<p>Can we pipe grep in less command?</p>
+<ul>
+<li><code>/</code> searches (<code>n</code> / <code>N</code> to to next/prev)</li>
+<li><code>&amp;</code> will limit to matching lines</li>
+<li>less is super useful!
+<ul>
+<li>My question is <code>git show HASH | grep &quot;keyword&quot;</code> is it possible?</li>
+</ul>
+</li>
+<li>Yes, not a problem, you can pipe any unix command this way, even more complex stuff or a full script
+<ul>
+<li>Oh oops.  Yes, that works.  Since git uses less, maybe the hotkeys above are useful too (it's what I often do)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Can y'all correct answer to 52.?</p>
+<ul>
+<li>I added some.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="lunch-break-until-xx-00">Lunch break until xx:00</h3>
+<p>:::</p>
+<ol start="64">
+<li>
+<p>Where can I find the &quot;cheatsheet&quot;?</p>
+<ul>
+<li>Link now added to the very top</li>
+<li>https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf</li>
+</ul>
+</li>
+<li>
+<p>Throwback to the push exercise: when I try to push it asks for username and password, and when i put it in i get this:</p>
+</li>
+</ol>
+<p>mic/win/linux?
+- tried ssh. Im on mac. After 'git push -u origin main' it asks for username and then password for https://github.com
+&gt; got this issue too. If you have a key (or create a new one) it has to be called id_rsa.pub or id_ed25519.pub (there is a third one). It does not recognize any other key names. You also need to a) add the key to your user profile (didn't work for me) or as a deploy key to your repo (this did). And b) do all the stuff with the agent, etc or eventually creating a key -&gt; https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding). </p>
+<h2 id="undoing-and-recovering">Undoing and recovering</h2>
+<p>https://coderefinery.github.io/git-intro/recovering/</p>
+<p>We can all start from this repository:</p>
+<ul>
+<li>step out of the networkx repository from previous exercise</li>
+<li>git clone https://github.com/coderefinery/recipe-before-merge.git recipe-recovery</li>
+<li>cd recipe-recovery</li>
+</ul>
+<ol start="66">
+<li>
+<p>Regarding (computer) directory structure, do you recommend having one git directory in which one places all git-tracked projects?</p>
+<ul>
+<li>I have a directory for projects. Each project has its own subdirectory. Some have multiple git tracked folders for some, the whole project is tracked as a single repository.</li>
+<li>Git tracked folders can be anywhere, so I would follow which ever method you have followed so far, but start tracking some of the project folders.</li>
+<li>Remind us about this qustion during the final Q&amp;A, it will be perfect then.</li>
+</ul>
+</li>
+<li>
+<p>What is a staged change ? (I forgot)</p>
+<ul>
+<li>When you have added a change (<code>git add</code>), but not committed yet (<code>git commit</code>)
+<ul>
+<li><code>git add</code> stages/prepares the change to be committed. it is a nice way to prepare changes and make sure to collect changes to nice logical units if you have many modifications in your working area.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>how do you selecet where to restore with -p?</p>
+<ul>
+<li>by default will ask for every file.  you can give a filename and it limits to that.</li>
+<li>it will ask you patch by patch and then you can decide what to do with each</li>
+</ul>
+</li>
+<li>
+<p>Can we 'revert' to a commit that is not the HEAD? If yes, what about the future commits?</p>
+<ul>
+<li>Reverting goes back in commit history, so you can revert multiple times but this will revert multiple commits.
+<ul>
+<li>but reverting does not change the history before that revert, only adds new commits (the person who answered knew that but just to avoid possible confusion since we don't really go back, only forward) </li>
+</ul>
+</li>
+<li>You can revert older commits.  If something has been changed since then, you get a conflict (and we learned how to resolve yesterday)</li>
+</ul>
+</li>
+<li>
+<p>Can you demonstrate how to combine many commits in one commit?</p>
+<ul>
+<li>there are several ways to do it but this is what I would do:
+<ul>
+<li>if the commits that you want to &quot;squash&quot; are at the end, then I would use <code>git reset --soft HASH</code> to the HASH just before the oldest commit to be squashed. This will &quot;remove&quot; commits but keep your changes and stage them. Then you can commit them all in one commit.</li>
+<li>alternative and solution when the squashed commits are not at the end but somewhere &quot;in the middle&quot;: interactive rebase, where you can squash, reorder, rename, delete commits, to your liking. in this case try an <code>git rebase -i HASH</code> where HASH is a bit more in the past than what you want to edit. it will open an interactive menu where you can do all these things. it's fun but experiment first on a test repo, not on your real code since rebase modifies history. </li>
+<li>before combining any commits, create a backup branch: <code>git branch backup</code>. If I mess up and all is destroyed, I can go back to that backup branch and all my commits are still there.
+<ul>
+<li>branches don't take up any space in Git so I always create a branch before a command that I am unsure about what it might do</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I have fixed a change in ingredients.txt and entered <code>git add ingredients.txt</code>. When I enter <code>git commit --ammend</code> I get the prompt <code>You asked to ammend the most recent commit, but doing so would make it empty</code>.</p>
+<ul>
+<li>Was your new change exactly the opposite of what the previous commit did?
+<ul>
+<li>Yes, would it be preferrable I did <code>git revert</code> in this scenario?
+<ul>
+<li>Since the change was only staged but not committed, if you want to modify it, I would modify, then <code>git add</code> again, then <code>git commit</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="exercises-undoing-and-recovering-until-xx-42">Exercises: undoing and recovering, until xx:42</h3>
+<p>https://coderefinery.github.io/git-intro/recovering/#exercise-revert-a-commit</p>
+<ul>
+<li>Do whatever exercises seem most interesting to you (four &quot;Undoing&quot; on that page).</li>
+<li>Undoing-1 to Undoing-4, any combination that is relevant for you
+:::</li>
+</ul>
+<ol start="71">
+<li>
+<p>What is origin/main in my case?: 40d63a5 (HEAD -&gt; main, origin/main) Merge branch 'dislike-cilantro' Decided on half of the spoon</p>
+<ul>
+<li>origin/main refers to <code>main</code> on origin and origin is the place we cloned from. Tomorrow (Thu) we will clarify these in more detail. but already at this point I can say that when we clone from a place, Git defines &quot;origin&quot; to refer to that place and it creates a local branch from the default branch (in this case &quot;main&quot;) and it creates a read-only reference to origin/main (&quot;main&quot; on origin). If too confusing, tomorrow it will become clear.</li>
+</ul>
+</li>
+<li>
+<p>I am getting the error &quot;commit XXX is a merge but no -m option was given. fatal: revert aborted.&quot; after having committed a change in ingredients.txt.</p>
+<ul>
+<li>you probably tried to revert a merge commit (double check this with <code>git graph</code>). you can revert a merge commit with <code>git revert -m HASH</code> (where HASH is the commit identifier)</li>
+</ul>
+</li>
+<li>
+<p>Why do I have a red (origin/main) tag in my git graph? And then also a (HEAD-&gt;main) as the top-most tag.</p>
+<ul>
+<li>I guess you used our sample repo.  This is the remote (origin, from where we cloned).  It says &quot;this is what origin thinks is main&quot;.
+<ul>
+<li>I haven't cloned it, it's my original local repo. </li>
+<li>Ah.  We also added it as a remote yesterday!  <code>git remote -v</code> will list some details.</li>
+</ul>
+</li>
+<li>see also question/answer 71 (unless I misunderstood the question) +1</li>
+<li>&quot;HEAD-&gt;main&quot; means &quot;you are currently working on branch main, that's where commits will go&quot; (record head is aligned with main)</li>
+</ul>
+</li>
+<li>
+<p>Does the order matter with git add and git commit?</p>
+<ul>
+<li>Yes.  Committing uses what has already been added.
+<ul>
+<li>You commit whatever you add, so commiting before adding will have no effect.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I am not getting a good understanding of a difference between commit and push. I have 2 local commits and now he is asking me to push.</p>
+<ul>
+<li>Git stores your history locally on your computer. When you run <code>git commit</code>, it adds a new commit to the stored history. In this case, you also have a remote repository on GitHub. <code>git push</code> will upload your commit history to that online repository.</li>
+</ul>
+</li>
+<li>
+<p>In which case it's more interesting to use <code>reset</code> instead of <code>revert</code> or create a branch starting from a previous commit ? </p>
+<ul>
+<li>if it is all only on my computer, I can delete the commit or even start a new branch just before or move the branch just before. but <code>revert</code> becomes interesting if other people already cloned that commit and add new commits based on the branch that I have published. Now if I delete it or change the branch, it will be surprising and confusing to others. Did it clarify?</li>
+<li>sometimes you want to also keep a trace that you changed your mind, even if it is a single-person project. I use <code>revert</code> also just for me for those situations.</li>
+</ul>
+</li>
+<li>
+<p>Yes sorry, I made a mistake in my question. It's <code>reset</code> that seems surprising since the 2 other solutions seem better.</p>
+<ul>
+<li>yes, reset is find for local work but we need to apply it carefully for published branches.</li>
+<li>advantage of reset: it makes the history look more organized</li>
+<li>sometimes you really have to &quot;remove&quot; commits (for instance somebody committed a password), then you need <code>reset</code> and <code>revert</code> will not be enough</li>
+<li>did these answer the question?
+<ul>
+<li>yes the password example is very clear!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Why it asks me to push when I try 'git commit --amend', but it does not when I do a simple commit ?</p>
+<ul>
+<li>it asks to &quot;git push&quot; ? 
+<ul>
+<li>Yes, here is the message:</li>
+</ul>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>&quot;On branch main
+</span><span>Your branch is ahead of &#39;origin/main&#39; by 3 commits.
+</span><span>(use &quot;git push&quot; to publish your local commits)
+</span><span>
+</span><span>No changes
+</span></code></pre>
+</li>
+<li>You asked to amend the most recent commit, but doing so would make it empty. You can repeat your command with <code>--allow-empty</code>, or you can remove the commit entirely with <code>git reset HEAD^</code>.</li>
+<li>When I do simple commit I get message I get: </li>
+</ul>
+<blockquote>
+<p>HERE is now something missing due to a weird multi-cursor editing glitch in HackMD archive. Sorry about that! -MJ
+ps. always keep backups of your stuff you are editing, or better yet: a version control 🙈</p>
+</blockquote>
+<ul>
+<li>&quot;git commit -p</li>
+</ul>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>No changes.
+</span><span>[main bd26dca] going back to less avocado
+</span><span>1 file changed, 1 insertion(+), 1 deletion(-)&quot;
+</span></code></pre>
+<ul>
+<li>so it means that in both cases (amend or not) it did not make any changes?</li>
+</ul>
+</li>
+<li>
+<p>Is amending only for editing the text in the previous commit message? Or does it also revert the previous changes, like with git revert?</p>
+<ul>
+<li>It can add new changes (whatever you have <code>git add</code>:ed)</li>
+<li>It will offer you to edit the message if you want</li>
+<li>You can do one or the other</li>
+<li>so if I edit a text file and do git ammend, I could revert the text file with ammend?</li>
+<li>Yes, you could.  You'd have to do the exact opposite change, so other methods wolud be better.</li>
+<li>ok thank you! :)</li>
+</ul>
+</li>
+<li>
+<p>A curious question. If the branch does not take space, how does it behave in the memory? If it is not a physical copy then how is it done? </p>
+<ul>
+<li>Internally branches are just a statement &quot;branch old-code is a515f51256d3...&quot;.  That commit is part of history anyway (probably), so the branch is basically no overhead.  If it's not part of history, well, you can figure that out.</li>
+<li>There's a &quot;git under the hood&quot; episode that shows more.</li>
+</ul>
+</li>
+<li>
+<p>There is git pull but there is also git fetch whats the diff?</p>
+<ul>
+<li>Git fetch would be in advanced material, it's not something I use often. It downloads the remote branches and renames them to &quot;remote_name/branch_name&quot;. It does not merge them with your local branches.</li>
+<li>Git pull downloads the remote branch and merges it to your current branch (or another local branch if you specify it).</li>
+</ul>
+</li>
+<li>
+<p>Can you demonstrate any example of using GitHub for version control when writing your thesis? Eg working in word and commiting to Git, is that possible?</p>
+<ul>
+<li>Word and other office documents do not go well with git (at least not without some additional tools/plugins)</li>
+<li>Usually people who version control their thesis etd documents use $\LaTeX$ 
+<ul>
+<li>If you feel LaTeX too overwhelming, maybe take a look into markdown
+<ul>
+<li>https://www.theurbanist.com.au/2018/02/writing-a-thesis-in-markdown/</li>
+<li>https://paulihuhtiniemi.com/blog/2019/07/03/masters-thesis-markdown</li>
+<li>https://github.com/tompollard/phd_thesis_markdown</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="break-until-xx-05-1">Break until xx:05</h3>
+<p>Then the general Q&amp;A below.
+:::</p>
+<h2 id="practical-advice-and-general-q-a">Practical advice and general Q&amp;A</h2>
+<p>https://coderefinery.github.io/git-intro/level/</p>
+<p>&quot;+1&quot; the questions you'd especially like discussed</p>
+<ol start="83">
+<li>
+<p>How will we get connected to participants to collaborate with tomorrow? Asking as an individual participant (who is sometimes out of office during this workshop).</p>
+<ul>
+<li>RB: please follow instructions here (email from yesterday but not everybody might have gotten it): https://coderefinery.github.io/2023-09-19-workshop/communication/#2023-09-19-summary-day-1-and-preparation-for-day-3</li>
+<li>this afternoon I will process such requests</li>
+</ul>
+</li>
+<li>
+<p>Do most people who use git actually use git bash or any other terminal-window or do they use github desktop or visual studio code's git-add-on or other programs for git?</p>
+<ul>
+<li>The command line interface (CLI) is older than the desktop interface for git, so it would probably be cli, but use whichever one is more comfortable for you.</li>
+<li>for small things: web, for larger changes: CLI or Desktop or editor with git included (e.g. VSCode) </li>
+<li>WSL &amp; terminal if you are in Windows. Or MobaXterm (not open source, but free). Notepad++ also has extensions. On Linux or Mac... terminal + vim / emacs </li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>How do I push changes following a reset to the remote, if I had already pushed the changes I am reverting with the reset?</p>
+<ul>
+<li>it probably errors that you cannot push because the remote contains commits that you don't have? if yes this is a good safeguard to warn you against accidentally removing commits in the remote. if this is the case, you can still force it with <code>git push --force origin SOMEBRANCH</code></li>
+</ul>
+</li>
+<li>
+<p>It seems really that understanding a git history of a project that you just want to start collaborate in is very complicated. How is it possible to collaborate in opensource projects? Is it even reasonable and if yes, what level of expertise in git is needed?  +1</p>
+<ul>
+<li>Very good question!  There are so many complexities, but when contributing to some other project it's easier, since someone else has set it up.  You only need to be able to make a new change</li>
+<li>Tomorrow (&quot;git collaborative&quot;) focuses on that exact work flow: clone, make one change, send it back (two ways: directly, or via a pull request (&quot;change proposal&quot;))</li>
+<li>the goal of tomorrow is to be able to do that</li>
+</ul>
+</li>
+<li>
+<p>Is <code>git commit -p</code> per file or per line? And, if it is per file, why do not we just use<code>git add</code> the selected files?</p>
+<ul>
+<li>per line (&quot;a&quot; does &quot;all lines in this file&quot;)</li>
+</ul>
+</li>
+<li>
+<p>How was the learning curve for you before starting using Git? How did you learn it? and at which point you decided you had to learn it?</p>
+<ul>
+<li>We discussed on stream a lot</li>
+<li>Most of us had used something lightly, but then change to get / got more proficient later on.</li>
+<li>Try visual tools eg. GitHub Desktop if you struggle with git logic in the command line 😊</li>
+</ul>
+</li>
+<li>
+<p>So, I have a project with already 60 scripts in there. I have the feeling is important for me to keep track of the next changes. How would I recomment I incorporate git in this already big project? Thanks</p>
+<ul>
+<li>so I have multiple folders (like a complex folder structure) all is a part of a research project. Thanks</li>
+<li>initialise the folder as a repository with <code>git init</code> and see content through <code>git status</code>. Stage and commit all or in chunks and include reasonable files to .gitignore. Then push to GitHub/GitLab and continue git workflow with reasonable size commits + consier using branches when trying new stuff.</li>
+</ul>
+</li>
+<li>
+<p>What plugin/library/... would you recomend to use git, when your main programming language is R and Rstudio as a tool to use? +3</p>
+<ul>
+<li>Rstudio has its onw integration, no plugins needed, just add the GIT option and the repo URL to the project (check the help )</li>
+<li>There is a recent R package called gitgadget that provide addin for additional git commands that is not available in the default integration.  https://cran.r-project.org/web/packages/gitgadget/index.html</li>
+<li>Alternatively I can open Git Bash (set this in the Global Options -&gt; Terminal -&gt; General -&gt; Set new terminal open with Git Bash) as a terminal (Tools -&gt; Terminal -&gt; New terminal) in Rstudio to type complicated git commands and see the changes in the GIT option.
+Found also interesting guide: https://happygitwithr.com/rstudio-git-github.html</li>
+</ul>
+</li>
+<li>
+<p>How do you decide what to push to git? What kind of things do you look for on github (or in what instances woudl you look for other peoples' code?) ((person w very non-technical background asking))</p>
+<ul>
+<li>Usually you are pushing changes that you want to have on the remote repository. There is no single answer for this, but it depends on the project, your goals for the project and the contributions you would like to make. You can look at it in the same way as writing a book together with other people: what are the sections you are responsible for and what contributions would you like to make.</li>
+</ul>
+</li>
+<li>
+<p>How do you go about finding the right commands? Sometimes I feel overwelmed by the man pages in git/linux or just forget the exact command</p>
+<ul>
+<li>Google them and look for the most updated websites that provide answers to that. Try those commands and if they work for you then write them down for future reference. It's perfectly normal to forget a lot of the commands and have to look them up, so don't feel discouraged by that.</li>
+<li>I really like the &quot;tldr&quot; command (needs to be installed), then for instance <code>tldr git push</code> it will give me short and nice summary of commands that I can use without too much text</li>
+<li>Chatgpt? (I already trouble shooted quite a few problems during the course)</li>
+</ul>
+</li>
+<li>
+<p>It is advised to not track binary files. Another curious question. Why not(in brief)?</p>
+<ul>
+<li>When changing a file, it has to re-record the whole thing, and that can not be space-efficient. (though it does try to compress it).  That, plus not being able to diff, makes it not ideal</li>
+<li>But we do have repos for minor photo storage, for example.  Since it's better to have them in the normal place than not be able to find when we need.</li>
+<li>git-annex can be used to track larger data</li>
+</ul>
+</li>
+<li>
+<p>Question 90. but with Python?</p>
+<ul>
+<li>CodeRefinery conda environment has already a good collection</li>
+<li>more important than plugins to a certain language might be plugins for your editor or environment where you write Python</li>
+<li>Visual studio code has tools for python and git</li>
+</ul>
+</li>
+<li>
+<p>Let's say I have <code>file.txt</code> and I add and commit and then I add the <code>.gitignore</code> file. And then I add the <code>file.txt</code> in gitignore. How would I untrack it? </p>
+<ul>
+<li>If a file is already tracket, it will stay tracked / keep updating if you change it even if it becomes ignored later.
+<ul>
+<li>How would I untrack a tracked file in git?
+<ul>
+<li>track: <code>git add</code></li>
+<li>untrack: <code>git restore --staged</code> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Just a general question, as an expert in git and also probably fluent in a couple of programming languages, how often do you need to actually look things up? do you still do mistakes?</p>
+<ul>
+<li>look stuff up: not that often, but most stuff we do is routine</li>
+<li>I'll often run <code>git COMMAND --help</code> to check or review help pages when doing something I don't do often - always good to check!  For complex stuff always web search + stackoverflow - even now.</li>
+<li>Whenever I need to run a git command other than <code>add</code>, <code>commit</code>, <code>pull</code> or <code>push</code>, I check before running.</li>
+</ul>
+</li>
+<li>
+<p>So if I want to add the tracked file in gitignore, I have to untrack it first and then add to gitignore to ignore it. Am I right?</p>
+<ul>
+<li>Yes. If the file is tracked, git will continue to track it even if it is already in .gitignore</li>
+</ul>
+</li>
+<li>
+<p>Would we learn about <code>.gitignore</code> in the future sessions?</p>
+<ul>
+<li>Not much more than we have now.  It basically makes <code>status</code> ignore files in there that aren't already tracked.</li>
+</ul>
+</li>
+<li>
+<p>What is the difference between merge and rebase and why would I use one or the other?</p>
+<ul>
+<li>here some discussion: https://coderefinery.github.io/git-branch-design/ (lesson is a bit old but still relevant)</li>
+</ul>
+</li>
+</ol>
+<h2 id="feedback-day-2">Feedback, day 2</h2>
+<h3 id="today-was">Today was:</h3>
+<ul>
+<li>Too fast:ooo</li>
+<li>just right: oooooooooooooooo</li>
+<li>too slow:oo</li>
+<li>too easy:o</li>
+<li>right level: oooooooo000oooo</li>
+<li>too hard:</li>
+<li>Exercises were good: oooooooooooo</li>
+<li>I would recommend today to others: ooooooooooooooooooo</li>
+<li>I wouldn't recommend today: </li>
+</ul>
+<h3 id="one-thing-good-about-today">One thing good about today:</h3>
+<ul>
+<li>The questions were covered very well.</li>
+<li>I like the practical tips and discussion at the end +1</li>
+<li>Was cool to push things to github, and get to know the interface a bit better +1</li>
+<li>Good to learn about revert and reset</li>
+<li>we've learned very nice stuff (revert, history tools), the sherlock holmes exercise was very cool.</li>
+</ul>
+<h3 id="one-thing-to-be-improved-for-next-time">One thing to be improved for next time:</h3>
+<ul>
+<li>I know it is not easy but I would rather it be slowed down a little bit.</li>
+<li>I think it would be good to summarize and show very fast the solution to the exercises after the exercise +2</li>
+<li>I would skip exercise with online github reposittory from previous day as it was confusing at least for me, that it was introduced today as well. It created some confusion and problem as in previous day we did create README, but today we were not supposed to. This is a very minor thing, but I would wthink about that, apart from that it was really great :)</li>
+<li>it would have been nice to spend more time on the undoing and recovering part (and maybe a bit less on the history - it's very cool but we have more difficulties to know when to use them)</li>
+<li>it could be nice to recap the main commands a few more times when doing the exercises; I keep having to scroll up to remember the basics but I think hearing them again (and again.. :D ) would help remember them as well</li>
+</ul>
+<h3 id="any-other-comments">Any other comments:</h3>
+<ul>
+<li>So glad to be in this course and learn git &quot;properly&quot; instead of bit by bit as the need comes up.</li>
+<li>you guys rock. Thank you! +7</li>
+<li>It has been a very valuable workshop for me so far. Thanks a lot and keep it up:)</li>
+<li>the sound level was different for each of you during the discussion
+<ul>
+<li>RB: I will get a headset to improve the situation</li>
+</ul>
+</li>
+</ul>
+<h3 id="workshop-mascot-anyone-offer-to-draw-it-and-we-ll-combine-with-cr-logo">Workshop mascot?  Anyone offer to draw it? (and we'll combine with CR logo)</h3>
+<ul>
+<li>cat: oooooooooooooo</li>
+<li>gopher: oooo</li>
+<li>tree of souls from Avatar (symbolising git): o</li>
+<li>git goat: oo</li>
+<li>A hedgehog (HedgeDoc) ooooo</li>
+<li>Shiba inu: o</li>
+<li>not sure if one is necessary o</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-09-19-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

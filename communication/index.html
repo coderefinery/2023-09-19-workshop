@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CodeRefinery workshop September 19-21 and 26-28, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-09-19-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery</title>
+      <meta name="twitter:title" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+      <meta property="og:title" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-09-19-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  
+    <h2 id="communication-with-participants">Communication with participants</h2>
+<p>Here we collect email texts which we have sent to participants.  They are
+hopefully useful for late registrations or future workshops.</p>
+<div class="uk-alert-danger" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    If you registered late and cannot find the link to the Q&A document, can
+    you please contact us (bottom of page)?
+  </p>
+</div>
+
+  
+
+  <h3>List of emails</h3>
+  <ul>
+    
+      <li>
+        <a href="#workshop-announcement-example-(shorter-version)">Workshop announcement example (shorter version)</a>
+      </li>
+    
+      <li>
+        <a href="#workshop-announcement-example-(longer-version)">Workshop announcement example (longer version)</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-28-workshop-summary">2023-09-28 Workshop summary</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-27-summary-day-5-and-preparation-for-day-6">2023-09-27 Summary day 5 and preparation for day 6</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-25-week-2-about-to-start">2023-09-25 Week 2 about to start</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-21-week-1-summary-and-week-2-outlook">2023-09-21 Week 1 summary and week 2 outlook</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-19-summary-day-1-and-preparation-for-day-3">2023-09-19 Summary day 1 and preparation for day 3</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-18-summary-for-team-leaders">2023-09-18 Summary for team leaders</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-18-practical-information">2023-09-18 Practical information</a>
+      </li>
+    
+      <li>
+        <a href="#2023-09-10-practical-information">2023-09-10 Practical information</a>
+      </li>
+    
+  </ul>
+
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        Workshop announcement example (shorter version)
+      </h5>
+      <p>
+        Subject: CodeRefinery Workshop announcement
+      </p>
+      <p>
+        <small>
+          <p>CodeRefinery invites everyone interested in improving their software practice
+skills to join
+the CodeRefinery workshop September 19-21 and 26-28, 2023, for free and online.</p>
+<p>Register and find more information at
+https://coderefinery.github.io/2023-09-19-workshop/.</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        Workshop announcement example (longer version)
+      </h5>
+      <p>
+        Subject: CodeRefinery Workshop announcement
+      </p>
+      <p>
+        <small>
+          <p>Are you writing code and managing data for your research? Do you feel like
+wasting too much time on manual work? Do you struggle to understand and reuse older code?</p>
+<p>Join
+the CodeRefinery workshop September 19-21 and 26-28, 2023, for free and online.</p>
+<p>The workshop covers good coding practices, reproducible research principles,
+and using Git for collaboration. It offers breakout room exercises with team
+leaders, and you can register as a team or volunteer as a team leader.
+But you can also follow on your own if you prefer.
+In-person exercise sessions are available in some locations.</p>
+<p>Register and find more information at
+https://coderefinery.github.io/2023-09-19-workshop/.</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-28 Workshop summary
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] summary and feedback
+      </p>
+      <p>
+        <small>
+          <p>Dear all,</p>
+<p>thank you so much for participating! Special thanks to all the exercise leaders, local organizers, volunteers, helpers, instructors, and organizers.</p>
+<p>Please let us know how this workshop went for you. Please give us honest feedback about what went well and what didn't go so well. This feedback will be very important for us. You can give the feedback by replying to me or by writing to support@coderefinery.org.</p>
+<p>We recognize that applying all these tools and techniques is not easy. Don't try to do things perfectly, try to do thing better. Ask for help and work together.</p>
+<p>Consider coming to one of our &quot;bring your own code&quot; sessions. This is the first time we will try this:</p>
+<ul>
+<li>Schedule: https://coderefinery.github.io/2023-09-19-workshop/#schedule</li>
+<li>Zoom link: (URL shared with registrants)</li>
+</ul>
+<p>Our lessons are open source and will stay open and accessible also in future:
+https://coderefinery.org/lessons/</p>
+<p>We are working on making them citable. Please open issues with suggestions and please send us pull requests with improvements.</p>
+<p>If you would like a certificate or credit for the workshop, please see:
+https://coderefinery.github.io/2023-09-19-workshop/certificates/</p>
+<p>Coding can be fun and helping others with coding and computing can be heaps of fun. If you want to do more, consider the job role &quot;research software engineer&quot; or just doing more for fun.</p>
+<p>If you would like to stay informed about future events, please sign up for the newsletter:
+https://coderefinery.org/#newsletter</p>
+<p>Thank you for your time and feedback and input!</p>
+<p>CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-27 Summary day 5 and preparation for day 6
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] Summary of day 5 and preparation for day 6
+      </p>
+      <p>
+        <small>
+          <p>Dear CodeRefinery workshop participant,</p>
+<p>We are coming close to the end! Here is some important news:</p>
+<p>The last day covers testing and modular code development. These really pull everything together and connect all of the pieces we have been learning. It shouldn't be missed!</p>
+<p>The testing lesson uses the conda environment and has some good exercises. The Modular code development lesson is mostly watching and discussing, so you can relax for the grand finale.</p>
+<p>It's a good time to invite your friends - the lessons are relevant and a new person can learn something, too.</p>
+<p>Our credit/certificate instructions have been updated:
+https://coderefinery.github.io/2023-09-19-workshop/certificates/</p>
+<p>You can get 1 ECTS Credit OR certificate depending on your situation. Deadline to submit your homework is 2023-12-01.</p>
+<p>This playlist is updated with videos the same evening as each course:
+https://www.youtube.com/playlist?list=PLpLblYHCzJADyLxv8GRyxFiRJBhQ-G0NQ</p>
+<p>Q&amp;A is always updated on the questions page each afternoon:
+https://coderefinery.github.io/2023-09-19-workshop/questions/</p>
+<p>See you tomorrow!</p>
+<p>CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-25 Week 2 about to start
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] week 2 about to start
+      </p>
+      <p>
+        <small>
+          <p>Dear all,</p>
+<p>CodeRefinery workshop week 2 is about to start - we are very much looking forward.</p>
+<p>This week is like a mini-seminar series containing topics related to reproducibility and reusability. You are welcome to invite colleagues to join, also just for a part of it.</p>
+<p>Many lessons received significant improvements over the last days and weeks.</p>
+<p>We have decided to not provide the central exercise Zoom this week. There was almost zero interest in this in week 1 and we decided to rather focus our efforts on answering questions on collaborative notes. If you really wish a centrally organized exercise Zoom, can you please let us know?</p>
+<p>See you tomorrow/today (Tue)!</p>
+<p>Radovan &amp; the CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-21 Week 1 summary and week 2 outlook
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] week 1 summary and week 2 outlook
+      </p>
+      <p>
+        <small>
+          <p>Dear CodeRefinery workshop participant,</p>
+<p>Thank you for joining the workshop this week, and for all the wonderful questions we got from you and hopefully could answer sufficiently in our collaborative document.</p>
+<p>All these questions and answers from this week are archived at https://coderefinery.github.io/2023-09-19-workshop/questions/</p>
+<p>Video recordings are up: https://coderefinery.github.io/2023-09-19-workshop/#news</p>
+<p>We hope you got some good practice and understanding on how to collaborate using Git/GitHub and our trial of collaborating with you from the stream worked out for you! If you have suggestions on how to improve our lessons, please open issues or send pull requests: https://github.com/coderefinery</p>
+<p>Next week will be a little more diverse!</p>
+<p>We will take a peek into 6 topics that are all related to FAIR research software development:</p>
+<p>Tuesday will start with an overview of how all CodeRefinery lessons fit together under the umbrella of reproducible research and what steps you can take now already to make your research more reproducible. In the afternoon we will look into licenses, how they work and why you might want to care even when &quot;only writing a small script for myself&quot;.</p>
+<p>Wednesday morning we look at different ways of how to document research code. From small projects with good README files to external documentation on Read the Docs. In the afternoon we will show some tips and tricks around Jupyter notebooks and how they can be used also outside of courses.</p>
+<p>Thursday we step a little deeper into software development practices by giving you a peek into automated testing and how this could benefit you and your collaborators. The workshop ends with some live coding to showcase how to make code more reusable by caring about modularity.</p>
+<p>In preparation for week 2 we recommend that you set up the coderefinery conda environment on your computer following https://coderefinery.github.io/installation/. And for most lessons we will try out our new Git skills again :)</p>
+<p>We hope to see you again in any of our sessions of week 2!</p>
+<p>CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-19 Summary day 1 and preparation for day 3
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] preparation for day 3
+      </p>
+      <p>
+        <small>
+          <p>Dear CodeRefinery workshop partipant,</p>
+<p>Thanks for today!</p>
+<ul>
+<li>Questions and answers from today are archived at https://coderefinery.github.io/2023-09-19-workshop/questions/</li>
+<li>Progress today marked on Git cheat sheet: https://fosstodon.org/@rkdarst/111092102577954826</li>
+</ul>
+<p>On Thursday we will all practice how to collaborate using Git/GitHub and one ambitious thing we will try is to collaborate with participants following via stream.</p>
+<ul>
+<li>Everybody: Please make sure you have HTTPS or SSH connection to GitHub configured following https://coderefinery.github.io/installation/ssh/ (but please still come and watch even if it does not work)</li>
+<li>Learners in teams and exercise groups: nothing to prepare yet (you can skip rest of email)</li>
+<li>Individual learners who wish to actively participate: please read below and request access</li>
+<li>Team leaders: You can prepare the exercise repositories for Thursday following https://coderefinery.github.io/git-collaborative/centralized/#exercise-preparation and https://coderefinery.github.io/git-collaborative/distributed/#exercise-preparation (but you will get enough time for that during the workshop)</li>
+</ul>
+<p>If you would like to participate <strong>as individual learner</strong> actively in the collaborative
+exercises, please request access by opening an issue at https://github.com/cr-workshop-exercises/access-requests/issues/new/choose (There click &quot;Get started&quot; -&gt; &quot;Submit new issue&quot;)</p>
+<p>This way we will know your GitHub username and give you write access to exercise repositories.</p>
+<p>After we add you as collaborator, you will get an email from GitHub.</p>
+<ul>
+<li>Please accept the invitation</li>
+<li>Don't forget to &quot;unwatch&quot; both https://github.com/cr-workshop-exercises/centralized-workflow-exercise and https://github.com/cr-workshop-exercises/centralized-workflow-exercise-recorded</li>
+<li>Screenshot how to &quot;unwatch&quot; at https://coderefinery.github.io/git-collaborative/centralized/#exercise-preparation</li>
+</ul>
+<p>See you tomorrow!</p>
+<p>CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-18 Summary for team leaders
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] summary for team leaders
+      </p>
+      <p>
+        <small>
+          <p>Dear all,</p>
+<p>This email goes to all team leaders and local organizers and contains some tips for how to organize
+a team in case you missed on-boarding last week or just wanted to have a summary.</p>
+<p>First of all: Thanks so much for doing this! It's the teams and team leaders that make this workshop really work. We really appreciate!</p>
+<p>Expect a dynamic, exciting course. Really, anything can happen, and your team will turn into what you want: Do you want to be active or to be around?</p>
+<ul>
+<li>If active: you'll need to take the lead in discussions. You don't have to discuss the active material: you could make the discussions about your own work (our material will be there later anyway).</li>
+<li>If &quot;be around&quot;: During exercise sessions and other times, you can ask how it's going and take questions there. If it's too quite, ask someone to screen-share and everyone else to say what to do.</li>
+</ul>
+<p>Be kind and considerate to everyone. Not everyone has to learn or do the same things. Don't make people feel bad for not doing as much as others, it's only natural!</p>
+<p>Don't worry! Take the first day to see how it works and then adapt based on what your group would like.</p>
+<p>It can be very, very hard to get people to talk sometimes. You can try this: Ask someone to screen-share (or you can). The person screen-sharing doesn't figure out what to do, but others tell them what to do. You can even make any exercises group-based this way.</p>
+<p>If you meet in-person and have a large screen to share: Twitch stream on one half, Notes on the other half.</p>
+<p>If you volunteered to be a team leader but don't have a team yet, please join the exercise Zoom rom: (URL shared with registrants)</p>
+<p>One-page summary with tips and tricks: https://coderefinery.github.io/manuals/team-leaders/</p>
+<p>Exercise overview so that you can see what to expect: https://coderefinery.github.io/2023-09-19-workshop/exercises/</p>
+<p>If you have any questions, please write to support@coderefinery.org.</p>
+<p>Thank you,</p>
+<p>Radovan and the CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-18 Practical information
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] practical information
+      </p>
+      <p>
+        <small>
+          <p>Dear all,</p>
+<p>Tomorrow our CodeRefinery workshop starts. We expect a dynamic and exciting workshop and very much look forward to it.</p>
+<p>Here are all relevant resources that you need to connect:</p>
+<p>(I will send a separate email to all team leaders in few minutes)</p>
+<p>You can follow the workshop lectures via Twitch in a web browser, no account needed:</p>
+<ul>
+<li>https://twitch.tv/coderefinery</li>
+</ul>
+<p>Please use this collaborative document to ask questions during the workshop:</p>
+<ul>
+<li>(URL shared with registrants)</li>
+</ul>
+<p>Schedule and lecture material:</p>
+<ul>
+<li>https://coderefinery.github.io/2023-09-19-workshop/#schedule</li>
+<li>Each day we will take a break for lunch, which we have done our best to schedule at a time that will work for most locations as we are across multiple time zones.</li>
+</ul>
+<p>Please install required software before the workshop:</p>
+<ul>
+<li>https://coderefinery.github.io/installation/</li>
+</ul>
+<p>Exercise Zoom room for individual learners who are not part of a team yet:</p>
+<ul>
+<li>(URL shared with registrants)</li>
+</ul>
+<p>If you have any questions, please write to support@coderefinery.org.</p>
+<p>Best regards,</p>
+<p>Radovan and the CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+    <div class="uk-card uk-card-default uk-card-body uk-margin-top">
+      <h5 class="uk-card-title">
+        2023-09-10 Practical information
+      </h5>
+      <p>
+        Subject: [CodeRefinery workshop] practical information
+      </p>
+      <p>
+        <small>
+          <p>Dear all,</p>
+<p>We are less than a week away from the CodeRefinery workshop. Exciting!</p>
+<p>Everybody, please install required software before the workshop:</p>
+<ul>
+<li>https://coderefinery.github.io/installation/</li>
+<li>Schedule in your time zone: https://coderefinery.github.io/2023-09-19-workshop/#schedule</li>
+<li>Zoom link for install help sessions: (URL shared with registrants)</li>
+</ul>
+<p>If you are a team leader, organize a local classroom, or are interested in helping leading an exercise team (thank you!), please come to one of our on-boarding sessions:</p>
+<ul>
+<li>https://coderefinery.github.io/2023-09-19-workshop/#schedule</li>
+<li>Zoom link for on-boarding sessions: (URL shared with registrants)</li>
+</ul>
+<p><strong>For all workshop participants</strong>, here are all relevant resources that you need to connect:</p>
+<p>You can follow the workshop lectures via Twitch in a web browser, no account needed:</p>
+<ul>
+<li>https://twitch.tv/coderefinery</li>
+</ul>
+<p>Please use this collaborative document to ask questions during the workshop:</p>
+<ul>
+<li>(URL shared with registrants)</li>
+</ul>
+<p>Schedule and lecture material:</p>
+<ul>
+<li>https://coderefinery.github.io/2023-09-19-workshop/#schedule</li>
+<li>Each day we will take a break for lunch, which we have done our best to schedule at a time that will work for most locations as we are across multiple time zones.</li>
+</ul>
+<p>Exercise Zoom room for individual learners who are not part of a team yet:</p>
+<ul>
+<li>(URL shared with registrants)</li>
+</ul>
+<p>If you have any questions, please write to support@coderefinery.org.</p>
+<p>Best regards,</p>
+<p>Radovan and the CodeRefinery team</p>
+
+        </small>
+      </p>
+    </div>
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-09-19-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 4 - CodeRefinery workshop September 19-21 and 26-28, 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.0/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2023-09-19-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 4</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 4" />
+      <meta property="og:title" content="Questions and notes from workshop day 4" />
+      <meta property="og:site_name" content="CodeRefinery workshop September 19-21 and 26-28, 2023" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2023-09-19-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2023-09-19-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 4</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#icebreaker-day-4">Icebreaker Day 4</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#reproducible-research">Reproducible research</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#intro-how-it-all-connects">Intro - how it all connects</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#motivation">Motivation</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#discussion-how-do-you-collaborate-on-writing-academic-papers">Discussion: How do you collaborate on writing academic papers?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#recording-computational-steps">Recording computational steps</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#exercise-workflow-1-and-workflow-2-until-xx-00-then-break-until-xx-10">Exercise Workflow-1 and Workflow-2, until xx:00 (then break until xx:10)</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#recording-dependencies">Recording dependencies</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#discussion-dependencies">Discussion: Dependencies</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#recording-environments">Recording environments</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#exercise-containers-1-here-and-2-at-home-until-xx-00">Exercise: Containers-1 (here) and 2 (at home), until xx:00</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#lunch-until-xx-00">Lunch until xx:00</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#social-coding-and-open-software">Social coding and open software</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#social-coding">Social coding</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#question-1-why-would-i-want-to-share-my-scripts-code-data">Question 1: Why would I want to share my scripts&#x2F;code&#x2F;data?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#question-2-the-most-concerning-thing-for-me-if-i-share-my-software-now">Question 2: The most concerning thing for me, If I share my software now</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#question-3-why-is-software-often-treated-differently-from-papers">Question 3: Why is software often treated differently from papers?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#question-4-when-you-find-a-repository-with-code-library-you-would-like-to-reuse-what-are-the-things-you-look-at-to-decide-whether-you-use-it">Question 4: When you find a repository with code&#x2F;library you would like to reuse, what are the things you look at to decide whether you use it?</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#question-5-which-of-these-are-derivative-works">Question 5: Which of these are derivative works?</a>
+              
+                <ul>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#software-citation">Software citation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#feedback-day-4">Feedback, day 4</a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://coderefinery.github.io/2023-09-19-workshop/questions/day4/#any-other-comments">Any other comments?</a>
+                    </li>
+                  
+                </ul>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker-day-4">Icebreaker Day 4</h2>
+<ul>
+<li>
+<p>Computer programs are expected to produce the same output for the same inputs. Is that always true for research software? Can you give some examples?</p>
+<ul>
+<li>if there is randomness involved, the output might not be the same. the randomness might be obvious or less obvious to the user of the software</li>
+<li>unfortunately I have seen examples where same software produced different results on different computers. on the positive side: you could get really good results if you find the right computer.</li>
+<li>Random seeds involved means different path but not different results ... depends on what we do</li>
+<li>If a computer program gives you different results for the same input, it is only trying to tell you that you need to get smarter at what you are doing, OR, trying to do.</li>
+<li>Sometimes the computer finds a solution on one day and can't find it on another day, even though everything is the same. Not sure why that happens.</li>
+</ul>
+</li>
+<li>
+<p>What do you want to be when you grow up?</p>
+<ul>
+<li>I want to sit in a cabin, read books, drink coffee, write books +6</li>
+<li>Someone who likes his job, spend time with family :) +2</li>
+<li>Maybe I don't want to be a grown up +1</li>
+<li>I want to have my own &quot;side&quot; hustle and help people to live better lives</li>
+<li>Somehow teaching/mentoring these topics sound fun</li>
+</ul>
+</li>
+<li>
+<p>Do you start this week or did you already attend last week (add an &quot;o&quot;)?</p>
+<ul>
+<li>I have joined last week: oooooooo</li>
+<li>I just started today: oo</li>
+<li>Last week was a good week and you guys made it more interesting</li>
+</ul>
+</li>
+</ul>
+<h1 id="reproducible-research">Reproducible research</h1>
+<p>Materials: https://coderefinery.github.io/reproducible-research/</p>
+<p>No problem to ask questions also about past week. +1</p>
+<h2 id="intro-how-it-all-connects">Intro - how it all connects</h2>
+<p>https://coderefinery.github.io/reproducible-research/intro/</p>
+<h2 id="motivation">Motivation</h2>
+<p>https://coderefinery.github.io/reproducible-research/motivation/</p>
+<ul>
+<li>
+<p>What are your experiences re-running or adjusting a script or a figure you
+created few months ago?</p>
+<ul>
+<li>Usually these days I'm aware so try to write conservatively - make it obvious how it works.  So somewhat OK, but still might fail (especially if data can't be found)</li>
+<li>Issues with compiling which took a lot of time to solve again (settings up all the right environment paths)...</li>
+<li>Often that makes me not too happy about my past self (&quot;where was that script?&quot;)</li>
+<li>Many issues, learned to used archives of databases (like biomaRt), instead of using standard approach (newest version), as they may be updated from manuscript submission to first revision</li>
+<li>If I only  worked on it myself it is mostly fine. However, the moment my project is with 2 of more people... Yep, this gets problematic soon.</li>
+<li>Add some many comments +1</li>
+<li>Jumping between sub-projects is hard unless fully documented</li>
+<li>Well, as it goes wrong usually, I learned to put notes ... better too many than too few :)</li>
+</ul>
+</li>
+<li>
+<p>Have you continued working from a previous student's
+script/code/plot/notebook? What were the biggest challenges?</p>
+<ul>
+<li>Yes. I got the code but had to reverse-engineer how to run it from non-existent or outdated documentation.</li>
+<li>Once someone told me &quot;best projects are tiny things you can write yourself from scratch... trying to use someone else's thing goes badly&quot;.  I've mostly done that, but haven't gone very far then.  Trying to use someone else's has usually gone badly</li>
+<li>Genuinely understand what the code does, had to little comments. What do the acronyms stand for.</li>
+<li>(share your experience, but constructively)</li>
+<li>The largest problem for me is figuring out what the other person wanted, this can take weeks.</li>
+<li>yes, it was a massive code with a lot of modules ... few notes on the code ... I wasted my time trying to find my way in it ... Unfortunately, This code was wery well written but because the documentation was inexistant, I dropped it.</li>
+<li>In a country where even the postal service does not work ... well, ... what is to be expected ...</li>
+<li>Pb with libraries that do not exist anymore ... no environment were available so I had to update the script with new libraries</li>
+<li>Trying to match sample names from different parts of a collaborative project should not be a problem, but people always feel the need to reinvent the wheel.</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>Supposably I want to add my post-processing Inkscape steps, would I write these instructions as comments in the open-sourced code? or README.md? or somewhere else?</p>
+<ul>
+<li>If it's manual work, I would describe it in the README. But really it's a question of preference.</li>
+<li>What about &quot;as close to the place it's used, where someone is most likely to see it?&quot;</li>
+</ul>
+</li>
+<li>
+<p>On the organizing part, I looked at your project directory. In my case, my data is over 400GB. So what I typically do is keep my data in another, fully separate folder (or even machine). I will always put a small example data folder in the project folder, but it is not possible to do this for the real research data. (Although we have a separata research data storage solution at my university, especially for reproducability)</p>
+<ul>
+<li>I definitely agree with this!  Very good idea.</li>
+<li>This is a good idea. I would add the doi of the data if it is published or source in readme 
+<ul>
+<li>Yep thanks. I typically also have the input files + software/version with which I ran the simulations in my project folder as well. :+1:</li>
+</ul>
+</li>
+<li>this is great practice. it really helps the next person to have small example data close to the rest.</li>
+</ul>
+</li>
+</ol>
+<h2 id="discussion-how-do-you-collaborate-on-writing-academic-papers">Discussion: How do you collaborate on writing academic papers?</h2>
+<ul>
+<li>
+<p>Are you using version control for academic papers?</p>
+<ul>
+<li>I try but most others have resisted.  At least overleaf used to let me pull with git.
+<ul>
+<li>has the git integration disappeared? I also remember that I could clone. </li>
+<li>I think it might be a paid feature now?  Haven't had to use it in a while</li>
+</ul>
+</li>
+<li>Google doc as it is good for both biologists and bioinformaticians and you can track changes and get versions from certain dates +2</li>
+<li>I have been using Overleaf for 5 years now</li>
+<li>(share your experience)</li>
+</ul>
+</li>
+<li>
+<p>How do you handle collaborative issues e.g. conflicting changes?</p>
+<ul>
+<li>(laughs).  At least overleaf works?  I used to make a branch, send a version to someone, when it comes back put it in that branch again and merge the branch.</li>
+<li>...</li>
+<li>(share your experience)</li>
+</ul>
+</li>
+<li>
+<p>What tools are you using when organizing your projects?</p>
+<ul>
+<li>Files and directories?  git?  Nothing fancy.</li>
+<li>...</li>
+<li>(share your experience)</li>
+</ul>
+</li>
+</ul>
+<h2 id="recording-computational-steps">Recording computational steps</h2>
+<p>https://coderefinery.github.io/reproducible-research/workflow-management/</p>
+<p>:::info</p>
+<h3 id="exercise-workflow-1-and-workflow-2-until-xx-00-then-break-until-xx-10">Exercise Workflow-1 and Workflow-2, until xx:00 (then break until xx:10)</h3>
+<p>https://coderefinery.github.io/reproducible-research/workflow-management/#exercise</p>
+<ul>
+<li>Prep: as show, clone the word-count repo as we learned last week</li>
+<li>Make sure you change directory into the word-count directory (<code>cd word-count</code>)</li>
+<li>Workflow-1: is doing it manually</li>
+<li>Workflow-2: is doing it automatically.</li>
+<li>Try to do all of them</li>
+</ul>
+<p>:::</p>
+<ol start="3">
+<li>
+<p>Should we go over the conda env activation in more detail?</p>
+<ul>
+<li>it was a big quick, especially since we did not use this in week 1</li>
+<li>The basic idea: by activating it, the software we installed before becomes available to you.  <code>conda activate coderefinery</code> should do this.  There is some initial step to be done that should have been covered in <a rel="noopener" target="_blank" href="https://coderefinery.github.io/installation/conda/">the installation instructions</a></li>
+</ul>
+</li>
+<li>
+<p>Should we clone this into a &quot;coding&quot; folder that was made last week, or just into the main folder?</p>
+<ul>
+<li>it's up to you!  Into the coding folder would make sense to keep workshop stuff together. 
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>(I guess you found it!) (I realized it was the group leaders work to help me ;) )</p>
+</li>
+<li>
+<p>Somebody else get an error using binder? 
+YES</p>
+<ul>
+<li>Can you paste the error message here?
+<code> Removing intermediate container 47481a3fce60 The command '/bin/sh -c TIMEFORMAT='time: %3R' bash -c 'time ${MAMBA_EXE} env update -p ${NB_PYTHON_PREFIX} --file &quot;environment.yml&quot; &amp;&amp; time ${MAMBA_EXE} clean --all -f -y &amp;&amp; ${MAMBA_EXE} list -p ${NB_PYTHON_PREFIX} '' returned a non-zero code: 1</code></li>
+<li>I am trying to reproduce the error :)</li>
+<li>Ok it seems that Binder has some issues running the most recent Python 3.11 since few weeks ago. https://discourse.jupyter.org/t/mybinder-stopped-working-for-repo/21170/3 Right now in the <a rel="noopener" target="_blank" href="https://github.com/coderefinery/word-count">exercise repository</a> we do not restrict the version of python to be smaller than 3.11 and that causes the error. We will comment on this after the break as this is related to the environment.</li>
+</ul>
+</li>
+<li>
+<p>Note about the exercise description: The line <code>Somebody wrote a script (script.sh) to process all 4 books:</code> is a bit vague, it could maybe be more explicit? (Create a script file called <code>script.sh</code> and copy paste the following shell script there.)</p>
+<ul>
+<li>good point. bonus points to the person who sends a pull request to improve the text: https://github.com/coderefinery/reproducible-research/edit/main/content/workflow-management.md</li>
+<li>should the script be included in the repo?
+<ul>
+<li>but the script is just below that line. maybe I misundestood the question. the script that &quot;somebody wrote&quot; is that Bash script containing the comment &quot;# loop over all books&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>I can't run the snakefile, &quot;Missing output files: statistics/last.data&quot; ..? </p>
+<ul>
+<li>are you sure it is not actually running? Did you get some green text in terminal and do the outputfiles in plot and statistics exist?</li>
+<li>Snakemake tells you reasons for running each of the jobsteps and what you posted above sounds like one of these reason-texts :thinking:</li>
+<li>Hm... haven't figured anything out yet.  Any other messages?</li>
+</ul>
+</li>
+<li>
+<p>I had another possible improvement to the code/assignment. From a reprodusability point of view, having all code snippets in their respective folder is somewhat frustrating and unclear. It might be better to have them at the same location (count.py, plot.py ect.) and make them write their results to the folders that the folders dat they are in right now. (of course with comments stating where you will make it read/write from/to). </p>
+<ul>
+<li>thanks! yes, I agree, I would probably also put them all in the same folder (but to be fair I also might have created that exercise example but I am now unsure why it was split into several folders)</li>
+</ul>
+</li>
+<li>
+<p>How often should one use snakemake? is it recommended to have it for every step of a project and the entire project?</p>
+<ul>
+<li>it is a useful tool for a project that requires multiple steps run on multiple similar input data</li>
+</ul>
+</li>
+<li>
+<p>Does anyone have any reccomendations for workflow platforms in neuroscience? Does snakemake work well there too?</p>
+<ul>
+<li>Snakemake is a good one to start with. It also depends on the scale of the project, if the same script has to be run for many subjects for example. I have also seen people coding their workflow with https://pydoit.org/ and some excellent neuroscience papers have released full containers with pipelines to get insipration from, for example: https://www.nature.com/articles/s41586-020-2314-9</li>
+</ul>
+</li>
+</ol>
+<p>How did the exercise go?</p>
+<ul>
+<li>I'm a bit confused on how the workfflow in snakemake goes, its is a bit hard to follow on what the environment variables are and in what order instructions are done.</li>
+</ul>
+<h3 id="recording-dependencies">Recording dependencies</h3>
+<p>https://coderefinery.github.io/reproducible-research/dependencies/</p>
+<ol start="12">
+<li>Can't one generate such an enviroment.yml file automatically using tools? (which ones again?)
+<ul>
+<li>yes you can! have a look at &quot;(optional) Dependencies-2: Create a time-capsule for the future&quot; box on the same page below.</li>
+</ul>
+</li>
+</ol>
+<p>:::info</p>
+<h3 id="discussion-dependencies">Discussion: <a rel="noopener" target="_blank" href="https://coderefinery.github.io/reproducible-research/dependencies/#exercises">Dependencies</a></h3>
+<p>A: couble of libs in code: 
+- trial and error?
+- This is always quite annoying.
+B: README list: 
+- Manual work but at least there
+- High chance that it isn't kept up-to-date in the future.
+C: environment.yml: 
+- works but might change in the future?
+- Is changing good since you get automatic updates?  Or break things?
+D: environment.yml with ...:
+- I like this one since it specifies which packages are required, including the version. Also, it signifies the dependency on other (GitHub) packages with the version it was 3 years ago. However, you assume that the user has tagged the right commit. 
+E: environment.yml with ...
+- Seems to have everything.  Requires sub-projects to be released <em>and</em> added to conda?
+- Maybe doing full release for everything is too much to expect, too?
+::: </p>
+<ol start="13">
+<li>
+<p>How can you make a package? like student E?</p>
+<ul>
+<li>depends on the language. would this be a Python project? if yes, I personally use https://flit.pypa.io/ to package and upload to PyPI. To publish on Conda I would look at conda-forge. They have excellent documentation.</li>
+<li>For Python, I like to use the <a rel="noopener" target="_blank" href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Python</a> documentation that explains each step</li>
+<li>A follow up course we might advertise is &quot;Python for SciComp&quot; and we have a mini-tutorial there: https://aaltoscicomp.github.io/python-for-scicomp/packaging/</li>
+<li>In general, it can take a bit to learn how to do this, but it's really useful!  even if you don't release officially, being able to do <code>pip install https://github.com/YOU/YOURPROJECT/archives/main.zip</code> is pretty useful!</li>
+</ul>
+</li>
+<li>
+<p>Are conda-forge and PyPi equivalent? Which one is recommended for package publishing?</p>
+<ul>
+<li>similar idea but PyPI is more for projects that are meant to be included in other Python projects. Conda is more general and also used for projects that have nothing to do with Python. but similar concept.</li>
+<li>conda was made for complex libraries that also needed compiled code, but is now common in science in general.</li>
+<li>Usually things go to PyPI first and then conda.  PyPI may be a bit easier (and also usable from conda), so start there I guess?</li>
+</ul>
+</li>
+<li>
+<p>Doesn't pip also have versions? As far as I understood, a good practice is to define versions of python libraries in the environment.yml file. Should we also mention pip versions, if there are such?</p>
+<ul>
+<li>yes it has. but can you please clarify your question? (I got distracted and did not hear the stream so I am unsure what statement this question refers to)</li>
+</ul>
+</li>
+<li>
+<p>what is the difference between conda and container(Docker)?</p>
+<ul>
+<li>conda is a way to track, isolate, and document dependencies of a project. but sometimes dependencies go beyond the library dependencies. some codes depend on the actual operating system and have system dependencies. in this case the conda environment might not even be enough. so a container goes beyond that and not only tracks the code dependencies, but packages the entire operating system with all system dependencies also.</li>
+</ul>
+</li>
+</ol>
+<h2 id="recording-environments">Recording environments</h2>
+<p>https://coderefinery.github.io/reproducible-research/environments/</p>
+<p>Discussion: Have you ever come across containers? Docker? Singularity? Apptainer? Podman?</p>
+<ul>
+<li>I started coming across them when deploying web services.  At first I didn't quite like the idea, now I see they have some good uses.</li>
+<li>Yes and I found that there is a big difference between Docker and Singularity. On HPC systems usually they won't let you use Docker, while you can usually work with Singularity. The difference is I suppose that the first one touches on OS, while the other is fully isolated.</li>
+<li>I have heard it multiple times, but didnt know what it was up until now (sort of)!!</li>
+</ul>
+<p>:::info</p>
+<h3 id="exercise-containers-1-here-and-2-at-home-until-xx-00">Exercise: Containers-1 (here) and 2 (at home), until xx:00</h3>
+<p>https://coderefinery.github.io/reproducible-research/environments/#exercises</p>
+<ul>
+<li>You don't need to use the container yourself (that's a lot of install and setup), but you review the existing container</li>
+<li>Wrap up at xx:00, then lunch.</li>
+</ul>
+<p>:::</p>
+<ol start="16">
+<li>
+<p>If containers also allow other operating systems, is it fair to compare them to something like a virtual machine?</p>
+<ul>
+<li>Purists would say &quot;different&quot;, but yeah, practically somewhat similar.  (it shares a lot more than a virtual machine: the kernel, filesystem mounts, and a lot more of the basic operating system services.)</li>
+</ul>
+</li>
+<li>
+<p>At what point do you stop using the container? Eg: a project was created 5+ years ago with specific conditions, but when would it be time to move to updated versions of everything?</p>
+<ul>
+<li>it's time to update the environment as soon as I start changing also the code. or to take advantage of updated libraries and dependencies that offer better/faster/... functionality.</li>
+<li>If it is code that you plan to reuse often, keep it up to date across versions of other libraries. </li>
+<li>Containers are also useful about carrying the code around various systems, sometimes we are not allowed to install anything in some systems but we can bring the container with us.</li>
+<li>This is actually a good phisolophical point: is the purpose of containers so that you don't ever have to update the environment?  Or so that you can re-create it easily?  Both are done... and too many containers do last so long and can't be reproduced anymore</li>
+</ul>
+</li>
+<li>
+<p>Is image another word for container?</p>
+<ul>
+<li>Oh yes.  Good point.</li>
+<li>at least docker uses this specific terminology: &quot;image&quot; = the data of it.  &quot;container&quot; = one instance of the container actually running.  But I tend to use them interchangably, which might not be the best.</li>
+<li>And are they both interchangable with &quot;environment&quot;?</li>
+<li>&quot;environment&quot; is more a term we are using here for the general idea of &quot;where the code runs&quot;.  It can mean many things: conda environment, virtual environment, I guess even &quot;running in the container's Python environment&quot;.</li>
+<li>This makes sense, thank you! :D</li>
+</ul>
+</li>
+<li>
+<p>Are containers usually used to &quot;publish&quot; code rather than during development, if not, how are they usually used during development?</p>
+<ul>
+<li>Sometimes yes, they are used to publish code.  I'm not sure if it's a good idea, but it is effective and solves some certain problems.</li>
+</ul>
+</li>
+</ol>
+<p>::: info</p>
+<h1 id="lunch-until-xx-00">Lunch until xx:00</h1>
+<p>:::</p>
+<h2 id="social-coding-and-open-software">Social coding and open software</h2>
+<p>https://coderefinery.github.io/social-coding/</p>
+<ol start="20">
+<li>Has anyone watching ever <em>not</em> distributed one of their own codes, because you realized you didn't have rights to?</li>
+</ol>
+<h3 id="social-coding">Social coding</h3>
+<p>https://coderefinery.github.io/social-coding/social-coding/</p>
+<h2 id="question-1-why-would-i-want-to-share-my-scripts-code-data">Question 1: Why would I want to share my scripts/code/data?</h2>
+<p><strong>Choose many</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>A: Easier to find and reproduce (scientific reproducibility)
+<ul>
+<li>votes: ooooooooooooooooo</li>
+</ul>
+</li>
+<li>B: More trustworthy: others can verify correctness and find and report bugs
+<ul>
+<li>votes:ooo0oooo</li>
+</ul>
+</li>
+<li>C: Enables others to build on top of your code
+(derivative work, provided the license allows it)
+<ul>
+<li>votes:oooooooooo</li>
+</ul>
+</li>
+<li>D: Others can submit features/improvements
+<ul>
+<li>votes:oooooooooo</li>
+</ul>
+</li>
+<li>E: Others can help fixing bugs
+<ul>
+<li>votes:ooooooooooo</li>
+</ul>
+</li>
+<li>F: Many tools and apps are free for open source, so no financial cost for this
+(GitHub, GitLab, Appveyor, Read the Docs)
+<ul>
+<li>votes:ooooo</li>
+</ul>
+</li>
+<li>G: Good for your CV: you can show what you have built
+<ul>
+<li>votes:oooooooooooo</li>
+</ul>
+</li>
+<li>H: Discourages competitors. If others can't build on your work,
+they will make competing work
+<ul>
+<li>votes: o</li>
+</ul>
+</li>
+<li>I: When publicly shared, usually we time-stamp or set a version,
+so it is easier to refer to a specific version
+<ul>
+<li>votes:ooo</li>
+</ul>
+</li>
+<li>J: You can reuse your own code later after change of job or affiliation
+<ul>
+<li>votes: ooooooo</li>
+</ul>
+</li>
+<li>K: It encourages me to code properly from the start
+<ul>
+<li>votes: ooooooooooo</li>
+</ul>
+</li>
+</ul>
+<h2 id="question-2-the-most-concerning-thing-for-me-if-i-share-my-software-now">Question 2: The most concerning thing for me, If I share my software now</h2>
+<p><strong>Choose one</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>A: It will be scooped (stolen) by someone else
+<ul>
+<li>votes: ooooo</li>
+</ul>
+</li>
+<li>B: It will expose my &quot;ugly code&quot;
+<ul>
+<li>votes:ooooooooooooooooooo</li>
+</ul>
+</li>
+<li>C: Others may find bugs and mistakes. What if the algorithm is wrong?
+<ul>
+<li>votes:ooooooooo</li>
+</ul>
+</li>
+<li>D: I will get too many questions, I do not have time for that
+<ul>
+<li>votes:oooooooooo</li>
+</ul>
+</li>
+<li>E: Losing control over the direction of the project
+<ul>
+<li>votes: oooo</li>
+</ul>
+</li>
+<li>F: Low quality copies will appear
+<ul>
+<li>votes: </li>
+</ul>
+</li>
+<li>G: I won't be able to sell this later. Someone else will make money from it
+<ul>
+<li>votes:</li>
+</ul>
+</li>
+<li>H: It is too early, I am just prototyping, I will write version to distribute later
+<ul>
+<li>votes:oooooooooooooo</li>
+</ul>
+</li>
+<li>I: Worried about licensing and legal matters, as they are very complicated
+<ul>
+<li>votes:oooooooooo</li>
+</ul>
+</li>
+</ul>
+<h2 id="question-3-why-is-software-often-treated-differently-from-papers">Question 3: Why is software often treated differently from papers?</h2>
+<p>Free-form answers:</p>
+<ul>
+<li>Not counted as citation or proper output.</li>
+<li>In EU law scientific findings are patentable, while it is more tricky or impossible to patent software/code.</li>
+<li>Slightly harder to grasp the purpose of the source code</li>
+<li>The hiring committee maybe looks at my papers but not at my code +1</li>
+<li>Harder to be acknowledged for it.</li>
+<li>...</li>
+</ul>
+<h2 id="question-4-when-you-find-a-repository-with-code-library-you-would-like-to-reuse-what-are-the-things-you-look-at-to-decide-whether-you-use-it">Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?</h2>
+<p>Free-form answers:</p>
+<ul>
+<li>Is there documentation available? Any examples to see if I can use it for my project?</li>
+<li>Tutorial</li>
+<li>Does it fit my intended purpose?</li>
+<li>Quality of documentation</li>
+<li>Good README file, do they answer to new issues? </li>
+<li>The quality and structure of the code</li>
+<li>References to the papers based on using this code</li>
+<li>If I can actually run it</li>
+<li>code style / quality</li>
+<li>The example files + the licence + I make a small testcase for myself.</li>
+<li>good comments that I can actually make sense out of the code</li>
+<li>It should be very easy to use and updates should be very recent, then I know that project is maintained.</li>
+<li>Does it generally look like it uses good practices? (gives me confidence in the rest)</li>
+<li>Is it using tools that I can understand?</li>
+</ul>
+<ol start="21">
+<li>
+<p>Does anyone have experiences of hiring committes think of code quality and reusability?  (what if it's a big famous code used by everyone?)</p>
+<ul>
+<li>When hiring for the bioinformatician position I was at least looking at github account, if it existed and had some codes there it was a big plus.</li>
+</ul>
+</li>
+<li>
+<p>I guess there is &quot;derivitive work by using ideas&quot; and &quot;derivitive work as specified by copyright law&quot; ?  I guess that's next lesson.</p>
+</li>
+</ol>
+<h2 id="question-5-which-of-these-are-derivative-works">Question 5: Which of these are derivative works?</h2>
+<p><strong>Choose many</strong>. Vote by adding an <code>o</code> character:</p>
+<ul>
+<li>A. Download some code from a website and add on to it
+<ul>
+<li>votes:oooooooooooooo</li>
+</ul>
+</li>
+<li>B. Download some code and use one of the functions in your code
+<ul>
+<li>votes:ooooooo</li>
+</ul>
+</li>
+<li>C. Changing code you got from somewhere
+<ul>
+<li>votes:oooooooooooooooooo</li>
+</ul>
+</li>
+<li>D. Extending code you got from somewhere
+<ul>
+<li>votes:ooooooooooooooooooo</li>
+</ul>
+</li>
+<li>E. Completely rewriting code you got from somewhere
+<ul>
+<li>votes:oooooo</li>
+</ul>
+</li>
+<li>F. Rewriting code to a different programming language
+<ul>
+<li>votes:ooooooooo</li>
+</ul>
+</li>
+<li>G. Linking to libraries (static or dynamic), plug-ins, and drivers
+<ul>
+<li>votes:oo</li>
+</ul>
+</li>
+<li>H. Clean room design (somebody explains you the code but you have never seen it)
+<ul>
+<li>votes:oo</li>
+</ul>
+</li>
+<li>I. You read a paper, understand algorithm, write own code
+<ul>
+<li>votes:oooo</li>
+</ul>
+</li>
+<li>J. I copied code from generative AI and use it as part of my own code
+<ul>
+<li>votes:ooooo</li>
+</ul>
+</li>
+</ul>
+<ol start="23">
+<li>
+<p>for poll above: what kind of derivative work?  copyright or ...?</p>
+</li>
+<li>
+<p>Could you mention once more which kind of license if often used in an academic context? </p>
+<ul>
+<li>instructors often use MIT (permissive) or EUPL (share-alike, improvements must also be published).</li>
+</ul>
+</li>
+<li>
+<p>Is EUPL the only license with share-alike?</p>
+<ul>
+<li>also MPL and LGPL are very similar. GPL is also share-alike but &quot;stong&quot; in the sense than not only modifications but the combined work</li>
+</ul>
+</li>
+<li>
+<p>We are talking about licensing and modifications, do the (some) licenses protect you against modifications that decrease the code quality or prevent harmful modifications? </p>
+<ul>
+<li>Usually they don't cover this, since it's rather arbitrary, and can't actually hurt the original code.  Some have &quot;no advertising&quot; concept which says that original author's names can't be used to publicize derivatives and so on.</li>
+<li>The ethical considerations are a good point!</li>
+</ul>
+</li>
+<li>
+<p>Is rewriting code derivative work? What does it mean in practice for me?</p>
+<ul>
+<li>Very good (and difficult) question.  It might be or might now.  Is your re-write using the creative expression of the original (like if you copy line-by-line)?  Or are you deriving from the general ideas.  Relevant wikipedia for info, it's a big thing: https://en.wikipedia.org/wiki/Clean_room_design</li>
+<li>&quot;Clean room design is usually employed as best practice, but not strictly required by law.&quot;</li>
+<li>In practice: most of the stuff we do is so small it won't matter.  But try to break down to the ideas and re-create without referring to original design.</li>
+</ul>
+</li>
+<li>
+<p>What license does the code generated with ChatGPT have? I am not expecting an answer :) </p>
+<ul>
+<li>In EU and US, (I need to double check, I'm not a lawyer) it's not possible to copyright something produced by an AI. So it's public domain. If you want to license it you need to make a significant modification.</li>
+<li>If the model happens to output some of its training data, the original developer own the copyright. It's up to you to check...</li>
+<li>And what if you use AI to help translate between coding languages???
+<ul>
+<li>I think (not a lawyer) that would be derivative work of the original code. The AI is not doing clean room design :smile: But if the original code has a license you can use, the AI would not change that.</li>
+<li>But the AI output might infringe another code, so you need to check</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What is wrong with derivative work? As long as you are citing correctly?</p>
+<ul>
+<li>nothing!</li>
+<li>copyright derivative work: you have to follow the license of the original.  As long as it's open-source, this isn't a problem.  It's good to build off of others.</li>
+<li>scientific intellectual derivative work: like you say, you should cite (but this isn't related to copyright)</li>
+</ul>
+</li>
+<li>
+<p>Ethical use of code and licenses?</p>
+<ul>
+<li>Most open-source licenses don't restrict field of use, and in fact isn't possible under most free software/open source definitions</li>
+<li>(link incoming) (no link but this is what I wrote before, still looking for link):
+<ul>
+<li>about &quot;ethical licenses&quot;: the relevant term from open-source license discussion is &quot;discrimination against fields of endeavor&quot; - search this to see related discusison.
+It was long ago established that discriminating against certain types of use was incompatible with the open source philosophy for reasons that you can read about. While it sounds good to discriminate against unethical things, it seems practical problems in actually doing that were decided to be too great and thus &quot;discrimination against field of endeavor&quot; is not allowed by any of the major open source/free software definitions</li>
+</ul>
+</li>
+<li>point 6 here: https://opensource.org/definition-annotated/</li>
+<li>(I'm not fully happy with these links)</li>
+</ul>
+</li>
+</ol>
+<h3 id="software-citation">Software citation</h3>
+<p>https://coderefinery.github.io/social-coding/software-citation/</p>
+<ol start="31">
+<li>
+<p>Any services for publishing models with DOI/citeability? e.g. LLMs.</p>
+<ul>
+<li>does huggingface help with this?  (I really don't know)</li>
+<li>https://huggingface.co/docs/hub/doi#digital-object-identifier-doi </li>
+</ul>
+</li>
+<li>
+<p>.</p>
+</li>
+<li>
+<p>.</p>
+</li>
+<li>
+<p>.</p>
+</li>
+</ol>
+<h3 id="feedback-day-4">Feedback, day 4</h3>
+<p>:::info</p>
+<ul>
+<li>Tomorrow we talk about documentatation</li>
+<li>Also Jupyter notebooks (you could say this is a form of documentation) </li>
+<li>The CodeRefinery conda environment is used again tomorrow - along with git at the same time.  It's important that you can use git + conda from the same directory.
+:::</li>
+</ul>
+<h4 id="today-was">Today was:</h4>
+<ul>
+<li>Too fast:</li>
+<li>just right: oooooooooo</li>
+<li>too slow:oooooo</li>
+<li>too easy:oo</li>
+<li>right level:ooooooo</li>
+<li>too hard:oo</li>
+<li>Exercises were good:ooooo</li>
+<li>I would recommend today to others: ooooooooo</li>
+<li>I wouldn't recommend today: </li>
+</ul>
+<h4 id="one-good-thing-about-today">One good thing about today</h4>
+<ul>
+<li>Very nice intro to FAIR princinples, they are more and more important even in classical grant application they more ofte ask how we are going to be following FAIR principles.</li>
+<li>I liked how it was emphasised how we can slowly incorporate these principles over time</li>
+<li>I liked the emphasis on how to share your code environment of a project. I encounter these reproducibility issues regularly.</li>
+<li>It was nice to see how collaborating can work in practice, and how to make sure to keep making reproducible work. Was also nice to hear more about the licenses since that has been quite intimidating - now a bit less so!
+<ul>
+<li>thanks!</li>
+</ul>
+</li>
+</ul>
+<h4 id="one-thing-to-be-improved-for-future-days">One thing to be improved for future days:</h4>
+<ul>
+<li>There should be more in-depth/interactive assignments during this day. Now it was a little too passive. +1</li>
+<li>I would make it in a bit faster pace.</li>
+<li>I wish there were more exercises, compared to last week there was not much benefit being part of a group
+<ul>
+<li>we're sorry about this, but it'll get better tomorrow!</li>
+</ul>
+</li>
+<li>I would like to know how Singularity could work an the HPC cluster. 
+<ul>
+<li>See two points below - sort of similar.  Would a demonstration be exciting enough?  (also it depends a lot on the cluster!)</li>
+</ul>
+</li>
+<li>Maybe additional information about the difference between setup.py, requirements.yml, toml files etc. to specify dependencies for packages. However, this may be out of scope for this course +1</li>
+<li>It could have been fun to try making an environment/image
+<ul>
+<li>thanks!  We have tried this in the past, but there were so many setup requirements that most people couldn't do it.  Any ideas for how to make it possible?</li>
+<li>Is environment-ception possible..? Making an environment, within the coderefinery one? :D</li>
+</ul>
+</li>
+</ul>
+<h3 id="any-other-comments">Any other comments?</h3>
+<ul>
+<li>I feel like I have a better understanding overall of how everything comes together - thank you for today!</li>
+<li>Thanks! I really appreciate how self-contained the written docs for the course are, it's hard to follow an online course with 100% attention so it's really great to follow when I can and know where I can look to fill in the gaps and find the links to follow up for deeper understanding in the future.</li>
+<li>.</li>
+<li>.</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2023-09-19-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
